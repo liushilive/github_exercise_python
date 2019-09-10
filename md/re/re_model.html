@@ -667,34 +667,38 @@
             <div class="search-plus" id="book-search-results">
                 <div class="search-noresults">
                     <section class="normal markdown-section">
-                        <div id='anchor-navigation-ex-navbar'><i class='fa fa-anchor'></i><ul><li><span class='title-icon fa fa-hand-o-right'></span><a aria-label class='on-toolbar-action' href='' onclick="$('.fa.fa-align-justify').parent()[0].click();">目录</a></li><li><span class='title-icon fa fa-hand-o-right'></span><a href='#anchor_1'><b></b>Python 正则学习</a></li><ul><li><span class='title-icon fa fa-hand-o-right'></span><a href='#anchor_2'><b>1. </b>re</a></li><li><span class='title-icon fa fa-hand-o-right'></span><a href='#anchor_3'><b>2. </b>如何写正则表达式</a></li><li><span class='title-icon fa fa-hand-o-right'></span><a href='#anchor_4'><b>3. </b>信息提取</a></li></ul></ul></div><a href='#anchor_1' id='anchorNavigationExGoTop'><i class='fa fa-arrow-up'></i></a>
+                        <div id='anchor-navigation-ex-navbar'><i class='fa fa-anchor'></i><ul><li><span class='title-icon fa fa-hand-o-right'></span><a aria-label class='on-toolbar-action' href='' onclick="$('.fa.fa-align-justify').parent()[0].click();">目录</a></li><li><span class='title-icon fa fa-hand-o-right'></span><a href='#anchor_1'><b></b>Python 正则学习</a></li><ul><li><span class='title-icon fa fa-hand-o-right'></span><a href='#anchor_2'><b>1. </b>re</a></li></ul><li><span class='title-icon fa fa-hand-o-right'></span><a href='#anchor_3'><b></b>如何写正则表达式</a></li><li><span class='title-icon fa fa-hand-o-right'></span><a href='#anchor_4'><b></b>信息提取</a></li></ul></div><a href='#anchor_1' id='anchorNavigationExGoTop'><i class='fa fa-arrow-up'></i></a>
                         <h1 id="anchor_1"><a name="anchor_1" class="anchor-navigation-ex-anchor" href="#anchor_1"><i class="fa fa-link" aria-hidden="true"></i></a>Python 正则学习</h1><p><a href="https://docs.python.org/3/library/re.html">参考官方文档</a></p>
 <p><strong>正则表达式</strong>  <code class="language-markup">Regular Expression</code>  的主要功能是从字符串（string）中通过特定的模式，搜索希望找到的内容。</p>
 <h2 id="anchor_2"><a name="anchor_2" class="anchor-navigation-ex-anchor" href="#anchor_2"><i class="fa fa-link" aria-hidden="true"></i></a>1. re</h2><p>Python 中可以使用包  <code class="language-markup">re</code>  来处理正则表达式。</p>
 <p>下面是一个简单的应用，目的是找到字符串中的数字：</p>
 <pre class="line-numbers"><code class="lang-python">import re
 
-m = re.search(&quot;[0-9]&quot;,&quot;abcd4ef&quot;)
+m = re.search(&quot;[0-9]&quot;, &quot;abcd4ef&quot;)
 print(m.group(0))
 </code></pre>
 <p><code class="language-markup">re.search()</code>  接收两个参数，第一个参数  <code class="language-markup">[0-9]</code>  就是我们所说的正则表达式，它告诉 Python，“听着，我想从字符串中找从 0 到 9 的任意一个数字字符”。</p>
 <p><code class="language-markup">re.search()</code>  如果从第二个参数中找到符合要求的子字符串，就返回一个对象  <code class="language-markup">m</code> ，你可以通过  <code class="language-markup">m.group()</code>  的方法查看搜索到的结果。如果没有找到符合要求的字符，则  <code class="language-markup">re.search()</code>  会返回  <code class="language-markup">None</code> 。</p>
 <p>除了  <code class="language-markup">search()</code>  方法外， <code class="language-markup">re</code>  包还提供了其他搜索方法，它们的功能有所差别：</p>
-<pre class="line-numbers"><code class="lang-python">m = re.search(pattern, string)  # 搜索整个字符串，直到发现符合的子字符串
-m = re.match(pattern, string)   # 从头开始检查字符串是否符合正则表达式。
-                                # 必须从字符串的第一个字符开始就相符
+<pre class="line-numbers"><code class="lang-python"># 搜索整个字符串，直到发现符合的子字符串，如果没有发现返回 None
+m = re.search(pattern, string)
+# 从头开始检查字符串是否符合正则表达式。
+# 必须从字符串的第一个字符开始就相符
+m = re.match(pattern, string)
 </code></pre>
 <p>我们可以从这两个函数中选择一个进行搜索。上面的例子中，如果使用  <code class="language-markup">re.match()</code>  的话，则会得到  <code class="language-markup">None</code> ，因为字符串的起始为  <code class="language-markup">a</code> ，不符合  <code class="language-markup">[0-9]</code>  的要求。再一次，我们可以使用  <code class="language-markup">m.group()</code>  来查看找到的字符串。</p>
 <p>我们还可以在搜索之后将搜索到的子字符串进行替换。下面的  <code class="language-markup">sub()</code>  利用正则  <code class="language-markup">pattern</code>  在字符串  <code class="language-markup">string</code>  中进行搜索。对于搜索到的字符串，用另一个字符串  <code class="language-markup">replacement</code>  进行替换。函数将返回替换后的字符串：</p>
 <pre class="line-numbers"><code class="lang-python">str = re.sub(pattern, replacement, string)
 </code></pre>
 <p>此外，常用的方法还有</p>
-<pre class="line-numbers"><code class="lang-python">re.split()    # 根据正则表达式分割字符串，将分割后的所有子字符串
-              # 放在一个列表(list)中返回
-re.findall()  # 根据正则表达式搜索字符串，将所有符合条件的子字符串
-              # 放在一个列表(list)中返回
+<pre class="line-numbers"><code class="lang-python"># 根据正则表达式分割字符串，将分割后的所有子字符串
+# 放在一个列表(list)中返回
+re.split()
+# 根据正则表达式搜索字符串，将所有符合条件的子字符串
+# 放在一个列表(list)中返回
+re.findall()
 </code></pre>
-<h2 id="anchor_3"><a name="anchor_3" class="anchor-navigation-ex-anchor" href="#anchor_3"><i class="fa fa-link" aria-hidden="true"></i></a>2. 如何写正则表达式</h2><p>正则表达式的功能其实非常强大，关键在于如何写出有效的正则表达式。</p>
+<h1 id="anchor_3"><a name="anchor_3" class="anchor-navigation-ex-anchor" href="#anchor_3"><i class="fa fa-link" aria-hidden="true"></i></a>如何写正则表达式</h1><p>正则表达式的功能其实非常强大，关键在于如何写出有效的正则表达式。</p>
 <p>我们先看正则表达式的常用语法。</p>
 <p>正则表达式用某些符号代表单个字符：</p>
 <pre class="line-numbers"><code class="lang-python">. # 任意的一个字符
@@ -707,16 +711,18 @@ a|b # 字符a或字符b
 \S # 一个非空格
 \d # 一个数字，相当于[0-9]
 \D # 一个非数字，相当于[^0-9]
-\w # 数字或字母，相当于[0-9a-zA-Z]
-\W # 非数字非字母，相当于[^0-9a-zA-Z]
+\w # 任何语言单词的一部分的字符，以及数字和下划线
+\W # 匹配任何不是单词字符的字符
 </code></pre>
 <p>正则表达式还可以用某些符号来表示某种形式的重复，这些符号紧跟在单个字符之后，就表示多个这样类似的字符：</p>
 <pre class="line-numbers"><code class="lang-python">* # 重复超过0次或更多次
 + # 重复1次或超过1次
 ? # 重复0次或1次
-{m} # 重复m次。比如，a{4} 相当于 aaaa，再比如，[1-3]{2} 相当于 [1-3][1-3]
-{m, n} # 重复m到n次。比如说a{2, 5}表示a重复2到5次。
-       # 小于m次的重复，或者大于n次的重复都不符合条件
+{m}
+# 重复m次。比如，a{4} 相当于 aaaa，再比如，[1-3]{2} 相当于 [1-3][1-3]
+{m, n}
+# 重复m到n次。比如说a{2, 5}表示a重复2到5次。
+# 小于m次的重复，或者大于n次的重复都不符合条件
 </code></pre>
 <p>下面是重复符号的例子：</p>
 <table>
@@ -764,8 +770,8 @@ $ # 字符串的结尾位置
 </tr>
 </tbody>
 </table>
-<h2 id="anchor_4"><a name="anchor_4" class="anchor-navigation-ex-anchor" href="#anchor_4"><i class="fa fa-link" aria-hidden="true"></i></a>3. 信息提取</h2><p>有的时候，我们想在搜索的同时，对结果进一步提炼。比如说，我们从下面一个字符串中提取信息：</p>
-<pre class="line-numbers"><code class="lang-python">content = &quot;abcd_output_1994_abcd_1912_abcd&quot;
+<h1 id="anchor_4"><a name="anchor_4" class="anchor-navigation-ex-anchor" href="#anchor_4"><i class="fa fa-link" aria-hidden="true"></i></a>信息提取</h1><p>有的时候，我们想在搜索的同时，对结果进一步提炼。比如说，我们从下面一个字符串中提取信息：</p>
+<pre class="line-numbers"><code class="lang-python">s = &quot;abcd_output_1994_abcd_1912_abcd&quot;
 </code></pre>
 <p>如果我们把正则表达式写成：</p>
 <pre class="line-numbers"><code class="lang-python">&quot;output_\d{4}&quot;
