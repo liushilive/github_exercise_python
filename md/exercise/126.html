@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-<title>Python 相关 - Python 3 练习 067</title>
+<title>Python 相关 - Python 3 练习 126</title>
 <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
 <meta content="" name="description">
 <meta content="刘士" name="author">
@@ -20,7 +20,7 @@
       rel="apple-touch-icon-precomposed" sizes="152x152">
 <link href="../..\../asserts/lsbook/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
 <!--分页-->
-<link href="068.html" rel="next"/>
+<link href="../questions/index.html" rel="next"/>
 </head>
 <body>
 <div class="book"><div class="book-summary">
@@ -281,7 +281,7 @@
 <li class="chapter" data-level="3.1.66" data-path="066.html">
     <a href="066.html"><b>3.1.66.</b> Python 3 练习 066</a>
 </li>
-<li class="chapter active" data-level="3.1.67" data-path="067.html">
+<li class="chapter" data-level="3.1.67" data-path="067.html">
     <a href="067.html"><b>3.1.67.</b> Python 3 练习 067</a>
 </li>
 <li class="chapter" data-level="3.1.68" data-path="068.html">
@@ -458,7 +458,7 @@
 <li class="chapter" data-level="3.1.125" data-path="125.html">
     <a href="125.html"><b>3.1.125.</b> Python 3 练习 125</a>
 </li>
-<li class="chapter" data-level="3.1.126" data-path="126.html">
+<li class="chapter active" data-level="3.1.126" data-path="126.html">
     <a href="126.html"><b>3.1.126.</b> Python 3 练习 126</a>
 </li>
 
@@ -661,7 +661,7 @@
         <!-- Title -->
         <h1>
             <i class="fa fa-circle-o-notch fa-spin"></i>
-            <a href="../..">Python 3 练习 067</a>
+            <a href="../..">Python 3 练习 126</a>
         </h1>
     </div>
 
@@ -671,45 +671,18 @@
                 <div class="search-noresults">
                     <section class="normal markdown-section">
                         <div id='anchor-navigation-ex-navbar'><i class='fa fa-anchor'></i><ul><li><span class='title-icon fa fa-hand-o-right'></span><a aria-label class='on-toolbar-action' href='' onclick="$('.fa.fa-align-justify').parent()[0].click();">目录</a></li><li><span class='title-icon fa fa-hand-o-right'></span><a href='#anchor_1'><b></b>Python 练习</a></li><ul><li><span class='title-icon fa fa-hand-o-right'></span><a href='#anchor_2'><b>1. </b>题目</a></li><li><span class='title-icon fa fa-hand-o-right'></span><a href='#anchor_3'><b>2. </b>分析</a></li><li><span class='title-icon fa fa-hand-o-right'></span><a href='#anchor_4'><b>3. </b>实例</a></li></ul></ul></div><a href='#anchor_1' id='anchorNavigationExGoTop'><i class='fa fa-arrow-up'></i></a>
-                        <h1 id="anchor_1"><a name="anchor_1" class="anchor-navigation-ex-anchor" href="#anchor_1"><i class="fa fa-link" aria-hidden="true"></i></a>Python 练习</h1><h2 id="anchor_2"><a name="anchor_2" class="anchor-navigation-ex-anchor" href="#anchor_2"><i class="fa fa-link" aria-hidden="true"></i></a>1. 题目</h2><p>输入数组，最大的与第一个元素交换，最小的与最后一个元素交换，输出数组。</p>
-<h2 id="anchor_3"><a name="anchor_3" class="anchor-navigation-ex-anchor" href="#anchor_3"><i class="fa fa-link" aria-hidden="true"></i></a>2. 分析</h2><h2 id="anchor_4"><a name="anchor_4" class="anchor-navigation-ex-anchor" href="#anchor_4"><i class="fa fa-link" aria-hidden="true"></i></a>3. 实例</h2><sec data-title="点我看答案"><div class="panel panel-default"><div class="panel-heading"><b>点我看答案<a class="pull-right section atTitle btn btn-default " target="sectionx0"><span class="fa fa-angle-down" /></a></b></div><div class="panel-collapse collapse" id="sectionx0"><div class="panel-body">
+                        <h1 id="anchor_1"><a name="anchor_1" class="anchor-navigation-ex-anchor" href="#anchor_1"><i class="fa fa-link" aria-hidden="true"></i></a>Python 练习</h1><h2 id="anchor_2"><a name="anchor_2" class="anchor-navigation-ex-anchor" href="#anchor_2"><i class="fa fa-link" aria-hidden="true"></i></a>1. 题目</h2><p>有一对兔子，从出生后第 4 个月起每个月都生一对兔子，小兔子长到第 4 个月后每个月又生一对兔子，假如兔子都不死，问每个月的兔子总数为多少？</p>
+<h2 id="anchor_3"><a name="anchor_3" class="anchor-navigation-ex-anchor" href="#anchor_3"><i class="fa fa-link" aria-hidden="true"></i></a>2. 分析</h2><p>按照兔子成长轨迹来计算</p>
+<h2 id="anchor_4"><a name="anchor_4" class="anchor-navigation-ex-anchor" href="#anchor_4"><i class="fa fa-link" aria-hidden="true"></i></a>3. 实例</h2><sec data-title="点我看答案"><div class="panel panel-default"><div class="panel-heading"><b>点我看答案<a class="pull-right section atTitle btn btn-default " target="sectionx0"><span class="fa fa-angle-down" /></a></b></div><div class="panel-collapse collapse" id="sectionx0"><div class="panel-body">
 
-<pre class="line-numbers"><code class="lang-python">def inp(numbers):
-    for i in range(6):
-        numbers.append(int(input(&#39;输入一个数字:&#39;)))
+<pre class="line-numbers"><code class="lang-python">a = {1: 1, 2: 0, 3: 0}
 
-
-def arr_max(array):
-    max = 0
-    for i in range(1, len(array) - 1):
-        p = i
-        if array[p] &gt; array[max]:
-            max = p
-    k = max
-    array[0], array[k] = array[k], array[0]
-
-
-def arr_min(array):
-    min = 0
-    for i in range(1, len(array) - 1):
-        p = i
-        if array[p] &lt; array[min]:
-            min = p
-    l = min
-    array[5], array[l] = array[l], array[5]
-
-
-def outp(numbers):
-    for i in range(len(numbers)):
-        print(numbers[i])
-
-
-array = []
-inp(array)  # 输入 6 个数字并放入数组
-arr_max(array)  # 获取最大元素并与第一个元素交换
-arr_min(array)  # 获取最小元素并与最后一个元素交换
-print(&#39;计算结果：&#39;)
-outp(array)
+for i in range(1, 22):
+    print(f&#39;{i} {sum(a.values())} {a}&#39;)
+    tmp = a[3]
+    a[3] += a[2]
+    a[2] = a[1]
+    a[1] = tmp
 </code></pre>
  </div></div></div></sec>
                         <footer class="page-footer"><span class="copyright">© 2019 刘士. 
@@ -737,12 +710,12 @@ All rights reserved.</span><span class="footer-modification">
 </div>
 
 
-<a aria-label="Previous page: Python 3 练习 066" class="navigation navigation-prev" href="066.html">
+<a aria-label="Previous page: Python 3 练习 125" class="navigation navigation-prev" href="125.html">
     <i class="fa fa-angle-left"></i>
 </a>
 
 
-<a aria-label="Next page: Python 3 练习 068" class="navigation navigation-next" href="068.html">
+<a aria-label="Next page: 面试题" class="navigation navigation-next" href="../questions/index.html">
     <i class="fa fa-angle-right"></i>
 </a>
 
