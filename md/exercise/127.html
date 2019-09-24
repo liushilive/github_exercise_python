@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-<title>Python 相关 - Python 3 练习 089</title>
+<title>Python 相关 - Python 3 练习 127</title>
 <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
 <meta content="" name="description">
 <meta content="刘士" name="author">
@@ -20,7 +20,7 @@
       rel="apple-touch-icon-precomposed" sizes="152x152">
 <link href="../..\../asserts/lsbook/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
 <!--分页-->
-<link href="090.html" rel="next"/>
+<link href="../questions/index.html" rel="next"/>
 </head>
 <body>
 <div class="book"><div class="book-summary">
@@ -347,7 +347,7 @@
 <li class="chapter" data-level="3.1.88" data-path="088.html">
     <a href="088.html"><b>3.1.88.</b> Python 3 练习 088</a>
 </li>
-<li class="chapter active" data-level="3.1.89" data-path="089.html">
+<li class="chapter" data-level="3.1.89" data-path="089.html">
     <a href="089.html"><b>3.1.89.</b> Python 3 练习 089</a>
 </li>
 <li class="chapter" data-level="3.1.90" data-path="090.html">
@@ -461,7 +461,7 @@
 <li class="chapter" data-level="3.1.126" data-path="126.html">
     <a href="126.html"><b>3.1.126.</b> Python 3 练习 126</a>
 </li>
-<li class="chapter" data-level="3.1.127" data-path="127.html">
+<li class="chapter active" data-level="3.1.127" data-path="127.html">
     <a href="127.html"><b>3.1.127.</b> Python 3 练习 127</a>
 </li>
 
@@ -664,7 +664,7 @@
         <!-- Title -->
         <h1>
             <i class="fa fa-circle-o-notch fa-spin"></i>
-            <a href="../..">Python 3 练习 089</a>
+            <a href="../..">Python 3 练习 127</a>
         </h1>
     </div>
 
@@ -674,21 +674,12 @@
                 <div class="search-noresults">
                     <section class="normal markdown-section">
                         <div id='anchor-navigation-ex-navbar'><i class='fa fa-anchor'></i><ul><li><span class='title-icon fa fa-hand-o-right'></span><a aria-label class='on-toolbar-action' href='' onclick="$('.fa.fa-align-justify').parent()[0].click();">目录</a></li><li><span class='title-icon fa fa-hand-o-right'></span><a href='#anchor_1'><b></b>Python 练习</a></li><ul><li><span class='title-icon fa fa-hand-o-right'></span><a href='#anchor_2'><b>1. </b>题目</a></li><li><span class='title-icon fa fa-hand-o-right'></span><a href='#anchor_3'><b>2. </b>分析</a></li><li><span class='title-icon fa fa-hand-o-right'></span><a href='#anchor_4'><b>3. </b>实例</a></li></ul></ul></div><a href='#anchor_1' id='anchorNavigationExGoTop'><i class='fa fa-arrow-up'></i></a>
-                        <h1 id="anchor_1"><a name="anchor_1" class="anchor-navigation-ex-anchor" href="#anchor_1"><i class="fa fa-link" aria-hidden="true"></i></a>Python 练习</h1><h2 id="anchor_2"><a name="anchor_2" class="anchor-navigation-ex-anchor" href="#anchor_2"><i class="fa fa-link" aria-hidden="true"></i></a>1. 题目</h2><p>某个公司采用公用电话传递数据，数据是四位的整数，在传递过程中是加密的，加密规则如下：</p>
-<p>每位数字都加上 5, 然后用和除以 10 的余数代替该数字，</p>
-<p>再将第一位和第四位交换，第二位和第三位交换。</p>
+                        <h1 id="anchor_1"><a name="anchor_1" class="anchor-navigation-ex-anchor" href="#anchor_1"><i class="fa fa-link" aria-hidden="true"></i></a>Python 练习</h1><h2 id="anchor_2"><a name="anchor_2" class="anchor-navigation-ex-anchor" href="#anchor_2"><i class="fa fa-link" aria-hidden="true"></i></a>1. 题目</h2><p>找出  <code class="language-markup">['a', 'b', 'c', 'd', 'a']</code>  当中重复的元素和位置</p>
 <h2 id="anchor_3"><a name="anchor_3" class="anchor-navigation-ex-anchor" href="#anchor_3"><i class="fa fa-link" aria-hidden="true"></i></a>2. 分析</h2><h2 id="anchor_4"><a name="anchor_4" class="anchor-navigation-ex-anchor" href="#anchor_4"><i class="fa fa-link" aria-hidden="true"></i></a>3. 实例</h2><sec data-title="点我看答案"><div class="panel panel-default"><div class="panel-heading"><b>点我看答案<a class="pull-right section atTitle btn btn-default " target="sectionx0"><span class="fa fa-angle-down" /></a></b></div><div class="panel-collapse collapse" id="sectionx0"><div class="panel-body">
 
-<pre class="line-numbers"><code class="lang-python">a = int(input(&#39;输入四个数字:&#39;))
-aa = [a % 10, a % 100 // 10, a % 1000 // 100, a // 1000]
-
-for i in range(4):
-    aa[i] += 5
-    aa[i] %= 10
-for i in range(2):
-    aa[i], aa[3 - i] = aa[3 - i], aa[i]
-for i in range(3, -1, -1):
-    print(str(aa[i]), end=&quot;&quot;)
+<pre class="line-numbers"><code class="lang-python">a = [&#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;d&#39;, &#39;a&#39;, &#39;c&#39;]
+b = [(x, y) for x, y in enumerate(a) if a.count(y) &gt; 1]
+print(b)
 </code></pre>
  </div></div></div></sec>
                         <footer class="page-footer"><span class="copyright">© 2019 刘士. 
@@ -716,12 +707,12 @@ All rights reserved.</span><span class="footer-modification">
 </div>
 
 
-<a aria-label="Previous page: Python 3 练习 088" class="navigation navigation-prev" href="088.html">
+<a aria-label="Previous page: Python 3 练习 126" class="navigation navigation-prev" href="126.html">
     <i class="fa fa-angle-left"></i>
 </a>
 
 
-<a aria-label="Next page: Python 3 练习 090" class="navigation navigation-next" href="090.html">
+<a aria-label="Next page: 面试题" class="navigation navigation-next" href="../questions/index.html">
     <i class="fa fa-angle-right"></i>
 </a>
 
