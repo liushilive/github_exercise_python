@@ -261,7 +261,7 @@
             <div class="search-plus" id="book-search-results">
                 <div class="search-noresults">
                     <section class="normal markdown-section">
-                        <div id='anchor-navigation-ex-navbar'><i class='fa fa-anchor'></i><ul><li><span class='title-icon fa fa-hand-o-right'></span><a aria-label class='on-toolbar-action' href='' onclick="$('.fa.fa-align-justify').parent()[0].click();">目录</a></li><li><span class='title-icon fa fa-hand-o-right'></span><a href='#anchor_1'><b></b>Python 练习</a></li><ul><li><span class='title-icon fa fa-hand-o-right'></span><a href='#anchor_2'><b>1. </b>题目</a></li><li><span class='title-icon fa fa-hand-o-right'></span><a href='#anchor_3'><b>2. </b>分析</a></li></ul></ul></div><a href='#anchor_1' id='anchorNavigationExGoTop'><i class='fa fa-arrow-up'></i></a>
+                        <div id='anchor-navigation-ex-navbar'><i class='fa fa-anchor'></i><ul><li><span class='title-icon fa fa-hand-o-right'></span><a aria-label class='on-toolbar-action' href='' onclick="$('.fa.fa-align-justify').parent()[0].click();">目录</a></li><li><span class='title-icon fa fa-hand-o-right'></span><a href='#anchor_1'><b></b>Python 练习</a></li><ul><li><span class='title-icon fa fa-hand-o-right'></span><a href='#anchor_2'><b>1. </b>题目</a></li><li><span class='title-icon fa fa-hand-o-right'></span><a href='#anchor_3'><b>2. </b>分析</a></li><li><span class='title-icon fa fa-hand-o-right'></span><a href='#anchor_4'><b>3. </b>实例</a></li></ul></ul></div><a href='#anchor_1' id='anchorNavigationExGoTop'><i class='fa fa-arrow-up'></i></a>
                         <h1 id="anchor_1"><a class="anchor-navigation-ex-anchor" href="#anchor_1" name="anchor_1"><i aria-hidden="true" class="fa fa-link"></i></a>Python 练习</h1>
 <h2 id="anchor_2"><a class="anchor-navigation-ex-anchor" href="#anchor_2" name="anchor_2"><i aria-hidden="true" class="fa fa-link"></i></a>1. 题目</h2>
 <p>给你一个整数列表 L, 输出 L 的中位数。</p>
@@ -274,27 +274,16 @@
 <p>注意：中位数和众数不同，众数指最多的数，众数有时不止一个，而中位数只能有一个。</p>
 </blockquote>
 <p>有一组数据：</p>
-\[
-将它按从小到大的顺序排序为：
-
-$$X_{(1)},...,X_{(N)}$$
-
-则当 N 为奇数时，
-
-$$m_{0.5}=\frac{X_{(N+1)}}{2}$$
-
-当 N 为偶数时，
-
-$$m_{0.5}=\frac{X_{(\frac{N}{2})}+X_{(\frac{N}{2}+1)}}{2}$$
-
-一个数集中最多有一半的数值小于中位数，也最多有一半的数值大于中位数。如果大于和小于中位数的数值个数均少于一半，那麽数集中必有若干值等同于中位数。
-
-## 实例
-
-<!--sec data-title="点我看答案" ces-->
-
-```python
-L = [0, 1, 2, 3, 4]
+<p>\(X_1,...,X_N\)</p>
+<p>将它按从小到大的顺序排序为：</p>
+<p>\(X_{(1)},...,X_{(N)}\)</p>
+<p>则当 N 为奇数时，</p>
+<p>\(m_{0.5}=\frac{X_{(N+1)}}{2}\)</p>
+<p>当 N 为偶数时，</p>
+<p>\(m_{0.5}=\frac{X_{(\frac{N}{2})}+X_{(\frac{N}{2}+1)}}{2}\)</p>
+<p>一个数集中最多有一半的数值小于中位数，也最多有一半的数值大于中位数。如果大于和小于中位数的数值个数均少于一半，那麽数集中必有若干值等同于中位数。</p>
+<h2 id="anchor_4"><a class="anchor-navigation-ex-anchor" href="#anchor_4" name="anchor_4"><i aria-hidden="true" class="fa fa-link"></i></a>3. 实例</h2>
+<sec data-title="点我看答案"><div class="panel panel-default"><div class="panel-heading"><b>点我看答案<a class="pull-right section atTitle btn btn-default " target="sectionx29"><span class="fa fa-angle-down" /></a></b></div><div class="panel-collapse collapse" id="sectionx29"><div class="panel-body"><pre class="line-numbers"><code class="lang-python">L = [0, 1, 2, 3, 4]
 L.sort()
 
 if len(L) % 2 == 0:
@@ -302,11 +291,7 @@ if len(L) % 2 == 0:
 else:
     print(L[int(len(L)/2)])
 
-```
-
-<!--endsec-->
-
-\]
+</code></pre></div></div></div></sec>
 
                         <footer class="page-footer"><span class="copyright">© 2019 刘士. 
 All rights reserved.</span><span class="footer-modification">
