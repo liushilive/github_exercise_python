@@ -273,7 +273,7 @@
 m = re.search(&quot;[0-9]&quot;, &quot;abcd4ef&quot;)
 print(m.group(0))
 </code></pre>
-<p><code class="language-vim">re.search()</code> 接收两个参数，第一个参数 <code class="language-vim">[0-9]</code> 就是我们所说的正则表达式，它告诉 Python，“听着，我想从字符串中找从 0 到 9 的任意一个数字字符”。</p>
+<p><code class="language-vim">re.search()</code> 接收两个参数，第一个参数 <code class="language-vim">[0-9]</code> 就是我们所说的正则表达式，它告诉 Python，<code class="language-vim">听着，我想从字符串中找从 0 到 9 的任意一个数字字符</code>。</p>
 <p><code class="language-vim">re.search()</code> 如果从第二个参数中找到符合要求的子字符串，就返回一个对象 <code class="language-vim">m</code>，你可以通过 <code class="language-vim">m.group()</code> 的方法查看搜索到的结果。如果没有找到符合要求的字符，则 <code class="language-vim">re.search()</code> 会返回 <code class="language-vim">None</code>。</p>
 <p>除了 <code class="language-vim">search()</code> 方法外，<code class="language-vim">re</code> 包还提供了其他搜索方法，它们的功能有所差别：</p>
 <pre class="line-numbers"><code class="lang-python"># 搜索整个字符串，直到发现符合的子字符串，如果没有发现返回 None
