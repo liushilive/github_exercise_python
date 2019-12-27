@@ -270,8 +270,8 @@
 <p>下面是一个简单的应用，目的是找到字符串中的数字：</p>
 <pre class="line-numbers"><code class="lang-python">import re
 
-m = re.search(&quot;[0-9]&quot;, &quot;abcd4ef&quot;)
-print(m.group(0))
+m = re.search(&quot;[0-9]&quot;, &quot;ab5cd4ef&quot;)
+print(m.group())
 </code></pre>
 <p><code class="language-vim">re.search()</code> 接收两个参数，第一个参数 <code class="language-vim">[0-9]</code> 就是我们所说的正则表达式，它告诉 Python，<code class="language-vim">听着，我想从字符串中找从 0 到 9 的任意一个数字字符</code>。</p>
 <p><code class="language-vim">re.search()</code> 如果从第二个参数中找到符合要求的子字符串，就返回一个对象 <code class="language-vim">m</code>，你可以通过 <code class="language-vim">m.group()</code> 的方法查看搜索到的结果。如果没有找到符合要求的字符，则 <code class="language-vim">re.search()</code> 会返回 <code class="language-vim">None</code>。</p>
@@ -364,7 +364,7 @@ re.findall()
 </li>
 <li>
 <p><code class="language-vim">{m}</code></p>
-<p>重复 <code class="language-vim">m</code> 次。比如，<code class="language-vim">a{4}</code> 相当于 <code class="language-vim">aaaa</code>，再比如，<code class="language-vim">[1-3]{2}</code> 相当于 <code class="language-vim">[1-3](1-3)</code></p>
+<p>重复 <code class="language-vim">m</code> 次。比如，<code class="language-vim">a{4}</code> 相当于 <code class="language-vim">aaaa</code>，再比如，<code class="language-vim">[1-3]{2}</code> 相当于 <code class="language-vim">[1-3][1-3]</code></p>
 </li>
 <li>
 <p><code class="language-vim">{m, n}</code></p>
@@ -454,12 +454,12 @@ re.findall()
 <p>括号 <code class="language-vim">()</code> 包围了一个小的正则表达式 <code class="language-vim">\d{4}</code>。这个小的正则表达式能从结果中进一步筛选信息，即四位的阿拉伯数字。用括号 <code class="language-vim">()</code> 圈起来的正则表达式的一部分，称为群（group）。一个正则表达式中可以有多个群。</p>
 <p>我们可以 <code class="language-vim">group(number)</code> 的方法来查询群。需要注意的是，<code class="language-vim">group(0)</code> 是整个正则表达的搜索结果。<code class="language-vim">group(1)</code> 是第一个群，以此类推：</p>
 <pre class="line-numbers"><code class="lang-python">import re
-m = re.search(&quot;output_(\d{4})&quot;, &quot;output_1986.txt&quot;)
+m = re.search(r&quot;output_(\d{4})&quot;, &quot;output_1986.txt&quot;)
 print(m.group(1)) # 将找到4个数字组成的1986
 </code></pre>
 <p>我们还可以将群命名，以便更好地使用 <code class="language-vim">group</code> 查询：</p>
 <pre class="line-numbers"><code class="lang-python">import re
-m = re.search(&quot;output_(?P&lt;year&gt;\d{4})&quot;, &quot;output_1986.txt&quot;) #(?P&lt;name&gt;...) 为group命名
+m = re.search(r&quot;output_(?P&lt;year&gt;\d{4})&quot;, &quot;output_1986.txt&quot;) #(?P&lt;name&gt;...) 为group命名
 print(m.group(&quot;year&quot;)) # 打印1986
 </code></pre>
 <p>上面的 <code class="language-vim">(?P&lt;year&gt;…)</code> 括住了一个群，并把它命名为 <code class="language-vim">year</code>。用这种方式来产生群，就可以通过 <code class="language-vim">year</code> 这个键来提取结果。</p>
