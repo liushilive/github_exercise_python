@@ -472,10 +472,10 @@ pattern.search(&quot;output_1986.txt&quot;).group(1)
 <h2 id="anchor_6"><a class="anchor-navigation-ex-anchor" href="#anchor_6" name="anchor_6"><i aria-hidden="true" class="fa fa-link"></i></a>2. 多行搜索</h2>
 <pre class="line-numbers"><code class="lang-python">re.findall(r&quot;^wo.*&quot;, &quot;hello\nworld\nWorld hello&quot;)
 re.findall(r&quot;^wo.*&quot;, &quot;hello\nworld\nworld hello&quot;, flags=re.M)
-
 </code></pre>
 <h2 id="anchor_7"><a class="anchor-navigation-ex-anchor" href="#anchor_7" name="anchor_7"><i aria-hidden="true" class="fa fa-link"></i></a>3. 忽略大小写</h2>
-<pre class="line-numbers"><code class="lang-python">re.findall(r&quot;^wo.*&quot;, &quot;hello\nworld\nworld hello&quot;, flags=(re.M + re.I))
+<pre class="line-numbers"><code class="lang-python">re.findall(r&quot;^wo.*&quot;, &quot;hello\nworld\nWorld hello&quot;, flags=re.M)
+re.findall(r&quot;^wo.*&quot;, &quot;hello\nworld\nWorld hello&quot;, flags=(re.M + re.I))
 </code></pre>
 
                         <footer class="page-footer"><span class="copyright">© 2020 刘士. 
