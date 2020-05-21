@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-<title>Python 相关 - 试题 004</title>
+<title>Python 相关 - 试题 059</title>
 <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
 <meta content="" name="description">
 <meta content="刘士" name="author">
@@ -20,7 +20,7 @@
       rel="apple-touch-icon-precomposed" sizes="152x152">
 <link href="../../../asserts/lsbook/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
 <!--分页-->
-<link href="005.html" rel="next"/>
+<link href="" rel="next"/>
 </head>
 <body>
 <div class="book"><div class="book-summary">
@@ -181,7 +181,7 @@
 <ul class="articles"><li class="chapter" data-level="4.1.1" data-path="001.html"><a href="001.html"><b>4.1.1.</b>试题 001</a></li>
 <li class="chapter" data-level="4.1.2" data-path="002.html"><a href="002.html"><b>4.1.2.</b>试题 002</a></li>
 <li class="chapter" data-level="4.1.3" data-path="003.html"><a href="003.html"><b>4.1.3.</b>试题 003</a></li>
-<li class="chapter active" data-level="4.1.4" data-path="004.html"><a href="004.html"><b>4.1.4.</b>试题 004</a></li>
+<li class="chapter" data-level="4.1.4" data-path="004.html"><a href="004.html"><b>4.1.4.</b>试题 004</a></li>
 <li class="chapter" data-level="4.1.5" data-path="005.html"><a href="005.html"><b>4.1.5.</b>试题 005</a></li>
 <li class="chapter" data-level="4.1.6" data-path="006.html"><a href="006.html"><b>4.1.6.</b>试题 006</a></li>
 <li class="chapter" data-level="4.1.7" data-path="007.html"><a href="007.html"><b>4.1.7.</b>试题 007</a></li>
@@ -236,7 +236,7 @@
 <li class="chapter" data-level="4.1.56" data-path="056.html"><a href="056.html"><b>4.1.56.</b>试题 056</a></li>
 <li class="chapter" data-level="4.1.57" data-path="057.html"><a href="057.html"><b>4.1.57.</b>试题 057</a></li>
 <li class="chapter" data-level="4.1.58" data-path="058.html"><a href="058.html"><b>4.1.58.</b>试题 058</a></li>
-<li class="chapter" data-level="4.1.59" data-path="059.html"><a href="059.html"><b>4.1.59.</b>试题 059</a></li></ul></li></ul>
+<li class="chapter active" data-level="4.1.59" data-path="059.html"><a href="059.html"><b>4.1.59.</b>试题 059</a></li></ul></li></ul>
             <li class="divider"></li>
             <li>
                 <a class="lsbook-link" href="https://github.com/liushilive/lsbook" target="blank">
@@ -253,7 +253,7 @@
         <!-- Title -->
         <h1>
             <i class="fa fa-circle-o-notch fa-spin"></i>
-            <a href="../..">试题 004</a>
+            <a href="../..">试题 059</a>
         </h1>
     </div>
 
@@ -264,11 +264,67 @@
                     <section class="normal markdown-section">
                         <div id='anchor-navigation-ex-navbar'><i class='fa fa-anchor'></i><ul><li><span class='title-icon fa fa-hand-o-right'></span><a aria-label class='on-toolbar-action' href='' onclick="$('.fa.fa-align-justify').parent()[0].click();">目录</a></li><li><span class='title-icon fa fa-hand-o-right'></span><a href='#anchor_1'><b></b>Python 面试题</a></li></ul></div><a href='#anchor_1' id='anchorNavigationExGoTop'><i class='fa fa-arrow-up'></i></a>
                         <h1 id="anchor_1"><a class="anchor-navigation-ex-anchor" href="#anchor_1" name="anchor_1"><i aria-hidden="true" class="fa fa-link"></i></a>Python 面试题</h1>
-<p>在 Python 中使用 <code class="language-vim">〜</code> 获取主目录的过程是什么？</p>
-<sec data-title="点我看答案"><div class="panel panel-default"><div class="panel-heading"><b>点我看答案<a class="pull-right section atTitle btn btn-default " target="sectionx1"><span class="fa fa-angle-down" /></a></b></div><div class="panel-collapse collapse" id="sectionx1"><div class="panel-body"><p>你需要导入 <code class="language-vim">os</code> 模块，然后只需一行就能完成剩下的工作。</p><pre class="line-numbers"><code class="lang-python">import os
+<p><code class="language-vim">图形代码.txt</code>文件中保存了 3 条图形代码，其中有 4 个属性：名称、类别、时间、异常码 0 成功 -1 失败。</p>
+<p>要求用 python 文本读取的方式解答：</p>
+<ol>
+<li>求异常码失败的图形</li>
+<li>求平均时间</li>
+<li>返回各图形的名称</li>
+</ol>
+<blockquote>
+<p>提示：</p>
+</blockquote>
+<ol>
+<li>要把图形数据放在 txt 文本中</li>
+<li>将数据分割后转换相应的格式</li>
+</ol>
+<p><code class="language-vim">图形代码.txt</code></p>
+<pre class="line-numbers"><code class="lang-vim">test. jpg$result:sky$cost time:100$result code:0
+tedt2. jpg$result:cat$cost time:200$result code:0
+test3. jpg$result:$cost time: 100$result code:-1
+</code></pre>
+<sec data-title="点我看答案"><div class="panel panel-default"><div class="panel-heading"><b>点我看答案<a class="pull-right section atTitle btn btn-default " target="sectionx1"><span class="fa fa-angle-down" /></a></b></div><div class="panel-collapse collapse" id="sectionx1"><div class="panel-body"><pre class="line-numbers"><code class="lang-python">data = []
+with open(&quot;图形代码.txt&quot;, encoding=&quot;utf-8&quot;) as f:
+    for line in f:
+        d = {}
+        名称, 类别, 时间, 异常码 = line.split(&quot;$&quot;)
+        d[&quot;名称&quot;] = 名称
+        d[&quot;类别&quot;] = 类别.split(&quot;:&quot;)[1]
+        d[&quot;时间&quot;] = int(时间.split(&quot;:&quot;)[1].strip())
+        d[&quot;异常码&quot;] = int(异常码.split(&quot;:&quot;)[1].strip())
+        data.append(d)
 
-print (os.path.expanduser(&#x27;~&#x27;))
-</code></pre><p>输出：</p><pre class="line-numbers"><code class="lang-python">/home/liushi
+print(data)
+
+
+def 求异常码失败的图形():
+    L = []
+    for d in data:
+        if d[&quot;异常码&quot;] == -1:
+            L.append(d[&quot;名称&quot;])
+    return L
+
+
+def 求平均时间():
+    _i = 0
+    _sum = 0
+    for d in data:
+        _sum += d[&quot;时间&quot;]
+        _i += 1
+    return _sum / _i
+
+
+def 返回各图形的名称():
+    L = []
+    for d in data:
+        L.append(d[&quot;名称&quot;])
+    return L
+
+
+print(&quot;求异常码失败的图形&quot;, 求异常码失败的图形())
+print(&quot;求平均时间&quot;, 求平均时间())
+print(&quot;返回各图形的名称&quot;, 返回各图形的名称())
+
 </code></pre></div></div></div></sec>
 
                         <footer class="page-footer"><span class="copyright">© 2020 刘士. 
@@ -307,14 +363,10 @@ All rights reserved.</span><span class="footer-modification">
 </div>
 
 
-<a aria-label="Previous page: 试题 003" class="navigation navigation-prev" href="003.html">
+<a aria-label="Previous page: 试题 058" class="navigation navigation-prev" href="058.html">
     <i class="fa fa-angle-left"></i>
 </a>
 
-
-<a aria-label="Next page: 试题 005" class="navigation navigation-next" href="005.html">
-    <i class="fa fa-angle-right"></i>
-</a>
 
 
 </div>
@@ -325,8 +377,8 @@ All rights reserved.</span><span class="footer-modification">
             "config": {
                 "github_url":"https://liushilive.github.io/",
                 "language": "zh-cn",
-                "previous_page_link": "003.html",
-                "next_page_link": "005.html"
+                "previous_page_link": "058.html",
+                "next_page_link": ""
             },
             "basePath": "../..",
             "js": {'prism': ['../../../asserts/lsbook/prismjs/clipboard.min.js', '../../../asserts/lsbook/prismjs/prism.js']}
