@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-<title>Python 相关 - 试题 014</title>
+<title>Python 相关 - 试题 061</title>
 <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
 <meta content="" name="description">
 <meta content="刘士" name="author">
@@ -20,7 +20,7 @@
       rel="apple-touch-icon-precomposed" sizes="152x152">
 <link href="../../../asserts/lsbook/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
 <!--分页-->
-<link href="015.html" rel="next"/>
+<link href="" rel="next"/>
 </head>
 <body>
 <div class="book"><div class="book-summary">
@@ -191,7 +191,7 @@
 <li class="chapter" data-level="4.1.11" data-path="011.html"><a href="011.html"><b>4.1.11.</b>试题 011</a></li>
 <li class="chapter" data-level="4.1.12" data-path="012.html"><a href="012.html"><b>4.1.12.</b>试题 012</a></li>
 <li class="chapter" data-level="4.1.13" data-path="013.html"><a href="013.html"><b>4.1.13.</b>试题 013</a></li>
-<li class="chapter active" data-level="4.1.14" data-path="014.html"><a href="014.html"><b>4.1.14.</b>试题 014</a></li>
+<li class="chapter" data-level="4.1.14" data-path="014.html"><a href="014.html"><b>4.1.14.</b>试题 014</a></li>
 <li class="chapter" data-level="4.1.15" data-path="015.html"><a href="015.html"><b>4.1.15.</b>试题 015</a></li>
 <li class="chapter" data-level="4.1.16" data-path="016.html"><a href="016.html"><b>4.1.16.</b>试题 016</a></li>
 <li class="chapter" data-level="4.1.17" data-path="017.html"><a href="017.html"><b>4.1.17.</b>试题 017</a></li>
@@ -238,7 +238,7 @@
 <li class="chapter" data-level="4.1.58" data-path="058.html"><a href="058.html"><b>4.1.58.</b>试题 058</a></li>
 <li class="chapter" data-level="4.1.59" data-path="059.html"><a href="059.html"><b>4.1.59.</b>试题 059</a></li>
 <li class="chapter" data-level="4.1.60" data-path="060.html"><a href="060.html"><b>4.1.60.</b>试题 060</a></li>
-<li class="chapter" data-level="4.1.61" data-path="061.html"><a href="061.html"><b>4.1.61.</b>试题 061</a></li></ul></li></ul>
+<li class="chapter active" data-level="4.1.61" data-path="061.html"><a href="061.html"><b>4.1.61.</b>试题 061</a></li></ul></li></ul>
             <li class="divider"></li>
             <li>
                 <a class="lsbook-link" href="https://github.com/liushilive/lsbook" target="blank">
@@ -255,7 +255,7 @@
         <!-- Title -->
         <h1>
             <i class="fa fa-circle-o-notch fa-spin"></i>
-            <a href="../..">试题 014</a>
+            <a href="../..">试题 061</a>
         </h1>
     </div>
 
@@ -266,45 +266,40 @@
                     <section class="normal markdown-section">
                         <div id='anchor-navigation-ex-navbar'><i class='fa fa-anchor'></i><ul><li><span class='title-icon fa fa-hand-o-right'></span><a aria-label class='on-toolbar-action' href='' onclick="$('.fa.fa-align-justify').parent()[0].click();">目录</a></li><li><span class='title-icon fa fa-hand-o-right'></span><a href='#anchor_1'><b></b>Python 面试题</a></li></ul></div><a href='#anchor_1' id='anchorNavigationExGoTop'><i class='fa fa-arrow-up'></i></a>
                         <h1 id="anchor_1"><a class="anchor-navigation-ex-anchor" href="#anchor_1" name="anchor_1"><i aria-hidden="true" class="fa fa-link"></i></a>Python 面试题</h1>
-<p>Python 用于迭代数字序列的内置函数是什么？</p>
-<sec data-title="点我看答案"><div class="panel panel-default"><div class="panel-heading"><b>点我看答案<a class="pull-right section atTitle btn btn-default " target="sectionx1"><span class="fa fa-angle-down" /></a></b></div><div class="panel-collapse collapse" id="sectionx1"><div class="panel-body"><p><code class="language-vim">range()</code>生成一个数字列表，用于迭代 for 循环。</p><pre class="line-numbers"><code class="lang-python">for i in range(5):
-    print(i)
-</code></pre><p><code class="language-vim">range()</code>函数有两组参数。</p><ul>
-<li>
-<p><code class="language-vim">range(stop)</code></p>
-<ul>
-<li>stop：整数生成并从零开始。例如。<code class="language-vim">range(3) == [0,1,2]</code>。</li>
-</ul>
-</li>
-<li>
-<p><code class="language-vim">range(start, stop[, step])</code></p>
-<ul>
-<li>
-<p>start：这是开始的序列。</p>
-</li>
-<li>
-<p>stop：指定序列的上限。</p>
-</li>
-<li>
-<p>step：步长是生成序列的递增因子。</p>
-</li>
-</ul>
-</li>
-<li>
-<p>注意事项：</p>
-<ul>
-<li>
-<p>只允许整数参数。</p>
-</li>
-<li>
-<p>参数可以是正数或负数。</p>
-</li>
-<li>
-<p>Python 中的 <code class="language-vim">range()</code> 函数从第零个索引开始。</p>
-</li>
-</ul>
-</li>
-</ul></div></div></div></sec>
+<p>参赛者会看见三扇关闭了的门，其中一扇的后面有一辆汽车，选中后面有车的那扇门可赢得该汽车，另外两扇门后面则各藏有一只山羊。当参赛者选定了一扇门，但未去开启它的时候，节目主持人开启剩下两扇门的其中一扇，露出其中一只山羊。主持人其后会问参赛者要不要换另一扇仍然关上的门。</p>
+<p>编程证明计算换门与否的概率</p>
+<sec data-title="点我看答案"><div class="panel panel-default"><div class="panel-heading"><b>点我看答案<a class="pull-right section atTitle btn btn-default " target="sectionx1"><span class="fa fa-angle-down" /></a></b></div><div class="panel-collapse collapse" id="sectionx1"><div class="panel-body"><pre class="line-numbers"><code class="lang-python">import random
+
+def MontyHall(select, change):
+    doors = [1, 2, 3]
+    car = random.choice(doors)
+
+    # 主持人开一个不是车、没被选中的门
+    left = []
+    for d in doors:
+        if d != car and d != select:
+            left.append(d)
+    open = random.choice(left)
+
+    if change == 1:
+        select = 6 - open - select
+    return select == car
+
+win_change, win_nochange, win_randchange = 0, 0, 0
+
+for i in range(10000):
+    select = random.randint(1, 3)
+    change = random.randint(0, 1)
+    win_randchange += MontyHall(select, change)
+    win_change += MontyHall(select, 1)
+    win_nochange += MontyHall(select, 0)
+
+
+print(&#x27;不一定换门的中奖概率 =&#x27;, win_randchange / 10000)
+print(&#x27;换门的中奖概率 =&#x27;, win_change / 10000)
+print(&#x27;不换门中奖概率 =&#x27;, win_nochange / 10000)
+
+</code></pre></div></div></div></sec>
 
                         <footer class="page-footer"><span class="copyright">© 2020 刘士. 
 All rights reserved.</span><span class="footer-modification">
@@ -342,14 +337,10 @@ All rights reserved.</span><span class="footer-modification">
 </div>
 
 
-<a aria-label="Previous page: 试题 013" class="navigation navigation-prev" href="013.html">
+<a aria-label="Previous page: 试题 060" class="navigation navigation-prev" href="060.html">
     <i class="fa fa-angle-left"></i>
 </a>
 
-
-<a aria-label="Next page: 试题 015" class="navigation navigation-next" href="015.html">
-    <i class="fa fa-angle-right"></i>
-</a>
 
 
 </div>
@@ -360,8 +351,8 @@ All rights reserved.</span><span class="footer-modification">
             "config": {
                 "github_url":"https://liushilive.github.io/",
                 "language": "zh-cn",
-                "previous_page_link": "013.html",
-                "next_page_link": "015.html"
+                "previous_page_link": "060.html",
+                "next_page_link": ""
             },
             "basePath": "../..",
             "js": {'prism': ['../../../asserts/lsbook/prismjs/clipboard.min.js', '../../../asserts/lsbook/prismjs/prism.js']}
