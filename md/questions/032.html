@@ -23,7 +23,7 @@
 <link href="033.html" rel="next"/>
 </head>
 <body>
-<div class="book"><div class="book-summary">
+<div class="book match-braces"><div class="book-summary">
     <div id="book-search-input" role="search">
         <input placeholder="输入并搜索" type="text"/>
     </div>
@@ -267,13 +267,13 @@
                         <div id='anchor-navigation-ex-navbar'><i class='fa fa-anchor'></i><ul><li><span class='title-icon fa fa-hand-o-right'></span><a aria-label class='on-toolbar-action' href='' onclick="$('.fa.fa-align-justify').parent()[0].click();">目录</a></li><li><span class='title-icon fa fa-hand-o-right'></span><a href='#anchor_1'><b></b>Python 面试题</a></li></ul></div><a href='#anchor_1' id='anchorNavigationExGoTop'><i class='fa fa-arrow-up'></i></a>
                         <h1 id="anchor_1"><a class="anchor-navigation-ex-anchor" href="#anchor_1" name="anchor_1"><i aria-hidden="true" class="fa fa-link"></i></a>Python 面试题</h1>
 <p>Python 有一个<code class="language-vim">main()</code>方法吗？</p>
-<sec data-title="点我看答案"><div class="panel panel-default"><div class="panel-heading"><b>点我看答案<a class="pull-right section atTitle btn btn-default " target="sectionx1"><span class="fa fa-angle-down" /></a></b></div><div class="panel-collapse collapse" id="sectionx1"><div class="panel-body"><p><code class="language-vim">main()</code>是入口点函数，在大多数编程语言中首先调用。</p><p>由于 Python 是基于解释器的，因此它逐个顺序执行代码行。</p><p>Python 也有一个 <code class="language-vim">main()</code> 方法。但是每当我们运行 Python 脚本时，只要直接单击它或从命令行启动它就会执行它。</p><p>我们还可以使用 Python <code class="language-vim">if</code> 语句覆盖 Python 默认的 <code class="language-vim">main()</code> 函数。请参阅以下代码。</p><pre class="line-numbers"><code class="lang-python">print(&quot;欢迎&quot;)
+<sec data-title="点我看答案"><div class="panel panel-default"><div class="panel-heading"><b>点我看答案<a class="pull-right section atTitle btn btn-default " target="sectionx1"><span class="fa fa-angle-down" /></a></b></div><div class="panel-collapse collapse" id="sectionx1"><div class="panel-body"><p><code class="language-vim">main()</code>是入口点函数，在大多数编程语言中首先调用。</p><p>由于 Python 是基于解释器的，因此它逐个顺序执行代码行。</p><p>Python 也有一个 <code class="language-vim">main()</code> 方法。但是每当我们运行 Python 脚本时，只要直接单击它或从命令行启动它就会执行它。</p><p>我们还可以使用 Python <code class="language-vim">if</code> 语句覆盖 Python 默认的 <code class="language-vim">main()</code> 函数。请参阅以下代码。</p><pre class="line-numbers"><code class="lang-python rainbow-braces">print(&quot;欢迎&quot;)
 print(&quot;__name__ contains: &quot;, __name__)
 def main():
     print(&quot;测试主函数&quot;)
 if __name__ == &#x27;__main__&#x27;:
     main()
-</code></pre><p>输出：</p><pre class="line-numbers"><code class="lang-python">欢迎
+</code></pre><p>输出：</p><pre class="line-numbers"><code class="lang-python rainbow-braces">欢迎
 __name__ contains:  __main__
 测试主函数
 </code></pre></div></div></div></sec>

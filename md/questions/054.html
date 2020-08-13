@@ -23,7 +23,7 @@
 <link href="055.html" rel="next"/>
 </head>
 <body>
-<div class="book"><div class="book-summary">
+<div class="book match-braces"><div class="book-summary">
     <div id="book-search-input" role="search">
         <input placeholder="输入并搜索" type="text"/>
     </div>
@@ -267,7 +267,7 @@
                         <div id='anchor-navigation-ex-navbar'><i class='fa fa-anchor'></i><ul><li><span class='title-icon fa fa-hand-o-right'></span><a aria-label class='on-toolbar-action' href='' onclick="$('.fa.fa-align-justify').parent()[0].click();">目录</a></li><li><span class='title-icon fa fa-hand-o-right'></span><a href='#anchor_1'><b></b>Python 面试题</a></li></ul></div><a href='#anchor_1' id='anchorNavigationExGoTop'><i class='fa fa-arrow-up'></i></a>
                         <h1 id="anchor_1"><a class="anchor-navigation-ex-anchor" href="#anchor_1" name="anchor_1"><i aria-hidden="true" class="fa fa-link"></i></a>Python 面试题</h1>
 <p>Python 中的闭包是什么？</p>
-<sec data-title="点我看答案"><div class="panel panel-default"><div class="panel-heading"><b>点我看答案<a class="pull-right section atTitle btn btn-default " target="sectionx1"><span class="fa fa-angle-down" /></a></b></div><div class="panel-collapse collapse" id="sectionx1"><div class="panel-body"><p>Python 闭包是另一个函数返回的函数对象。我们使用它们来消除代码冗余。</p><p>在下面的例子中，我们编写了一个简单的闭包来乘以数字。</p><pre class="line-numbers"><code class="lang-python">def multiply_number(num):
+<sec data-title="点我看答案"><div class="panel panel-default"><div class="panel-heading"><b>点我看答案<a class="pull-right section atTitle btn btn-default " target="sectionx1"><span class="fa fa-angle-down" /></a></b></div><div class="panel-collapse collapse" id="sectionx1"><div class="panel-body"><p>Python 闭包是另一个函数返回的函数对象。我们使用它们来消除代码冗余。</p><p>在下面的例子中，我们编写了一个简单的闭包来乘以数字。</p><pre class="line-numbers"><code class="lang-python rainbow-braces">def multiply_number(num):
     def product(number):
         &quot;&quot;&quot;product() 这里是一个闭包&quot;&quot;&quot;
         return num * number
@@ -279,7 +279,7 @@ print(num_2(24))
 
 num_6 = multiply_number(6)
 print(num_6(1))
-</code></pre><p>输出</p><pre class="line-numbers"><code class="lang-python">22
+</code></pre><p>输出</p><pre class="line-numbers"><code class="lang-python rainbow-braces">22
 48
 6
 </code></pre></div></div></div></sec>

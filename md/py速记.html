@@ -23,7 +23,7 @@
 <link href="sort/index.html" rel="next"/>
 </head>
 <body>
-<div class="book"><div class="book-summary">
+<div class="book match-braces"><div class="book-summary">
     <div id="book-search-input" role="search">
         <input placeholder="输入并搜索" type="text"/>
     </div>
@@ -270,7 +270,7 @@
 <p>author：刘士</p>
 <p>date：2019 年 6 月 13 日</p>
 </blockquote>
-<pre class="line-numbers"><code class="lang-python"># 单行注释由一个井号开头。
+<pre class="line-numbers"><code class="lang-python rainbow-braces"># 单行注释由一个井号开头。
 &quot;&quot;&quot;
 三个双引号（或单引号）之间可以写多行字符串，
 通常用来写文档注释。
@@ -280,17 +280,17 @@
 <ul>
 <li>
 <p><code class="language-vim">type()</code> 查看类型</p>
-<pre class="line-numbers"><code class="lang-python">type(3)
+<pre class="line-numbers"><code class="lang-python rainbow-braces">type(3)
 </code></pre>
 </li>
 <li>
 <p>数字就是数字</p>
-<pre class="line-numbers"><code class="lang-python">123
+<pre class="line-numbers"><code class="lang-python rainbow-braces">123
 </code></pre>
 </li>
 <li>
 <p>算数运算与常识中的保持一致</p>
-<pre class="line-numbers"><code class="lang-python">1 + 1 #=&gt; 2
+<pre class="line-numbers"><code class="lang-python rainbow-braces">1 + 1 #=&gt; 2
 8 - 1 #=&gt; 7
 10 * 2 #=&gt; 20
 5 / 2 #=&gt; 2.5
@@ -298,51 +298,51 @@
 <blockquote>
 <p>整除有一点棘手。对于整除来说，计算结果会自动取整。</p>
 </blockquote>
-<pre class="line-numbers"><code class="lang-python">5 // 2 #=&gt; 2
+<pre class="line-numbers"><code class="lang-python rainbow-braces">5 // 2 #=&gt; 2
 </code></pre>
 <blockquote>
 <p>求余用<code class="language-vim">%</code></p>
 </blockquote>
-<pre class="line-numbers"><code class="lang-python">10 % 3 #=&gt; 1
+<pre class="line-numbers"><code class="lang-python rainbow-braces">10 % 3 #=&gt; 1
 </code></pre>
 <blockquote>
 <p>求乘方用<code class="language-vim">**</code></p>
 </blockquote>
-<pre class="line-numbers"><code class="lang-python">3**2 #=&gt;9
+<pre class="line-numbers"><code class="lang-python rainbow-braces">3**2 #=&gt;9
 </code></pre>
 </li>
 <li>
 <p>使用小括号来强制计算的优先顺序</p>
-<pre class="line-numbers"><code class="lang-python">(1 + 3) * 2 #=&gt; 8
+<pre class="line-numbers"><code class="lang-python rainbow-braces">(1 + 3) * 2 #=&gt; 8
 </code></pre>
 </li>
 <li>
 <p>布尔值也是基本数据类型</p>
-<pre class="line-numbers"><code class="lang-python">True
+<pre class="line-numbers"><code class="lang-python rainbow-braces">True
 False
 </code></pre>
 </li>
 <li>
 <p>使用 <code class="language-vim">not</code> 来取反</p>
-<pre class="line-numbers"><code class="lang-python">not True #=&gt; False
+<pre class="line-numbers"><code class="lang-python rainbow-braces">not True #=&gt; False
 not False #=&gt; True
 </code></pre>
 </li>
 <li>
 <p>等式判断用 <code class="language-vim">==</code></p>
-<pre class="line-numbers"><code class="lang-python">1 == 1 #=&gt; True
+<pre class="line-numbers"><code class="lang-python rainbow-braces">1 == 1 #=&gt; True
 2 == 1 #=&gt; False
 </code></pre>
 </li>
 <li>
 <p>不等式判断是用 <code class="language-vim">!=</code></p>
-<pre class="line-numbers"><code class="lang-python">1 != 1 #=&gt; False
+<pre class="line-numbers"><code class="lang-python rainbow-braces">1 != 1 #=&gt; False
 2 != 1 #=&gt; True
 </code></pre>
 </li>
 <li>
 <p>还有更多的判断运算</p>
-<pre class="line-numbers"><code class="lang-python">1 &lt; 10 #=&gt; True
+<pre class="line-numbers"><code class="lang-python rainbow-braces">1 &lt; 10 #=&gt; True
 1 &gt; 10 #=&gt; False
 2 &lt;= 2 #=&gt; True
 2 &gt;= 2 #=&gt; True
@@ -350,7 +350,7 @@ not False #=&gt; True
 </li>
 <li>
 <p>居然可以把判断运算串连起来！</p>
-<pre class="line-numbers"><code class="lang-python">1 &lt; 2 &lt; 3 #=&gt; True
+<pre class="line-numbers"><code class="lang-python rainbow-braces">1 &lt; 2 &lt; 3 #=&gt; True
 2 &lt; 3 &lt; 2 #=&gt; False
 2 &lt; 3 == 2 #=&gt; False
 2 &lt; 3 &gt;1 #=&gt; True
@@ -358,33 +358,33 @@ not False #=&gt; True
 </li>
 <li>
 <p>使用 <code class="language-vim">&quot;</code> 或 <code class="language-vim">&#x27;</code> 来创建字符串</p>
-<pre class="line-numbers"><code class="lang-python">&quot;这是一个字符串.&quot;
+<pre class="line-numbers"><code class="lang-python rainbow-braces">&quot;这是一个字符串.&quot;
 &#x27;这也是一个字符串.&#x27;
 </code></pre>
 </li>
 <li>
 <p>字符串也可以相加！</p>
-<pre class="line-numbers"><code class="lang-python">&quot;Hello &quot; + &quot;world!&quot; #=&gt; &quot;Hello world!&quot;
+<pre class="line-numbers"><code class="lang-python rainbow-braces">&quot;Hello &quot; + &quot;world!&quot; #=&gt; &quot;Hello world!&quot;
 </code></pre>
 </li>
 <li>
 <p>一个字符串可以视为一个特殊的元祖（后面讲到）</p>
-<pre class="line-numbers"><code class="lang-python">&quot;This is a string&quot;[0] #=&gt; &#x27;T&#x27;
+<pre class="line-numbers"><code class="lang-python rainbow-braces">&quot;This is a string&quot;[0] #=&gt; &#x27;T&#x27;
 </code></pre>
 </li>
 <li>
 <p>% 可以用来格式化字符串，就像这样：</p>
-<pre class="line-numbers"><code class="lang-python">&quot;%s 是 %s&quot; % (&quot;字符串&quot;, &quot;特殊的元祖&quot;)
+<pre class="line-numbers"><code class="lang-python rainbow-braces">&quot;%s 是 %s&quot; % (&quot;字符串&quot;, &quot;特殊的元祖&quot;)
 </code></pre>
 </li>
 <li>
 <p>后来又有一种格式化字符串的新方法：<code class="language-vim">format</code> 方法。我们推荐使用这个方法。</p>
-<pre class="line-numbers"><code class="lang-python">&quot;{} can be {}&quot;.format(&quot;strings&quot;, &quot;formatted&quot;)
+<pre class="line-numbers"><code class="lang-python rainbow-braces">&quot;{} can be {}&quot;.format(&quot;strings&quot;, &quot;formatted&quot;)
 </code></pre>
 </li>
 <li>
 <p>如果你不喜欢，还可以使用 f-string。</p>
-<pre class="line-numbers"><code class="lang-python">name=&quot;李四&quot;
+<pre class="line-numbers"><code class="lang-python rainbow-braces">name=&quot;李四&quot;
 food=&quot;土豆&quot;
 
 f&quot;{name} 想要吃 {food}&quot;
@@ -392,12 +392,12 @@ f&quot;{name} 想要吃 {food}&quot;
 </li>
 <li>
 <p>None 是一个对象，表示空数据</p>
-<pre class="line-numbers"><code class="lang-python">None #=&gt; None
+<pre class="line-numbers"><code class="lang-python rainbow-braces">None #=&gt; None
 </code></pre>
 </li>
 <li>
 <p>不要使用相等符号 <code class="language-vim">==</code> 来把对象和 <code class="language-vim">None</code> 进行比较，而要用 <code class="language-vim">is</code>。</p>
-<pre class="line-numbers"><code class="lang-python">&quot;etc&quot; is None #=&gt; False
+<pre class="line-numbers"><code class="lang-python rainbow-braces">&quot;etc&quot; is None #=&gt; False
 None is None  #=&gt; True
 &#x27;&#x27; is None #=&gt; False
 &#x27;&#x27; is not None #=&gt; True
@@ -414,7 +414,7 @@ id(10)
 </li>
 <li>
 <p>0 等于 False   1 等于 True</p>
-<pre class="line-numbers"><code class="lang-python">0 == False  #=&gt; True
+<pre class="line-numbers"><code class="lang-python rainbow-braces">0 == False  #=&gt; True
 1 == True #=&gt; True
 2 == True #=&gt; False
 </code></pre>
@@ -424,7 +424,7 @@ id(10)
 <ul>
 <li>
 <p>打印输出很简单</p>
-<pre class="line-numbers"><code class="lang-python">print(&quot;我是Python&quot;)
+<pre class="line-numbers"><code class="lang-python rainbow-braces">print(&quot;我是Python&quot;)
 </code></pre>
 </li>
 <li>
@@ -441,7 +441,7 @@ id(10)
 </li>
 <li>
 <p>标识符名称不允许为关键字（保留关键字 35 个）。</p>
-<pre class="line-numbers"><code class="lang-python">import keyword
+<pre class="line-numbers"><code class="lang-python rainbow-braces">import keyword
 keyword.kwlist
 </code></pre>
 </li>
@@ -452,18 +452,18 @@ keyword.kwlist
 </li>
 <li>
 <p>在赋值给变量之前不需要声明</p>
-<pre class="line-numbers"><code class="lang-python">some_var = 5    # 变量名的约定是使用下划线分隔的小写单词
+<pre class="line-numbers"><code class="lang-python rainbow-braces">some_var = 5    # 变量名的约定是使用下划线分隔的小写单词
 some_var #=&gt; 5
 </code></pre>
 </li>
 <li>
 <p>访问一个未赋值的变量会产生一个异常。</p>
-<pre class="line-numbers"><code class="lang-python">some_other_var  # 会抛出一个名称错误
+<pre class="line-numbers"><code class="lang-python rainbow-braces">some_other_var  # 会抛出一个名称错误
 </code></pre>
 </li>
 <li>
 <p><code class="language-vim">if</code> 可以作为表达式来使用</p>
-<pre class="line-numbers"><code class="lang-python">&quot;你好!&quot; if 3 &gt; 2 else 2 #=&gt; &quot;你好!&quot;
+<pre class="line-numbers"><code class="lang-python rainbow-braces">&quot;你好!&quot; if 3 &gt; 2 else 2 #=&gt; &quot;你好!&quot;
 &quot;你好!&quot; if 3 == 2 else 2 #=&gt; 2
 </code></pre>
 </li>
@@ -472,12 +472,12 @@ some_var #=&gt; 5
 <ul>
 <li>
 <p>列表用于存储序列</p>
-<pre class="line-numbers"><code class="lang-python">li = []
+<pre class="line-numbers"><code class="lang-python rainbow-braces">li = []
 </code></pre>
 </li>
 <li>
 <p>我们先尝试一个预先填充好的列表</p>
-<pre class="line-numbers"><code class="lang-python">other_li = [4, 5, 6]
+<pre class="line-numbers"><code class="lang-python rainbow-braces">other_li = [4, 5, 6]
 </code></pre>
 </li>
 </ul>
@@ -485,7 +485,7 @@ some_var #=&gt; 5
 <ul>
 <li>
 <p>使用 <code class="language-vim">append</code> 方法把元素添加到列表的尾部</p>
-<pre class="line-numbers"><code class="lang-python">li.append(1)    #li 现在是 [1]
+<pre class="line-numbers"><code class="lang-python rainbow-braces">li.append(1)    #li 现在是 [1]
 li.append(2)    #li 现在是 [1, 2]
 li.append(4)    #li 现在是 [1, 2, 4]
 li.append(3)    #li 现在是 [1, 2, 4, 3]
@@ -493,90 +493,90 @@ li.append(3)    #li 现在是 [1, 2, 4, 3]
 </li>
 <li>
 <p>使用 <code class="language-vim">pop</code> 来移除最后一个元素</p>
-<pre class="line-numbers"><code class="lang-python">li.pop()        #=&gt; 3，然后 li 现在是 [1, 2, 4]
+<pre class="line-numbers"><code class="lang-python rainbow-braces">li.pop()        #=&gt; 3，然后 li 现在是 [1, 2, 4]
 </code></pre>
 </li>
 <li>
 <p>我们再把它放回去</p>
-<pre class="line-numbers"><code class="lang-python">li.append(3)    # li 现在又是 [1, 2, 4, 3] 了
+<pre class="line-numbers"><code class="lang-python rainbow-braces">li.append(3)    # li 现在又是 [1, 2, 4, 3] 了
 </code></pre>
 </li>
 <li>
 <p>像访问其它语言的数组那样访问列表</p>
-<pre class="line-numbers"><code class="lang-python">li[0] #=&gt; 1
+<pre class="line-numbers"><code class="lang-python rainbow-braces">li[0] #=&gt; 1
 </code></pre>
 </li>
 <li>
 <p>查询最后一个元素</p>
-<pre class="line-numbers"><code class="lang-python">li[-1] #=&gt; 3
+<pre class="line-numbers"><code class="lang-python rainbow-braces">li[-1] #=&gt; 3
 </code></pre>
 </li>
 <li>
 <p>越界查询会产生一个索引错误</p>
-<pre class="line-numbers"><code class="lang-python">li[4] # 抛出一个索引错误
+<pre class="line-numbers"><code class="lang-python rainbow-braces">li[4] # 抛出一个索引错误
 </code></pre>
 </li>
 <li>
 <p>你可以使用切片语法来查询列表的一个范围。（这个范围相当于数学中的左闭右开区间。）</p>
-<pre class="line-numbers"><code class="lang-python">li[1:3] #=&gt; [2, 4]
+<pre class="line-numbers"><code class="lang-python rainbow-braces">li[1:3] #=&gt; [2, 4]
 </code></pre>
 </li>
 <li>
 <p>省略开头</p>
-<pre class="line-numbers"><code class="lang-python">li[2:] #=&gt; [4, 3]
+<pre class="line-numbers"><code class="lang-python rainbow-braces">li[2:] #=&gt; [4, 3]
 </code></pre>
 </li>
 <li>
 <p>省略结尾</p>
-<pre class="line-numbers"><code class="lang-python">li[:3] #=&gt; [1, 2, 4]
+<pre class="line-numbers"><code class="lang-python rainbow-braces">li[:3] #=&gt; [1, 2, 4]
 </code></pre>
 </li>
 <li>
 <p>li【开始：结束：步长】</p>
-<pre class="line-numbers"><code class="lang-python">li = [1, 2, 4, 3]
+<pre class="line-numbers"><code class="lang-python rainbow-braces">li = [1, 2, 4, 3]
 li[0:3:2] #=&gt; [1, 4]
 </code></pre>
 </li>
 <li>
 <p>使用 del 来删除列表中的任意元素</p>
-<pre class="line-numbers"><code class="lang-python">del li[2] # li 现在是 [1, 2, 3]
+<pre class="line-numbers"><code class="lang-python rainbow-braces">del li[2] # li 现在是 [1, 2, 3]
 </code></pre>
 </li>
 <li>
 <p>可以把列表相加</p>
-<pre class="line-numbers"><code class="lang-python">li + other_li #=&gt; [1, 2, 3, 4, 5, 6] - 请留意 li 和 other_li 并不会被修改
+<pre class="line-numbers"><code class="lang-python rainbow-braces">li + other_li #=&gt; [1, 2, 3, 4, 5, 6] - 请留意 li 和 other_li 并不会被修改
 </code></pre>
 </li>
 <li>
 <p>使用 extend 来合并列表</p>
-<pre class="line-numbers"><code class="lang-python">li.extend(other_li) # 现在 li 是 [1, 2, 3, 4, 5, 6]
+<pre class="line-numbers"><code class="lang-python rainbow-braces">li.extend(other_li) # 现在 li 是 [1, 2, 3, 4, 5, 6]
 </code></pre>
 </li>
 <li>
 <p>用 in 来检查是否存在于某个列表中</p>
-<pre class="line-numbers"><code class="lang-python">1 in li #=&gt; True
+<pre class="line-numbers"><code class="lang-python rainbow-braces">1 in li #=&gt; True
 </code></pre>
 </li>
 <li>
 <p>用 len 来检测列表的长度</p>
-<pre class="line-numbers"><code class="lang-python">len(li) #=&gt; 6
+<pre class="line-numbers"><code class="lang-python rainbow-braces">len(li) #=&gt; 6
 </code></pre>
 </li>
 </ul>
 <h2 id="anchor_6"><a class="anchor-navigation-ex-anchor" href="#anchor_6" name="anchor_6"><i aria-hidden="true" class="fa fa-link"></i></a>4. 元组很像列表，但它是<code class="language-vim">不可变</code>的</h2>
-<pre class="line-numbers"><code class="lang-python">tup = (1, 2, 3)
+<pre class="line-numbers"><code class="lang-python rainbow-braces">tup = (1, 2, 3)
 tup[0] #=&gt; 1
 tup[0] = 3  # 抛出一个类型错误
 </code></pre>
 <ul>
 <li>
 <p>创建只有一个元素的元组</p>
-<pre class="line-numbers"><code class="lang-python">tup1 = (1,)
+<pre class="line-numbers"><code class="lang-python rainbow-braces">tup1 = (1,)
 </code></pre>
 </li>
 <li>
 <p>操作列表的方式通常也能用在元组身上</p>
-<pre class="line-numbers"><code class="lang-python">len(tup) #=&gt; 3
+<pre class="line-numbers"><code class="lang-python rainbow-braces">len(tup) #=&gt; 3
 tup + (4, 5, 6) #=&gt; (1, 2, 3, 4, 5, 6)
 tup[:2] #=&gt; (1, 2)
 2 in tup #=&gt; True
@@ -584,17 +584,17 @@ tup[:2] #=&gt; (1, 2)
 </li>
 <li>
 <p>你可以把元组（或列表）中的元素解包赋值给多个变量</p>
-<pre class="line-numbers"><code class="lang-python">a, b, c = (1, 2, 3)     # 现在 a 是 1，b 是 2，c 是 3
+<pre class="line-numbers"><code class="lang-python rainbow-braces">a, b, c = (1, 2, 3)     # 现在 a 是 1，b 是 2，c 是 3
 </code></pre>
 </li>
 <li>
 <p>如果你省去了小括号，那么元组会被自动创建</p>
-<pre class="line-numbers"><code class="lang-python">d, e, f = 4, 5, 6
+<pre class="line-numbers"><code class="lang-python rainbow-braces">d, e, f = 4, 5, 6
 </code></pre>
 </li>
 <li>
 <p>再来看看交换两个值是多么简单。</p>
-<pre class="line-numbers"><code class="lang-python">e, d = d, e     # 现在 d 是 5 而 e 是 4
+<pre class="line-numbers"><code class="lang-python rainbow-braces">e, d = d, e     # 现在 d 是 5 而 e 是 4
 </code></pre>
 </li>
 </ul>
@@ -784,110 +784,110 @@ tup[:2] #=&gt; (1, 2)
 </tbody>
 </table>
 <h2 id="anchor_8"><a class="anchor-navigation-ex-anchor" href="#anchor_8" name="anchor_8"><i aria-hidden="true" class="fa fa-link"></i></a>6. 字典用于存储映射关系</h2>
-<pre class="line-numbers"><code class="lang-python">empty_dict = {}  # 空字典
+<pre class="line-numbers"><code class="lang-python rainbow-braces">empty_dict = {}  # 空字典
 </code></pre>
 <ul>
 <li>
 <p>这是一个预先填充的字典</p>
-<pre class="line-numbers"><code class="lang-python">filled_dict = {&quot;one&quot;: 1, &quot;two&quot;: 2, &quot;three&quot;: 3}
+<pre class="line-numbers"><code class="lang-python rainbow-braces">filled_dict = {&quot;one&quot;: 1, &quot;two&quot;: 2, &quot;three&quot;: 3}
 </code></pre>
 </li>
 <li>
 <p>使用 [] 来查询键值</p>
-<pre class="line-numbers"><code class="lang-python">filled_dict[&quot;one&quot;] #=&gt; 1
+<pre class="line-numbers"><code class="lang-python rainbow-braces">filled_dict[&quot;one&quot;] #=&gt; 1
 </code></pre>
 </li>
 <li>
 <p>将字典的所有键名获取为一个列表</p>
-<pre class="line-numbers"><code class="lang-python">filled_dict.keys() #=&gt; [&quot;three&quot;, &quot;two&quot;, &quot;one&quot;]
+<pre class="line-numbers"><code class="lang-python rainbow-braces">filled_dict.keys() #=&gt; [&quot;three&quot;, &quot;two&quot;, &quot;one&quot;]
 </code></pre>
 </li>
 <li>
 <p>将字典的所有键值获取为一个列表</p>
-<pre class="line-numbers"><code class="lang-python">filled_dict.values() #=&gt; [3, 2, 1]
+<pre class="line-numbers"><code class="lang-python rainbow-braces">filled_dict.values() #=&gt; [3, 2, 1]
 </code></pre>
 </li>
 <li>
 <p>使用 in 来检查一个字典是否包含某个键名</p>
-<pre class="line-numbers"><code class="lang-python">&quot;one&quot; in filled_dict #=&gt; True
+<pre class="line-numbers"><code class="lang-python rainbow-braces">&quot;one&quot; in filled_dict #=&gt; True
 1 in filled_dict #=&gt; False
 </code></pre>
 </li>
 <li>
 <p>查询一个不存在的键名会产生一个键名错误</p>
-<pre class="line-numbers"><code class="lang-python">filled_dict[&quot;four&quot;] # 键名错误
+<pre class="line-numbers"><code class="lang-python rainbow-braces">filled_dict[&quot;four&quot;] # 键名错误
 </code></pre>
 </li>
 <li>
 <p>所以要使用 <code class="language-vim">get</code> 方法来避免键名错误</p>
-<pre class="line-numbers"><code class="lang-python">filled_dict.get(&quot;one&quot;) #=&gt; 1
+<pre class="line-numbers"><code class="lang-python rainbow-braces">filled_dict.get(&quot;one&quot;) #=&gt; 1
 filled_dict.get(&quot;four&quot;) #=&gt; None
 </code></pre>
 </li>
 <li>
 <p><code class="language-vim">get</code> 方法支持传入一个默认值参数，将在取不到值时返回。</p>
-<pre class="line-numbers"><code class="lang-python">filled_dict.get(&quot;one&quot;, 4) #=&gt; 1
+<pre class="line-numbers"><code class="lang-python rainbow-braces">filled_dict.get(&quot;one&quot;, 4) #=&gt; 1
 filled_dict.get(&quot;four&quot;, 4) #=&gt; 4
 </code></pre>
 </li>
 <li>
 <p>修改字典的值</p>
-<pre class="line-numbers"><code class="lang-python">filled_dict[&quot;one&quot;] = 111
+<pre class="line-numbers"><code class="lang-python rainbow-braces">filled_dict[&quot;one&quot;] = 111
 </code></pre>
 </li>
 <li>
 <p><code class="language-vim">Setdefault</code> 方法可以安全地把新的名值对添加到字典里</p>
-<pre class="line-numbers"><code class="lang-python">filled_dict.setdefault(&quot;five&quot;, 5) #filled_dict[&quot;five&quot;] 被设置为 5
+<pre class="line-numbers"><code class="lang-python rainbow-braces">filled_dict.setdefault(&quot;five&quot;, 5) #filled_dict[&quot;five&quot;] 被设置为 5
 filled_dict.setdefault(&quot;five&quot;, 6) #filled_dict[&quot;five&quot;] 仍然为 5
 </code></pre>
 </li>
 </ul>
 <h2 id="anchor_9"><a class="anchor-navigation-ex-anchor" href="#anchor_9" name="anchor_9"><i aria-hidden="true" class="fa fa-link"></i></a>7. set 用于保存集合</h2>
-<pre class="line-numbers"><code class="lang-python">empty_set = set()  # 空集合
+<pre class="line-numbers"><code class="lang-python rainbow-braces">empty_set = set()  # 空集合
 </code></pre>
 <ul>
 <li>
 <p>初始化只有一个元素的集合</p>
-<pre class="line-numbers"><code class="lang-python">set1 = set([1])
+<pre class="line-numbers"><code class="lang-python rainbow-braces">set1 = set([1])
 set2 = {1}
 </code></pre>
 </li>
 <li>
 <p>使用一堆值来初始化一个集合</p>
-<pre class="line-numbers"><code class="lang-python">some_set = set([1,2,2,3,4]) # some_set 现在是 set([1, 2, 3, 4])
+<pre class="line-numbers"><code class="lang-python rainbow-braces">some_set = set([1,2,2,3,4]) # some_set 现在是 set([1, 2, 3, 4])
 </code></pre>
 </li>
 <li>
 <p>从 Python 2.7 开始，{} 可以用来声明一个集合</p>
-<pre class="line-numbers"><code class="lang-python">filled_set = {1, 2, 2, 3, 4} # =&gt; {1, 2, 3, 4}
+<pre class="line-numbers"><code class="lang-python rainbow-braces">filled_set = {1, 2, 2, 3, 4} # =&gt; {1, 2, 3, 4}
 # （注：集合是种无序不重复的元素集，因此重复的 2 被滤除了。）
 # （注：{} 不会创建一个空集合，只会创建一个空字典。）
 </code></pre>
 </li>
 <li>
 <p>把更多的元素添加进一个集合</p>
-<pre class="line-numbers"><code class="lang-python">filled_set.add(5) # filled_set 现在是 {1, 2, 3, 4, 5}
+<pre class="line-numbers"><code class="lang-python rainbow-braces">filled_set.add(5) # filled_set 现在是 {1, 2, 3, 4, 5}
 </code></pre>
 </li>
 <li>
 <p>使用 &amp; 来获取交集</p>
-<pre class="line-numbers"><code class="lang-python">other_set = {3, 4, 5, 6}
+<pre class="line-numbers"><code class="lang-python rainbow-braces">other_set = {3, 4, 5, 6}
 filled_set &amp; other_set #=&gt; {3, 4, 5}
 </code></pre>
 </li>
 <li>
 <p>使用 | 来获取并集</p>
-<pre class="line-numbers"><code class="lang-python">filled_set | other_set #=&gt; {1, 2, 3, 4, 5, 6}
+<pre class="line-numbers"><code class="lang-python rainbow-braces">filled_set | other_set #=&gt; {1, 2, 3, 4, 5, 6}
 </code></pre>
 </li>
 <li>
 <p>使用 - 来获取补集</p>
-<pre class="line-numbers"><code class="lang-python">{1,2,3,4} - {2,3,5} #=&gt; {1, 4}
+<pre class="line-numbers"><code class="lang-python rainbow-braces">{1,2,3,4} - {2,3,5} #=&gt; {1, 4}
 </code></pre>
 </li>
 <li>
 <p>使用 in 来检查是否存在于某个集合中</p>
-<pre class="line-numbers"><code class="lang-python">2 in filled_set #=&gt; True
+<pre class="line-numbers"><code class="lang-python rainbow-braces">2 in filled_set #=&gt; True
 10 in filled_set #=&gt; False
 </code></pre>
 </li>
@@ -896,32 +896,32 @@ filled_set &amp; other_set #=&gt; {3, 4, 5}
 <ul>
 <li>
 <p>str-&gt;int</p>
-<pre class="line-numbers"><code class="lang-python">int(&#x27;123&#x27;)
+<pre class="line-numbers"><code class="lang-python rainbow-braces">int(&#x27;123&#x27;)
 </code></pre>
 </li>
 <li>
 <p>int-&gt;str</p>
-<pre class="line-numbers"><code class="lang-python">str(123)
+<pre class="line-numbers"><code class="lang-python rainbow-braces">str(123)
 </code></pre>
 </li>
 <li>
 <p>list-&gt;set</p>
-<pre class="line-numbers"><code class="lang-python">set([1,2,3,4,5])
+<pre class="line-numbers"><code class="lang-python rainbow-braces">set([1,2,3,4,5])
 </code></pre>
 </li>
 <li>
 <p>set-&gt;list</p>
-<pre class="line-numbers"><code class="lang-python">list({1, 2, 3, 4, 5})
+<pre class="line-numbers"><code class="lang-python rainbow-braces">list({1, 2, 3, 4, 5})
 </code></pre>
 </li>
 <li>
 <p>list-&gt;tuple</p>
-<pre class="line-numbers"><code class="lang-python">tuple([1,2,3,4,5])
+<pre class="line-numbers"><code class="lang-python rainbow-braces">tuple([1,2,3,4,5])
 </code></pre>
 </li>
 <li>
 <p>tuple-&gt;list</p>
-<pre class="line-numbers"><code class="lang-python">list((1,2,3,4,5))
+<pre class="line-numbers"><code class="lang-python rainbow-braces">list((1,2,3,4,5))
 </code></pre>
 </li>
 </ul>
@@ -929,12 +929,12 @@ filled_set &amp; other_set #=&gt; {3, 4, 5}
 <ul>
 <li>
 <p>我们先创建一个变量</p>
-<pre class="line-numbers"><code class="lang-python">some_var = 5
+<pre class="line-numbers"><code class="lang-python rainbow-braces">some_var = 5
 </code></pre>
 </li>
 <li>
 <p>这里有一个条件语句。缩进在 Python 中可是很重要的哦！程序会打印出 <code class="language-vim">some_var 比 10 小</code></p>
-<pre class="line-numbers"><code class="lang-python">if some_var &gt; 10:
+<pre class="line-numbers"><code class="lang-python rainbow-braces">if some_var &gt; 10:
     print(&quot;some_var 完全比 10 大.&quot;)
 elif some_var &lt; 10:    # 这里的 elif 子句是可选的
     print(&quot;some_var 比 10 小.&quot;)
@@ -944,7 +944,7 @@ else:                  # 这一句也是可选的
 </li>
 <li>
 <p>for 循环可以遍历列表</p>
-<pre class="line-numbers"><code class="lang-python">&quot;&quot;&quot;
+<pre class="line-numbers"><code class="lang-python rainbow-braces">&quot;&quot;&quot;
 如果要打印出：
     dog 是哺乳动物
     cat 是哺乳动物
@@ -967,7 +967,7 @@ for i in range(4):
 </li>
 <li>
 <p>while 循环会一直继续，直到条件不再满足。</p>
-<pre class="line-numbers"><code class="lang-python">&quot;&quot;&quot;
+<pre class="line-numbers"><code class="lang-python rainbow-braces">&quot;&quot;&quot;
 如果要打印出：
     0
     1
@@ -982,13 +982,13 @@ while x &lt; 4:
 </li>
 <li>
 <p>跳过或终止循环</p>
-<pre class="line-numbers"><code class="lang-python">continue    #跳过循环的这一次执行，进行下一次的循环操作
+<pre class="line-numbers"><code class="lang-python rainbow-braces">continue    #跳过循环的这一次执行，进行下一次的循环操作
 break       # 停止执行整个循环
 </code></pre>
 </li>
 <li>
 <p>使用 try/except 代码块来处理异常</p>
-<pre class="line-numbers"><code class="lang-python">try:
+<pre class="line-numbers"><code class="lang-python rainbow-braces">try:
     # 使用 raise 来抛出一个错误
     raise IndexError(&quot;This is an index error&quot;)
     # 抛出一个索引错误：这是一个索引错误。
@@ -1011,24 +1011,24 @@ finally:
 <ul>
 <li>
 <p>使用 def 来创建新函数</p>
-<pre class="line-numbers"><code class="lang-python">def add(x, y):
+<pre class="line-numbers"><code class="lang-python rainbow-braces">def add(x, y):
     print(f&quot;x is {x} and y is {y}&quot;)
     return x + y    # 使用 return 语句来返回值
 </code></pre>
 </li>
 <li>
 <p>调用函数并传入参数</p>
-<pre class="line-numbers"><code class="lang-python">add(5, 6) #=&gt; 输出 &quot;x is 5 and y is 6&quot; 并且返回 11
+<pre class="line-numbers"><code class="lang-python rainbow-braces">add(5, 6) #=&gt; 输出 &quot;x is 5 and y is 6&quot; 并且返回 11
 </code></pre>
 </li>
 <li>
 <p>调用函数的另一种方式是传入关键字参数</p>
-<pre class="line-numbers"><code class="lang-python">add(y=6, x=5)   # 关键字参数可以以任意顺序传入
+<pre class="line-numbers"><code class="lang-python rainbow-braces">add(y=6, x=5)   # 关键字参数可以以任意顺序传入
 </code></pre>
 </li>
 <li>
 <p>你可以定义一个函数，并让它接受可变数量的定位参数。</p>
-<pre class="line-numbers"><code class="lang-python">def varargs(*args):
+<pre class="line-numbers"><code class="lang-python rainbow-braces">def varargs(*args):
     return args
 
 varargs(1, 2, 3) #=&gt; (1,2,3)
@@ -1036,18 +1036,18 @@ varargs(1, 2, 3) #=&gt; (1,2,3)
 </li>
 <li>
 <p>你也可以定义一个函数，并让它接受可变数量的关键字参数。</p>
-<pre class="line-numbers"><code class="lang-python">def keyword_args(**kwargs):
+<pre class="line-numbers"><code class="lang-python rainbow-braces">def keyword_args(**kwargs):
     return kwargs
 </code></pre>
 </li>
 <li>
 <p>我们试着调用它，看看会发生什么：</p>
-<pre class="line-numbers"><code class="lang-python">keyword_args(big=&quot;foot&quot;, loch=&quot;ness&quot;) #=&gt; {&quot;big&quot;: &quot;foot&quot;, &quot;loch&quot;: &quot;ness&quot;}
+<pre class="line-numbers"><code class="lang-python rainbow-braces">keyword_args(big=&quot;foot&quot;, loch=&quot;ness&quot;) #=&gt; {&quot;big&quot;: &quot;foot&quot;, &quot;loch&quot;: &quot;ness&quot;}
 </code></pre>
 </li>
 <li>
 <p>你还可以同时使用这两类参数，只要你愿意：</p>
-<pre class="line-numbers"><code class="lang-python">def all_the_args(*args, **kwargs):
+<pre class="line-numbers"><code class="lang-python rainbow-braces">def all_the_args(*args, **kwargs):
     print(args)
     print(kwargs)
 
@@ -1061,7 +1061,7 @@ all_the_args(1, 2, a=3, b=4)
 </li>
 <li>
 <p>在调用函数时，定位参数和关键字参数还可以反过来用。使用 <code class="language-vim">*</code> 来展开元组，使用 <code class="language-vim">**</code> 来展开关键字参数。</p>
-<pre class="line-numbers"><code class="lang-python">args = (1, 2, 3, 4)
+<pre class="line-numbers"><code class="lang-python rainbow-braces">args = (1, 2, 3, 4)
 kwargs = {&quot;a&quot;: 3, &quot;b&quot;: 4}
 all_the_args(*args) # 相当于 all_the_args(1, 2, 3, 4)
 all_the_args(**kwargs) # 相当于 all_the_args(a=3, b=4)
@@ -1073,7 +1073,7 @@ all_the_args(*args, **kwargs) # 相当于 all_the_args(1, 2, 3, 4, a=3, b=4)
 <ul>
 <li>
 <p>我们可以从对象中继承，来得到一个类。</p>
-<pre class="line-numbers"><code class="lang-python">class Human(object):
+<pre class="line-numbers"><code class="lang-python rainbow-braces">class Human(object):
     # 下面是一个类属性。它将被这个类的所有实例共享。
     species = &quot;H. sapiens&quot;
 
@@ -1100,7 +1100,7 @@ all_the_args(*args, **kwargs) # 相当于 all_the_args(1, 2, 3, 4, a=3, b=4)
 </li>
 <li>
 <p>实例化一个类</p>
-<pre class="line-numbers"><code class="lang-python">i = Human(name=&quot;Ian&quot;)
+<pre class="line-numbers"><code class="lang-python rainbow-braces">i = Human(name=&quot;Ian&quot;)
 print(i.say(&quot;hi&quot;))     # 打印出 &quot;Ian: hi&quot;
 
 j = Human(&quot;Joel&quot;)
@@ -1109,12 +1109,12 @@ print(j.say(&quot;hello&quot;))  # 打印出 &quot;Joel: hello&quot;
 </li>
 <li>
 <p>调用我们的类方法</p>
-<pre class="line-numbers"><code class="lang-python">print(i.get_species()) #=&gt; &quot;H. sapiens&quot;
+<pre class="line-numbers"><code class="lang-python rainbow-braces">print(i.get_species()) #=&gt; &quot;H. sapiens&quot;
 </code></pre>
 </li>
 <li>
 <p>修改共享属性</p>
-<pre class="line-numbers"><code class="lang-python">print(Human.species) #=&gt; &quot;H. species&quot;
+<pre class="line-numbers"><code class="lang-python rainbow-braces">print(Human.species) #=&gt; &quot;H. species&quot;
 Human.species = &quot;H. chinaman&quot;
 print(i.get_species()) #=&gt; &quot;H. species&quot;
 print(j.get_species()) #=&gt; &quot;H. species&quot;
@@ -1122,7 +1122,7 @@ print(j.get_species()) #=&gt; &quot;H. species&quot;
 </li>
 <li>
 <p>调用静态方法</p>
-<pre class="line-numbers"><code class="lang-python">print(Human.grunt()) #=&gt; &quot;*grunt*&quot;
+<pre class="line-numbers"><code class="lang-python rainbow-braces">print(Human.grunt()) #=&gt; &quot;*grunt*&quot;
 </code></pre>
 </li>
 </ul>
@@ -1130,13 +1130,13 @@ print(j.get_species()) #=&gt; &quot;H. species&quot;
 <ul>
 <li>
 <p>你可以导入模块</p>
-<pre class="line-numbers"><code class="lang-python">import math
+<pre class="line-numbers"><code class="lang-python rainbow-braces">import math
 print(math.sqrt(16)) #=&gt; 4
 </code></pre>
 </li>
 <li>
 <p>也可以从一个模块中获取指定的函数</p>
-<pre class="line-numbers"><code class="lang-python">from math import ceil, floor
+<pre class="line-numbers"><code class="lang-python rainbow-braces">from math import ceil, floor
 print(ceil(3.7))  #=&gt; 4.0
 print(floor(3.7)) #=&gt; 3.0
 </code></pre>
@@ -1146,12 +1146,12 @@ print(floor(3.7)) #=&gt; 3.0
 <blockquote>
 <p>警告：不建议使用这种方式</p>
 </blockquote>
-<pre class="line-numbers"><code class="lang-python">from math import *
+<pre class="line-numbers"><code class="lang-python rainbow-braces">from math import *
 </code></pre>
 </li>
 <li>
 <p>你可以缩短模块的名称</p>
-<pre class="line-numbers"><code class="lang-python">import math as m
+<pre class="line-numbers"><code class="lang-python rainbow-braces">import math as m
 print(math.sqrt(16) == m.sqrt(16)) #=&gt; True
 </code></pre>
 </li>
@@ -1162,13 +1162,13 @@ print(math.sqrt(16) == m.sqrt(16)) #=&gt; True
 模块的名称与文件名相同
 你可以查出一个模块里有哪些函数和属性</p>
 </blockquote>
-<pre class="line-numbers"><code class="lang-python">import math
+<pre class="line-numbers"><code class="lang-python rainbow-braces">import math
 print(dir(math))
 </code></pre>
 </li>
 <li>
 <p>随机数模块</p>
-<pre class="line-numbers"><code class="lang-python"># 实现了各种分布的伪随机数生成器
+<pre class="line-numbers"><code class="lang-python rainbow-braces"># 实现了各种分布的伪随机数生成器
 import random
 
 values = [1, 2, 3, 4, 5, 6]
@@ -1190,7 +1190,7 @@ random.random()
 <hr />
 <h2 id="anchor_15"><a class="anchor-navigation-ex-anchor" href="#anchor_15" name="anchor_15"><i aria-hidden="true" class="fa fa-link"></i></a>13. 闭包</h2>
 <p>闭包是一个包含有环境变量的函数对象</p>
-<pre class="line-numbers"><code class="lang-python">def f(x):
+<pre class="line-numbers"><code class="lang-python rainbow-braces">def f(x):
   def f1(y):
     return 2*x+y
   return f1
@@ -1200,7 +1200,7 @@ print(my_f(5))
 </code></pre>
 <h2 id="anchor_16"><a class="anchor-navigation-ex-anchor" href="#anchor_16" name="anchor_16"><i aria-hidden="true" class="fa fa-link"></i></a>14. 装饰器</h2>
 <p>装饰器可以对一个函数、方法或者类进行加工</p>
-<pre class="line-numbers"><code class="lang-python">def decorator_demo(old_function):
+<pre class="line-numbers"><code class="lang-python rainbow-braces">def decorator_demo(old_function):
   def new_function(a, b):
     print(&quot;input&quot;, a, b)
     return old_function(a, b)
@@ -1213,7 +1213,7 @@ def square_sum(a, b):
 print(square_sum(3, 4))
 </code></pre>
 <h3 id="anchor_17"><a class="anchor-navigation-ex-anchor" href="#anchor_17" name="anchor_17"><i aria-hidden="true" class="fa fa-link"></i></a>14.1. 带参装饰器</h3>
-<pre class="line-numbers"><code class="lang-python">def pre_str(pre=&quot;&quot;):
+<pre class="line-numbers"><code class="lang-python rainbow-braces">def pre_str(pre=&quot;&quot;):
   def decorator(old_function):
     def new_function(a, b):
       print(pre + &quot;input&quot;, a, b)
@@ -1228,7 +1228,7 @@ def square_sum(a, b):
 print(square_sum(3, 4))
 </code></pre>
 <h3 id="anchor_18"><a class="anchor-navigation-ex-anchor" href="#anchor_18" name="anchor_18"><i aria-hidden="true" class="fa fa-link"></i></a>14.2. 装饰类</h3>
-<pre class="line-numbers"><code class="lang-python">def decorator_class(Some_Class):
+<pre class="line-numbers"><code class="lang-python rainbow-braces">def decorator_class(Some_Class):
   class New_Class(object):
     def __init__(self, age):
       self.total_display = 0
@@ -1254,18 +1254,18 @@ eagle.display()
 eagle.display()
 </code></pre>
 <h2 id="anchor_19"><a class="anchor-navigation-ex-anchor" href="#anchor_19" name="anchor_19"><i aria-hidden="true" class="fa fa-link"></i></a>15. 匿名函数</h2>
-<pre class="line-numbers"><code class="lang-python">(lambda x: x &gt; 2)(3) #=&gt; True
+<pre class="line-numbers"><code class="lang-python rainbow-braces">(lambda x: x &gt; 2)(3) #=&gt; True
 </code></pre>
 <h2 id="anchor_20"><a class="anchor-navigation-ex-anchor" href="#anchor_20" name="anchor_20"><i aria-hidden="true" class="fa fa-link"></i></a>16. 内建的高阶函数</h2>
-<pre class="line-numbers"><code class="lang-python">map(add_10, [1,2,3])
+<pre class="line-numbers"><code class="lang-python rainbow-braces">map(add_10, [1,2,3])
 filter(lambda x: x &gt; 5, [3, 4, 5, 6, 7])
 reduce(lambda x, y: x + y, [1, 2, 3]])
 </code></pre>
 <h2 id="anchor_21"><a class="anchor-navigation-ex-anchor" href="#anchor_21" name="anchor_21"><i aria-hidden="true" class="fa fa-link"></i></a>17. 列表解析</h2>
-<pre class="line-numbers"><code class="lang-python">L = [x**2 for x in range(10) if x%2 == 0]
+<pre class="line-numbers"><code class="lang-python rainbow-braces">L = [x**2 for x in range(10) if x%2 == 0]
 </code></pre>
 <h2 id="anchor_22"><a class="anchor-navigation-ex-anchor" href="#anchor_22" name="anchor_22"><i aria-hidden="true" class="fa fa-link"></i></a>18. 字典解析</h2>
-<pre class="line-numbers"><code class="lang-python">d = {k: v for k,v in enumerate(&quot;Vamei&quot;) if v not in &quot;Vi&quot;}
+<pre class="line-numbers"><code class="lang-python rainbow-braces">d = {k: v for k,v in enumerate(&quot;Vamei&quot;) if v not in &quot;Vi&quot;}
 </code></pre>
 
                         <footer class="page-footer"><span class="copyright">© 2020 刘士. 

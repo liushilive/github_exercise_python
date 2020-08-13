@@ -23,7 +23,7 @@
 <link href="003.html" rel="next"/>
 </head>
 <body>
-<div class="book"><div class="book-summary">
+<div class="book match-braces"><div class="book-summary">
     <div id="book-search-input" role="search">
         <input placeholder="输入并搜索" type="text"/>
     </div>
@@ -267,7 +267,7 @@
                         <div id='anchor-navigation-ex-navbar'><i class='fa fa-anchor'></i><ul><li><span class='title-icon fa fa-hand-o-right'></span><a aria-label class='on-toolbar-action' href='' onclick="$('.fa.fa-align-justify').parent()[0].click();">目录</a></li><li><span class='title-icon fa fa-hand-o-right'></span><a href='#anchor_1'><b></b>Python 面试题</a></li></ul></div><a href='#anchor_1' id='anchorNavigationExGoTop'><i class='fa fa-arrow-up'></i></a>
                         <h1 id="anchor_1"><a class="anchor-navigation-ex-anchor" href="#anchor_1" name="anchor_1"><i aria-hidden="true" class="fa fa-link"></i></a>Python 面试题</h1>
 <p>以下 Python 代码片段的输出是什么？证明你的答案。</p>
-<pre class="line-numbers"><code class="lang-python">def extendList(val, list=[]):
+<pre class="line-numbers"><code class="lang-python rainbow-braces">def extendList(val, list=[]):
     list.append(val)
     return list
 
@@ -279,15 +279,15 @@ print(f&quot;list1 = {list1}&quot;)
 print(f&quot;list2 = {list2}&quot;)
 print(f&quot;list3 = {list3}&quot;)
 </code></pre>
-<sec data-title="点我看答案"><div class="panel panel-default"><div class="panel-heading"><b>点我看答案<a class="pull-right section atTitle btn btn-default " target="sectionx1"><span class="fa fa-angle-down" /></a></b></div><div class="panel-collapse collapse" id="sectionx1"><div class="panel-body"><p>上面的 Python 代码片段的结果是：</p><pre class="line-numbers"><code class="lang-python">list1 = [10, &#x27;a&#x27;]
+<sec data-title="点我看答案"><div class="panel panel-default"><div class="panel-heading"><b>点我看答案<a class="pull-right section atTitle btn btn-default " target="sectionx1"><span class="fa fa-angle-down" /></a></b></div><div class="panel-collapse collapse" id="sectionx1"><div class="panel-body"><p>上面的 Python 代码片段的结果是：</p><pre class="line-numbers"><code class="lang-python rainbow-braces">list1 = [10, &#x27;a&#x27;]
 list2 = [123]
 list3 = [10, &#x27;a&#x27;]
-</code></pre><p>可能错误地期望 <code class="language-vim">list1</code> 等于 <code class="language-vim">[10]</code> 而 <code class="language-vim">list3</code> 与 <code class="language-vim">[&#x27;a&#x27;]</code> 匹配，认为每次调用 <code class="language-vim">extendList</code> 时 <code class="language-vim">list</code> 参数都会初始化为其默认值 <code class="language-vim">[]</code>。</p><p>但是，运行流程就像在定义函数后创建一个新列表一样。只要有人在没有 <code class="language-vim">list</code> 参数的情况下调用 <code class="language-vim">extendList</code> 方法，就会使用相同的方法。它的工作方式与此类似，因为表达式（在默认参数中）的计算发生在函数定义时，而不是在调用期间。</p><p>因此，<code class="language-vim">list1</code> 和 <code class="language-vim">list3</code> 在相同的默认列表上运行，而 <code class="language-vim">list2</code> 在它自己创建的单独对象上运行（通过将空列表作为 <code class="language-vim">list</code> 参数的值传递）。</p><p><code class="language-vim">extendList</code> 函数的定义可以通过以下方式更改。</p><pre class="line-numbers"><code class="lang-python">def extendList(val, list=None):
+</code></pre><p>可能错误地期望 <code class="language-vim">list1</code> 等于 <code class="language-vim">[10]</code> 而 <code class="language-vim">list3</code> 与 <code class="language-vim">[&#x27;a&#x27;]</code> 匹配，认为每次调用 <code class="language-vim">extendList</code> 时 <code class="language-vim">list</code> 参数都会初始化为其默认值 <code class="language-vim">[]</code>。</p><p>但是，运行流程就像在定义函数后创建一个新列表一样。只要有人在没有 <code class="language-vim">list</code> 参数的情况下调用 <code class="language-vim">extendList</code> 方法，就会使用相同的方法。它的工作方式与此类似，因为表达式（在默认参数中）的计算发生在函数定义时，而不是在调用期间。</p><p>因此，<code class="language-vim">list1</code> 和 <code class="language-vim">list3</code> 在相同的默认列表上运行，而 <code class="language-vim">list2</code> 在它自己创建的单独对象上运行（通过将空列表作为 <code class="language-vim">list</code> 参数的值传递）。</p><p><code class="language-vim">extendList</code> 函数的定义可以通过以下方式更改。</p><pre class="line-numbers"><code class="lang-python rainbow-braces">def extendList(val, list=None):
     if list is None:
         list = []
     list.append(val)
     return list
-</code></pre><p>通过这个修订后的实现，输出将是：</p><pre class="line-numbers"><code class="lang-python">list1 = [10]
+</code></pre><p>通过这个修订后的实现，输出将是：</p><pre class="line-numbers"><code class="lang-python rainbow-braces">list1 = [10]
 list2 = [123]
 list3 = [&#x27;a&#x27;]
 </code></pre></div></div></div></sec>
