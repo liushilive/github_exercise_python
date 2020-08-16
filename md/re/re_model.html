@@ -266,7 +266,7 @@
                     <section class="normal markdown-section">
                         <div id='anchor-navigation-ex-navbar'><i class='fa fa-anchor'></i><ul><li><span class='title-icon fa fa-hand-o-right'></span><a aria-label class='on-toolbar-action' href='' onclick="$('.fa.fa-align-justify').parent()[0].click();">目录</a></li><li><span class='title-icon fa fa-hand-o-right'></span><a href='#anchor_1'><b></b>Python 正则学习</a></li><ul><li><span class='title-icon fa fa-hand-o-right'></span><a href='#anchor_2'><b>1. </b>re</a></li></ul><li><span class='title-icon fa fa-hand-o-right'></span><a href='#anchor_3'><b></b>如何写正则表达式</a></li><li><span class='title-icon fa fa-hand-o-right'></span><a href='#anchor_4'><b></b>信息提取</a></li><ul><li><span class='title-icon fa fa-hand-o-right'></span><a href='#anchor_5'><b>1. </b>正则表达式对象</a></li><li><span class='title-icon fa fa-hand-o-right'></span><a href='#anchor_6'><b>2. </b>多行搜索</a></li><li><span class='title-icon fa fa-hand-o-right'></span><a href='#anchor_7'><b>3. </b>忽略大小写</a></li></ul></ul></div><a href='#anchor_1' id='anchorNavigationExGoTop'><i class='fa fa-arrow-up'></i></a>
                         <h1 id="anchor_1"><a class="anchor-navigation-ex-anchor" href="#anchor_1" name="anchor_1"><i aria-hidden="true" class="fa fa-link"></i></a>Python 正则学习</h1>
-<p><a href="https://docs.python.org/3/library/re.html">参考官方文档</a></p>
+<p><a target=_Blank href="https://docs.python.org/3/library/re.html">参考官方文档</a></p>
 <p><strong>正则表达式</strong> <code class="language-vim">Regular Expression</code> 的主要功能是从字符串（string）中通过特定的模式，搜索希望找到的内容。</p>
 <h2 id="anchor_2"><a class="anchor-navigation-ex-anchor" href="#anchor_2" name="anchor_2"><i aria-hidden="true" class="fa fa-link"></i></a>1. re</h2>
 <p>Python 中可以使用包 <code class="language-vim">re</code> 来处理正则表达式。</p>
@@ -473,7 +473,7 @@ pattern.search(&quot;output_1986.txt&quot;)
 pattern.search(&quot;output_1986.txt&quot;).group(1)
 </code></pre>
 <h2 id="anchor_6"><a class="anchor-navigation-ex-anchor" href="#anchor_6" name="anchor_6"><i aria-hidden="true" class="fa fa-link"></i></a>2. 多行搜索</h2>
-<pre class="line-numbers"><code class="lang-python rainbow-braces">re.findall(r&quot;^wo.*&quot;, &quot;hello\nworld\nWorld hello&quot;)
+<pre class="line-numbers"><code class="lang-python rainbow-braces">re.findall(r&quot;^wo.*&quot;, &quot;hello\nworld\nworld hello&quot;)
 re.findall(r&quot;^wo.*&quot;, &quot;hello\nworld\nworld hello&quot;, flags=re.M)
 </code></pre>
 <h2 id="anchor_7"><a class="anchor-navigation-ex-anchor" href="#anchor_7" name="anchor_7"><i aria-hidden="true" class="fa fa-link"></i></a>3. 忽略大小写</h2>
