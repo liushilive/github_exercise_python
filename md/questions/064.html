@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-<title>Python 相关 - 试题 026</title>
+<title>Python 相关 - 试题 064</title>
 <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
 <meta content="" name="description">
 <meta content="刘士" name="author">
@@ -20,7 +20,7 @@
       rel="apple-touch-icon-precomposed" sizes="152x152">
 <link href="../../../asserts/lsbook/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
 <!--分页-->
-<link href="027.html" rel="next"/>
+<link href="065.html" rel="next"/>
 </head>
 <body>
 <div class="book match-braces"><div class="book-summary">
@@ -203,7 +203,7 @@
 <li class="chapter" data-level="4.1.23" data-path="023.html"><a href="023.html"><b>4.1.23.</b>试题 023</a></li>
 <li class="chapter" data-level="4.1.24" data-path="024.html"><a href="024.html"><b>4.1.24.</b>试题 024</a></li>
 <li class="chapter" data-level="4.1.25" data-path="025.html"><a href="025.html"><b>4.1.25.</b>试题 025</a></li>
-<li class="chapter active" data-level="4.1.26" data-path="026.html"><a href="026.html"><b>4.1.26.</b>试题 026</a></li>
+<li class="chapter" data-level="4.1.26" data-path="026.html"><a href="026.html"><b>4.1.26.</b>试题 026</a></li>
 <li class="chapter" data-level="4.1.27" data-path="027.html"><a href="027.html"><b>4.1.27.</b>试题 027</a></li>
 <li class="chapter" data-level="4.1.28" data-path="028.html"><a href="028.html"><b>4.1.28.</b>试题 028</a></li>
 <li class="chapter" data-level="4.1.29" data-path="029.html"><a href="029.html"><b>4.1.29.</b>试题 029</a></li>
@@ -240,7 +240,7 @@
 <li class="chapter" data-level="4.1.60" data-path="060.html"><a href="060.html"><b>4.1.60.</b>试题 060</a></li>
 <li class="chapter" data-level="4.1.61" data-path="061.html"><a href="061.html"><b>4.1.61.</b>试题 061</a></li>
 <li class="chapter" data-level="4.1.62" data-path="062.html"><a href="062.html"><b>4.1.62.</b>试题 062</a></li>
-<li class="chapter" data-level="4.1.63" data-path="064.html"><a href="064.html"><b>4.1.63.</b>试题 064</a></li>
+<li class="chapter active" data-level="4.1.63" data-path="064.html"><a href="064.html"><b>4.1.63.</b>试题 064</a></li>
 <li class="chapter" data-level="4.1.64" data-path="065.html"><a href="065.html"><b>4.1.64.</b>试题 065</a></li></ul></li></ul>
             <li class="divider"></li>
             <li>
@@ -258,7 +258,7 @@
         <!-- Title -->
         <h1>
             <i class="fa fa-circle-o-notch fa-spin"></i>
-            <a href="../..">试题 026</a>
+            <a href="../..">试题 064</a>
         </h1>
     </div>
 
@@ -269,8 +269,28 @@
                     <section class="normal markdown-section">
                         <div id='anchor-navigation-ex-navbar'><i class='fa fa-anchor'></i><ul><li><span class='title-icon fa fa-hand-o-right'></span><a aria-label class='on-toolbar-action' href='' onclick="$('.fa.fa-align-justify').parent()[0].click();">目录</a></li><li><span class='title-icon fa fa-hand-o-right'></span><a href='#anchor_1'><b></b>Python 面试题</a></li></ul></div><a href='#anchor_1' id='anchorNavigationExGoTop'><i class='fa fa-arrow-up'></i></a>
                         <h1 id="anchor_1"><a class="anchor-navigation-ex-anchor" href="#anchor_1" name="anchor_1"><i aria-hidden="true" class="fa fa-link"></i></a>Python 面试题</h1>
-<p>Python 中使用的 <code class="language-vim">return</code> 关键字是什么？</p>
-<sec data-title="点我看答案"><div class="panel panel-default"><div class="panel-heading"><b>点我看答案<a class="pull-right section atTitle btn btn-default " target="sectionx1"><span class="fa fa-angle-down" /></a></b></div><div class="panel-collapse collapse" id="sectionx1"><div class="panel-body"><p>函数的目的是接收输入并返回一些输出。</p><p>返回是一个 Python 语句，我们可以在函数中使用它来将值发送回其调用者。</p></div></div></div></sec>
+<p>请完善装饰器 <code class="language-vim">repeat</code> 函数代码，实现输入任意正整数，打印 n 次 <code class="language-vim">hello</code>。</p>
+<pre class="line-numbers"><code class="lang-python rainbow-braces">def repeat(num: int):
+    pass
+
+
+@repeat(n)
+def print_hello():
+    print(&quot;hello&quot;)
+</code></pre>
+<sec data-title="点我看答案"><div class="panel panel-default"><div class="panel-heading"><b>点我看答案<a class="pull-right section atTitle btn btn-default " target="sectionx1"><span class="fa fa-angle-down" /></a></b></div><div class="panel-collapse collapse" id="sectionx1"><div class="panel-body"><pre class="line-numbers"><code class="lang-python rainbow-braces">def repeat(num: int):
+    def new(old):
+        for i in range(num - 1):
+            old()
+        return old
+
+    return new
+
+
+@repeat(n)
+def print_hello():
+    print(&quot;hello&quot;)
+</code></pre></div></div></div></sec>
 
                         <footer class="page-footer">
 <span class="copyright">© 2020 刘士. All rights reserved.</span>
@@ -302,12 +322,12 @@ setTimeout('busuanzi()', 2000);
 </div>
 
 
-<a aria-label="Previous page: 试题 025" class="navigation navigation-prev" href="025.html">
+<a aria-label="Previous page: 试题 062" class="navigation navigation-prev" href="062.html">
     <i class="fa fa-angle-left"></i>
 </a>
 
 
-<a aria-label="Next page: 试题 027" class="navigation navigation-next" href="027.html">
+<a aria-label="Next page: 试题 065" class="navigation navigation-next" href="065.html">
     <i class="fa fa-angle-right"></i>
 </a>
 
@@ -320,8 +340,8 @@ setTimeout('busuanzi()', 2000);
             "config": {
                 "github_url":"https://liushilive.github.io/",
                 "language": "zh-cn",
-                "previous_page_link": "025.html",
-                "next_page_link": "027.html"
+                "previous_page_link": "062.html",
+                "next_page_link": "065.html"
             },
             "basePath": "../..",
             "js": {'prism': ['../../../asserts/lsbook/prismjs/clipboard.min.js', '../../../asserts/lsbook/prismjs/prism.js']}
