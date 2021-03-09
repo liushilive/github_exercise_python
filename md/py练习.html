@@ -1,0 +1,1845 @@
+<!DOCTYPE HTML>
+<html lang="zh-cn">
+<head>
+<meta charset="UTF-8">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<title>Python 相关 - Python 练习</title>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="" name="description">
+<meta content="刘士" name="author">
+
+<link href="../../asserts/lsbook/less/website.css" rel="stylesheet">
+<link href="../../asserts/lsbook/katex/katex.min.css" rel="stylesheet">
+<link href="../../asserts/lsbook/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+<meta content="true" name="HandheldFriendly"/>
+<meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<link href="../../asserts/lsbook/images/apple-touch-icon-precomposed-152.png"
+      rel="apple-touch-icon-precomposed" sizes="152x152">
+<link href="../../asserts/lsbook/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+<!--分页-->
+<link href="sort/index.html" rel="next"/>
+</head>
+<body>
+<div class="book match-braces"><div class="book-summary">
+    <div id="book-search-input" role="search">
+        <input placeholder="输入并搜索" type="text"/>
+    </div>
+    <nav role="navigation">
+        <ul class="summary">
+            <li class="header" title="Summary">Summary</li>
+<ul class="articles"><li class="chapter" data-level="1.1" data-path="../index.html"><a href="../index.html" title="介绍"><b>1.1.</b>介绍</a></li>
+<li class="chapter" data-level="1.2" data-path="pep8/index.html"><a href="pep8/index.html" title="PEP 8"><b>1.2.</b>PEP 8</a></li>
+<li class="chapter" data-level="1.3" data-path="re/re_model.html"><a href="re/re_model.html" title="正则表达式"><b>1.3.</b>正则表达式</a></li>
+<li class="chapter" data-level="1.4" data-path="py3总结.html"><a href="py3总结.html" title="Python 3 总结"><b>1.4.</b>Python 3 总结</a></li>
+<li class="chapter" data-level="1.5" data-path="py速记.html"><a href="py速记.html" title="Python 速记"><b>1.5.</b>Python 速记</a></li>
+<li class="chapter active" data-level="1.6" data-path="py练习.html"><a href="py练习.html" title="Python 练习"><b>1.6.</b>Python 练习</a></li></ul>
+<li class="header" title="算法">算法</li>
+<ul class="articles"><li class="chapter" data-level="2.1" data-path="sort/index.html"><a href="sort/index.html" title="Python 3 排序算法"><b>2.1.</b>Python 3 排序算法</a>
+<ul class="articles"><li class="chapter" data-level="2.1.1" data-path="sort/冒泡排序.html"><a href="sort/冒泡排序.html" title="冒泡排序"><b>2.1.1.</b>冒泡排序</a></li>
+<li class="chapter" data-level="2.1.2" data-path="sort/选择排序.html"><a href="sort/选择排序.html" title="选择排序"><b>2.1.2.</b>选择排序</a></li>
+<li class="chapter" data-level="2.1.3" data-path="sort/插入排序.html"><a href="sort/插入排序.html" title="插入排序"><b>2.1.3.</b>插入排序</a></li>
+<li class="chapter" data-level="2.1.4" data-path="sort/希尔排序.html"><a href="sort/希尔排序.html" title="希尔排序"><b>2.1.4.</b>希尔排序</a></li>
+<li class="chapter" data-level="2.1.5" data-path="sort/归并排序.html"><a href="sort/归并排序.html" title="归并排序"><b>2.1.5.</b>归并排序</a></li>
+<li class="chapter" data-level="2.1.6" data-path="sort/快速排序.html"><a href="sort/快速排序.html" title="快速排序"><b>2.1.6.</b>快速排序</a></li>
+<li class="chapter" data-level="2.1.7" data-path="sort/堆排序.html"><a href="sort/堆排序.html" title="堆排序"><b>2.1.7.</b>堆排序</a></li>
+<li class="chapter" data-level="2.1.8" data-path="sort/计数排序.html"><a href="sort/计数排序.html" title="计数排序"><b>2.1.8.</b>计数排序</a></li>
+<li class="chapter" data-level="2.1.9" data-path="sort/桶排序.html"><a href="sort/桶排序.html" title="桶排序"><b>2.1.9.</b>桶排序</a></li>
+<li class="chapter" data-level="2.1.10" data-path="sort/基数排序.html"><a href="sort/基数排序.html" title="基数排序"><b>2.1.10.</b>基数排序</a></li></ul></li></ul>
+<li class="header" title="练习">练习</li>
+<ul class="articles"><li class="chapter" data-level="3.1" data-path="exercise/index.html"><a href="exercise/index.html" title="Python 3 练习"><b>3.1.</b>Python 3 练习</a>
+<ul class="articles"><li class="chapter" data-level="3.1.1" data-path="exercise/001.html"><a href="exercise/001.html" title="Python 3 练习 001"><b>3.1.1.</b>Python 3 练习 001</a></li>
+<li class="chapter" data-level="3.1.2" data-path="exercise/002.html"><a href="exercise/002.html" title="Python 3 练习 002"><b>3.1.2.</b>Python 3 练习 002</a></li>
+<li class="chapter" data-level="3.1.3" data-path="exercise/003.html"><a href="exercise/003.html" title="Python 3 练习 003"><b>3.1.3.</b>Python 3 练习 003</a></li>
+<li class="chapter" data-level="3.1.4" data-path="exercise/004.html"><a href="exercise/004.html" title="Python 3 练习 004"><b>3.1.4.</b>Python 3 练习 004</a></li>
+<li class="chapter" data-level="3.1.5" data-path="exercise/005.html"><a href="exercise/005.html" title="Python 3 练习 005"><b>3.1.5.</b>Python 3 练习 005</a></li>
+<li class="chapter" data-level="3.1.6" data-path="exercise/006.html"><a href="exercise/006.html" title="Python 3 练习 006"><b>3.1.6.</b>Python 3 练习 006</a></li>
+<li class="chapter" data-level="3.1.7" data-path="exercise/007.html"><a href="exercise/007.html" title="Python 3 练习 007"><b>3.1.7.</b>Python 3 练习 007</a></li>
+<li class="chapter" data-level="3.1.8" data-path="exercise/008.html"><a href="exercise/008.html" title="Python 3 练习 008"><b>3.1.8.</b>Python 3 练习 008</a></li>
+<li class="chapter" data-level="3.1.9" data-path="exercise/009.html"><a href="exercise/009.html" title="Python 3 练习 009"><b>3.1.9.</b>Python 3 练习 009</a></li>
+<li class="chapter" data-level="3.1.10" data-path="exercise/010.html"><a href="exercise/010.html" title="Python 3 练习 010"><b>3.1.10.</b>Python 3 练习 010</a></li>
+<li class="chapter" data-level="3.1.11" data-path="exercise/011.html"><a href="exercise/011.html" title="Python 3 练习 011"><b>3.1.11.</b>Python 3 练习 011</a></li>
+<li class="chapter" data-level="3.1.12" data-path="exercise/012.html"><a href="exercise/012.html" title="Python 3 练习 012"><b>3.1.12.</b>Python 3 练习 012</a></li>
+<li class="chapter" data-level="3.1.13" data-path="exercise/013.html"><a href="exercise/013.html" title="Python 3 练习 013"><b>3.1.13.</b>Python 3 练习 013</a></li>
+<li class="chapter" data-level="3.1.14" data-path="exercise/014.html"><a href="exercise/014.html" title="Python 3 练习 014"><b>3.1.14.</b>Python 3 练习 014</a></li>
+<li class="chapter" data-level="3.1.15" data-path="exercise/015.html"><a href="exercise/015.html" title="Python 3 练习 015"><b>3.1.15.</b>Python 3 练习 015</a></li>
+<li class="chapter" data-level="3.1.16" data-path="exercise/016.html"><a href="exercise/016.html" title="Python 3 练习 016"><b>3.1.16.</b>Python 3 练习 016</a></li>
+<li class="chapter" data-level="3.1.17" data-path="exercise/017.html"><a href="exercise/017.html" title="Python 3 练习 017"><b>3.1.17.</b>Python 3 练习 017</a></li>
+<li class="chapter" data-level="3.1.18" data-path="exercise/018.html"><a href="exercise/018.html" title="Python 3 练习 018"><b>3.1.18.</b>Python 3 练习 018</a></li>
+<li class="chapter" data-level="3.1.19" data-path="exercise/019.html"><a href="exercise/019.html" title="Python 3 练习 019"><b>3.1.19.</b>Python 3 练习 019</a></li>
+<li class="chapter" data-level="3.1.20" data-path="exercise/020.html"><a href="exercise/020.html" title="Python 3 练习 020"><b>3.1.20.</b>Python 3 练习 020</a></li>
+<li class="chapter" data-level="3.1.21" data-path="exercise/021.html"><a href="exercise/021.html" title="Python 3 练习 021"><b>3.1.21.</b>Python 3 练习 021</a></li>
+<li class="chapter" data-level="3.1.22" data-path="exercise/022.html"><a href="exercise/022.html" title="Python 3 练习 022"><b>3.1.22.</b>Python 3 练习 022</a></li>
+<li class="chapter" data-level="3.1.23" data-path="exercise/023.html"><a href="exercise/023.html" title="Python 3 练习 023"><b>3.1.23.</b>Python 3 练习 023</a></li>
+<li class="chapter" data-level="3.1.24" data-path="exercise/024.html"><a href="exercise/024.html" title="Python 3 练习 024"><b>3.1.24.</b>Python 3 练习 024</a></li>
+<li class="chapter" data-level="3.1.25" data-path="exercise/025.html"><a href="exercise/025.html" title="Python 3 练习 025"><b>3.1.25.</b>Python 3 练习 025</a></li>
+<li class="chapter" data-level="3.1.26" data-path="exercise/026.html"><a href="exercise/026.html" title="Python 3 练习 026"><b>3.1.26.</b>Python 3 练习 026</a></li>
+<li class="chapter" data-level="3.1.27" data-path="exercise/027.html"><a href="exercise/027.html" title="Python 3 练习 027"><b>3.1.27.</b>Python 3 练习 027</a></li>
+<li class="chapter" data-level="3.1.28" data-path="exercise/028.html"><a href="exercise/028.html" title="Python 3 练习 028"><b>3.1.28.</b>Python 3 练习 028</a></li>
+<li class="chapter" data-level="3.1.29" data-path="exercise/029.html"><a href="exercise/029.html" title="Python 3 练习 029"><b>3.1.29.</b>Python 3 练习 029</a></li>
+<li class="chapter" data-level="3.1.30" data-path="exercise/030.html"><a href="exercise/030.html" title="Python 3 练习 030"><b>3.1.30.</b>Python 3 练习 030</a></li>
+<li class="chapter" data-level="3.1.31" data-path="exercise/031.html"><a href="exercise/031.html" title="Python 3 练习 031"><b>3.1.31.</b>Python 3 练习 031</a></li>
+<li class="chapter" data-level="3.1.32" data-path="exercise/032.html"><a href="exercise/032.html" title="Python 3 练习 032"><b>3.1.32.</b>Python 3 练习 032</a></li>
+<li class="chapter" data-level="3.1.33" data-path="exercise/033.html"><a href="exercise/033.html" title="Python 3 练习 033"><b>3.1.33.</b>Python 3 练习 033</a></li>
+<li class="chapter" data-level="3.1.34" data-path="exercise/034.html"><a href="exercise/034.html" title="Python 3 练习 034"><b>3.1.34.</b>Python 3 练习 034</a></li>
+<li class="chapter" data-level="3.1.35" data-path="exercise/035.html"><a href="exercise/035.html" title="Python 3 练习 035"><b>3.1.35.</b>Python 3 练习 035</a></li>
+<li class="chapter" data-level="3.1.36" data-path="exercise/036.html"><a href="exercise/036.html" title="Python 3 练习 036"><b>3.1.36.</b>Python 3 练习 036</a></li>
+<li class="chapter" data-level="3.1.37" data-path="exercise/037.html"><a href="exercise/037.html" title="Python 3 练习 037"><b>3.1.37.</b>Python 3 练习 037</a></li>
+<li class="chapter" data-level="3.1.38" data-path="exercise/038.html"><a href="exercise/038.html" title="Python 3 练习 038"><b>3.1.38.</b>Python 3 练习 038</a></li>
+<li class="chapter" data-level="3.1.39" data-path="exercise/039.html"><a href="exercise/039.html" title="Python 3 练习 039"><b>3.1.39.</b>Python 3 练习 039</a></li>
+<li class="chapter" data-level="3.1.40" data-path="exercise/040.html"><a href="exercise/040.html" title="Python 3 练习 040"><b>3.1.40.</b>Python 3 练习 040</a></li>
+<li class="chapter" data-level="3.1.41" data-path="exercise/041.html"><a href="exercise/041.html" title="Python 3 练习 041"><b>3.1.41.</b>Python 3 练习 041</a></li>
+<li class="chapter" data-level="3.1.42" data-path="exercise/042.html"><a href="exercise/042.html" title="Python 3 练习 042"><b>3.1.42.</b>Python 3 练习 042</a></li>
+<li class="chapter" data-level="3.1.43" data-path="exercise/043.html"><a href="exercise/043.html" title="Python 3 练习 043"><b>3.1.43.</b>Python 3 练习 043</a></li>
+<li class="chapter" data-level="3.1.44" data-path="exercise/044.html"><a href="exercise/044.html" title="Python 3 练习 044"><b>3.1.44.</b>Python 3 练习 044</a></li>
+<li class="chapter" data-level="3.1.45" data-path="exercise/045.html"><a href="exercise/045.html" title="Python 3 练习 045"><b>3.1.45.</b>Python 3 练习 045</a></li>
+<li class="chapter" data-level="3.1.46" data-path="exercise/046.html"><a href="exercise/046.html" title="Python 3 练习 046"><b>3.1.46.</b>Python 3 练习 046</a></li>
+<li class="chapter" data-level="3.1.47" data-path="exercise/047.html"><a href="exercise/047.html" title="Python 3 练习 047"><b>3.1.47.</b>Python 3 练习 047</a></li>
+<li class="chapter" data-level="3.1.48" data-path="exercise/048.html"><a href="exercise/048.html" title="Python 3 练习 048"><b>3.1.48.</b>Python 3 练习 048</a></li>
+<li class="chapter" data-level="3.1.49" data-path="exercise/049.html"><a href="exercise/049.html" title="Python 3 练习 049"><b>3.1.49.</b>Python 3 练习 049</a></li>
+<li class="chapter" data-level="3.1.50" data-path="exercise/050.html"><a href="exercise/050.html" title="Python 3 练习 050"><b>3.1.50.</b>Python 3 练习 050</a></li>
+<li class="chapter" data-level="3.1.51" data-path="exercise/051.html"><a href="exercise/051.html" title="Python 3 练习 051"><b>3.1.51.</b>Python 3 练习 051</a></li>
+<li class="chapter" data-level="3.1.52" data-path="exercise/052.html"><a href="exercise/052.html" title="Python 3 练习 052"><b>3.1.52.</b>Python 3 练习 052</a></li>
+<li class="chapter" data-level="3.1.53" data-path="exercise/053.html"><a href="exercise/053.html" title="Python 3 练习 053"><b>3.1.53.</b>Python 3 练习 053</a></li>
+<li class="chapter" data-level="3.1.54" data-path="exercise/054.html"><a href="exercise/054.html" title="Python 3 练习 054"><b>3.1.54.</b>Python 3 练习 054</a></li>
+<li class="chapter" data-level="3.1.55" data-path="exercise/055.html"><a href="exercise/055.html" title="Python 3 练习 055"><b>3.1.55.</b>Python 3 练习 055</a></li>
+<li class="chapter" data-level="3.1.56" data-path="exercise/056.html"><a href="exercise/056.html" title="Python 3 练习 056"><b>3.1.56.</b>Python 3 练习 056</a></li>
+<li class="chapter" data-level="3.1.57" data-path="exercise/057.html"><a href="exercise/057.html" title="Python 3 练习 057"><b>3.1.57.</b>Python 3 练习 057</a></li>
+<li class="chapter" data-level="3.1.58" data-path="exercise/058.html"><a href="exercise/058.html" title="Python 3 练习 058"><b>3.1.58.</b>Python 3 练习 058</a></li>
+<li class="chapter" data-level="3.1.59" data-path="exercise/059.html"><a href="exercise/059.html" title="Python 3 练习 059"><b>3.1.59.</b>Python 3 练习 059</a></li>
+<li class="chapter" data-level="3.1.60" data-path="exercise/060.html"><a href="exercise/060.html" title="Python 3 练习 060"><b>3.1.60.</b>Python 3 练习 060</a></li>
+<li class="chapter" data-level="3.1.61" data-path="exercise/061.html"><a href="exercise/061.html" title="Python 3 练习 061"><b>3.1.61.</b>Python 3 练习 061</a></li>
+<li class="chapter" data-level="3.1.62" data-path="exercise/062.html"><a href="exercise/062.html" title="Python 3 练习 062"><b>3.1.62.</b>Python 3 练习 062</a></li>
+<li class="chapter" data-level="3.1.63" data-path="exercise/063.html"><a href="exercise/063.html" title="Python 3 练习 063"><b>3.1.63.</b>Python 3 练习 063</a></li>
+<li class="chapter" data-level="3.1.64" data-path="exercise/064.html"><a href="exercise/064.html" title="Python 3 练习 064"><b>3.1.64.</b>Python 3 练习 064</a></li>
+<li class="chapter" data-level="3.1.65" data-path="exercise/065.html"><a href="exercise/065.html" title="Python 3 练习 065"><b>3.1.65.</b>Python 3 练习 065</a></li>
+<li class="chapter" data-level="3.1.66" data-path="exercise/066.html"><a href="exercise/066.html" title="Python 3 练习 066"><b>3.1.66.</b>Python 3 练习 066</a></li>
+<li class="chapter" data-level="3.1.67" data-path="exercise/067.html"><a href="exercise/067.html" title="Python 3 练习 067"><b>3.1.67.</b>Python 3 练习 067</a></li>
+<li class="chapter" data-level="3.1.68" data-path="exercise/068.html"><a href="exercise/068.html" title="Python 3 练习 068"><b>3.1.68.</b>Python 3 练习 068</a></li>
+<li class="chapter" data-level="3.1.69" data-path="exercise/069.html"><a href="exercise/069.html" title="Python 3 练习 069"><b>3.1.69.</b>Python 3 练习 069</a></li>
+<li class="chapter" data-level="3.1.70" data-path="exercise/070.html"><a href="exercise/070.html" title="Python 3 练习 070"><b>3.1.70.</b>Python 3 练习 070</a></li>
+<li class="chapter" data-level="3.1.71" data-path="exercise/071.html"><a href="exercise/071.html" title="Python 3 练习 071"><b>3.1.71.</b>Python 3 练习 071</a></li>
+<li class="chapter" data-level="3.1.72" data-path="exercise/072.html"><a href="exercise/072.html" title="Python 3 练习 072"><b>3.1.72.</b>Python 3 练习 072</a></li>
+<li class="chapter" data-level="3.1.73" data-path="exercise/073.html"><a href="exercise/073.html" title="Python 3 练习 073"><b>3.1.73.</b>Python 3 练习 073</a></li>
+<li class="chapter" data-level="3.1.74" data-path="exercise/074.html"><a href="exercise/074.html" title="Python 3 练习 074"><b>3.1.74.</b>Python 3 练习 074</a></li>
+<li class="chapter" data-level="3.1.75" data-path="exercise/075.html"><a href="exercise/075.html" title="Python 3 练习 075"><b>3.1.75.</b>Python 3 练习 075</a></li>
+<li class="chapter" data-level="3.1.76" data-path="exercise/076.html"><a href="exercise/076.html" title="Python 3 练习 076"><b>3.1.76.</b>Python 3 练习 076</a></li>
+<li class="chapter" data-level="3.1.77" data-path="exercise/077.html"><a href="exercise/077.html" title="Python 3 练习 077"><b>3.1.77.</b>Python 3 练习 077</a></li>
+<li class="chapter" data-level="3.1.78" data-path="exercise/078.html"><a href="exercise/078.html" title="Python 3 练习 078"><b>3.1.78.</b>Python 3 练习 078</a></li>
+<li class="chapter" data-level="3.1.79" data-path="exercise/079.html"><a href="exercise/079.html" title="Python 3 练习 079"><b>3.1.79.</b>Python 3 练习 079</a></li>
+<li class="chapter" data-level="3.1.80" data-path="exercise/080.html"><a href="exercise/080.html" title="Python 3 练习 080"><b>3.1.80.</b>Python 3 练习 080</a></li>
+<li class="chapter" data-level="3.1.81" data-path="exercise/081.html"><a href="exercise/081.html" title="Python 3 练习 081"><b>3.1.81.</b>Python 3 练习 081</a></li>
+<li class="chapter" data-level="3.1.82" data-path="exercise/082.html"><a href="exercise/082.html" title="Python 3 练习 082"><b>3.1.82.</b>Python 3 练习 082</a></li>
+<li class="chapter" data-level="3.1.83" data-path="exercise/083.html"><a href="exercise/083.html" title="Python 3 练习 083"><b>3.1.83.</b>Python 3 练习 083</a></li>
+<li class="chapter" data-level="3.1.84" data-path="exercise/084.html"><a href="exercise/084.html" title="Python 3 练习 084"><b>3.1.84.</b>Python 3 练习 084</a></li>
+<li class="chapter" data-level="3.1.85" data-path="exercise/085.html"><a href="exercise/085.html" title="Python 3 练习 085"><b>3.1.85.</b>Python 3 练习 085</a></li>
+<li class="chapter" data-level="3.1.86" data-path="exercise/086.html"><a href="exercise/086.html" title="Python 3 练习 086"><b>3.1.86.</b>Python 3 练习 086</a></li>
+<li class="chapter" data-level="3.1.87" data-path="exercise/087.html"><a href="exercise/087.html" title="Python 3 练习 087"><b>3.1.87.</b>Python 3 练习 087</a></li>
+<li class="chapter" data-level="3.1.88" data-path="exercise/088.html"><a href="exercise/088.html" title="Python 3 练习 088"><b>3.1.88.</b>Python 3 练习 088</a></li>
+<li class="chapter" data-level="3.1.89" data-path="exercise/089.html"><a href="exercise/089.html" title="Python 3 练习 089"><b>3.1.89.</b>Python 3 练习 089</a></li>
+<li class="chapter" data-level="3.1.90" data-path="exercise/090.html"><a href="exercise/090.html" title="Python 3 练习 090"><b>3.1.90.</b>Python 3 练习 090</a></li>
+<li class="chapter" data-level="3.1.91" data-path="exercise/091.html"><a href="exercise/091.html" title="Python 3 练习 091"><b>3.1.91.</b>Python 3 练习 091</a></li>
+<li class="chapter" data-level="3.1.92" data-path="exercise/092.html"><a href="exercise/092.html" title="Python 3 练习 092"><b>3.1.92.</b>Python 3 练习 092</a></li>
+<li class="chapter" data-level="3.1.93" data-path="exercise/093.html"><a href="exercise/093.html" title="Python 3 练习 093"><b>3.1.93.</b>Python 3 练习 093</a></li>
+<li class="chapter" data-level="3.1.94" data-path="exercise/094.html"><a href="exercise/094.html" title="Python 3 练习 094"><b>3.1.94.</b>Python 3 练习 094</a></li>
+<li class="chapter" data-level="3.1.95" data-path="exercise/095.html"><a href="exercise/095.html" title="Python 3 练习 095"><b>3.1.95.</b>Python 3 练习 095</a></li>
+<li class="chapter" data-level="3.1.96" data-path="exercise/096.html"><a href="exercise/096.html" title="Python 3 练习 096"><b>3.1.96.</b>Python 3 练习 096</a></li>
+<li class="chapter" data-level="3.1.97" data-path="exercise/097.html"><a href="exercise/097.html" title="Python 3 练习 097"><b>3.1.97.</b>Python 3 练习 097</a></li>
+<li class="chapter" data-level="3.1.98" data-path="exercise/098.html"><a href="exercise/098.html" title="Python 3 练习 098"><b>3.1.98.</b>Python 3 练习 098</a></li>
+<li class="chapter" data-level="3.1.99" data-path="exercise/099.html"><a href="exercise/099.html" title="Python 3 练习 099"><b>3.1.99.</b>Python 3 练习 099</a></li>
+<li class="chapter" data-level="3.1.100" data-path="exercise/100.html"><a href="exercise/100.html" title="Python 3 练习 100"><b>3.1.100.</b>Python 3 练习 100</a></li>
+<li class="chapter" data-level="3.1.101" data-path="exercise/101.html"><a href="exercise/101.html" title="Python 3 练习 101"><b>3.1.101.</b>Python 3 练习 101</a></li>
+<li class="chapter" data-level="3.1.102" data-path="exercise/102.html"><a href="exercise/102.html" title="Python 3 练习 102"><b>3.1.102.</b>Python 3 练习 102</a></li>
+<li class="chapter" data-level="3.1.103" data-path="exercise/103.html"><a href="exercise/103.html" title="Python 3 练习 103"><b>3.1.103.</b>Python 3 练习 103</a></li>
+<li class="chapter" data-level="3.1.104" data-path="exercise/104.html"><a href="exercise/104.html" title="Python 3 练习 104"><b>3.1.104.</b>Python 3 练习 104</a></li>
+<li class="chapter" data-level="3.1.105" data-path="exercise/105.html"><a href="exercise/105.html" title="Python 3 练习 105"><b>3.1.105.</b>Python 3 练习 105</a></li>
+<li class="chapter" data-level="3.1.106" data-path="exercise/106.html"><a href="exercise/106.html" title="Python 3 练习 106"><b>3.1.106.</b>Python 3 练习 106</a></li>
+<li class="chapter" data-level="3.1.107" data-path="exercise/107.html"><a href="exercise/107.html" title="Python 3 练习 107"><b>3.1.107.</b>Python 3 练习 107</a></li>
+<li class="chapter" data-level="3.1.108" data-path="exercise/108.html"><a href="exercise/108.html" title="Python 3 练习 108"><b>3.1.108.</b>Python 3 练习 108</a></li>
+<li class="chapter" data-level="3.1.109" data-path="exercise/109.html"><a href="exercise/109.html" title="Python 3 练习 109"><b>3.1.109.</b>Python 3 练习 109</a></li>
+<li class="chapter" data-level="3.1.110" data-path="exercise/110.html"><a href="exercise/110.html" title="Python 3 练习 110"><b>3.1.110.</b>Python 3 练习 110</a></li>
+<li class="chapter" data-level="3.1.111" data-path="exercise/111.html"><a href="exercise/111.html" title="Python 3 练习 111"><b>3.1.111.</b>Python 3 练习 111</a></li>
+<li class="chapter" data-level="3.1.112" data-path="exercise/112.html"><a href="exercise/112.html" title="Python 3 练习 112"><b>3.1.112.</b>Python 3 练习 112</a></li>
+<li class="chapter" data-level="3.1.113" data-path="exercise/113.html"><a href="exercise/113.html" title="Python 3 练习 113"><b>3.1.113.</b>Python 3 练习 113</a></li>
+<li class="chapter" data-level="3.1.114" data-path="exercise/114.html"><a href="exercise/114.html" title="Python 3 练习 114"><b>3.1.114.</b>Python 3 练习 114</a></li>
+<li class="chapter" data-level="3.1.115" data-path="exercise/115.html"><a href="exercise/115.html" title="Python 3 练习 115"><b>3.1.115.</b>Python 3 练习 115</a></li>
+<li class="chapter" data-level="3.1.116" data-path="exercise/116.html"><a href="exercise/116.html" title="Python 3 练习 116"><b>3.1.116.</b>Python 3 练习 116</a></li>
+<li class="chapter" data-level="3.1.117" data-path="exercise/117.html"><a href="exercise/117.html" title="Python 3 练习 117"><b>3.1.117.</b>Python 3 练习 117</a></li>
+<li class="chapter" data-level="3.1.118" data-path="exercise/118.html"><a href="exercise/118.html" title="Python 3 练习 118"><b>3.1.118.</b>Python 3 练习 118</a></li>
+<li class="chapter" data-level="3.1.119" data-path="exercise/119.html"><a href="exercise/119.html" title="Python 3 练习 119"><b>3.1.119.</b>Python 3 练习 119</a></li>
+<li class="chapter" data-level="3.1.120" data-path="exercise/120.html"><a href="exercise/120.html" title="Python 3 练习 120"><b>3.1.120.</b>Python 3 练习 120</a></li>
+<li class="chapter" data-level="3.1.121" data-path="exercise/121.html"><a href="exercise/121.html" title="Python 3 练习 121"><b>3.1.121.</b>Python 3 练习 121</a></li>
+<li class="chapter" data-level="3.1.122" data-path="exercise/122.html"><a href="exercise/122.html" title="Python 3 练习 122"><b>3.1.122.</b>Python 3 练习 122</a></li>
+<li class="chapter" data-level="3.1.123" data-path="exercise/123.html"><a href="exercise/123.html" title="Python 3 练习 123"><b>3.1.123.</b>Python 3 练习 123</a></li>
+<li class="chapter" data-level="3.1.124" data-path="exercise/124.html"><a href="exercise/124.html" title="Python 3 练习 124"><b>3.1.124.</b>Python 3 练习 124</a></li>
+<li class="chapter" data-level="3.1.125" data-path="exercise/125.html"><a href="exercise/125.html" title="Python 3 练习 125"><b>3.1.125.</b>Python 3 练习 125</a></li>
+<li class="chapter" data-level="3.1.126" data-path="exercise/126.html"><a href="exercise/126.html" title="Python 3 练习 126"><b>3.1.126.</b>Python 3 练习 126</a></li>
+<li class="chapter" data-level="3.1.127" data-path="exercise/127.html"><a href="exercise/127.html" title="Python 3 练习 127"><b>3.1.127.</b>Python 3 练习 127</a></li></ul></li></ul>
+<li class="header" title="面试题">面试题</li>
+<ul class="articles"><li class="chapter" data-level="4.1" data-path="questions/index.html"><a href="questions/index.html" title="面试题"><b>4.1.</b>面试题</a>
+<ul class="articles"><li class="chapter" data-level="4.1.1" data-path="questions/001.html"><a href="questions/001.html" title="试题 001"><b>4.1.1.</b>试题 001</a></li>
+<li class="chapter" data-level="4.1.2" data-path="questions/002.html"><a href="questions/002.html" title="试题 002"><b>4.1.2.</b>试题 002</a></li>
+<li class="chapter" data-level="4.1.3" data-path="questions/003.html"><a href="questions/003.html" title="试题 003"><b>4.1.3.</b>试题 003</a></li>
+<li class="chapter" data-level="4.1.4" data-path="questions/004.html"><a href="questions/004.html" title="试题 004"><b>4.1.4.</b>试题 004</a></li>
+<li class="chapter" data-level="4.1.5" data-path="questions/005.html"><a href="questions/005.html" title="试题 005"><b>4.1.5.</b>试题 005</a></li>
+<li class="chapter" data-level="4.1.6" data-path="questions/006.html"><a href="questions/006.html" title="试题 006"><b>4.1.6.</b>试题 006</a></li>
+<li class="chapter" data-level="4.1.7" data-path="questions/007.html"><a href="questions/007.html" title="试题 007"><b>4.1.7.</b>试题 007</a></li>
+<li class="chapter" data-level="4.1.8" data-path="questions/008.html"><a href="questions/008.html" title="试题 008"><b>4.1.8.</b>试题 008</a></li>
+<li class="chapter" data-level="4.1.9" data-path="questions/009.html"><a href="questions/009.html" title="试题 009"><b>4.1.9.</b>试题 009</a></li>
+<li class="chapter" data-level="4.1.10" data-path="questions/010.html"><a href="questions/010.html" title="试题 010"><b>4.1.10.</b>试题 010</a></li>
+<li class="chapter" data-level="4.1.11" data-path="questions/011.html"><a href="questions/011.html" title="试题 011"><b>4.1.11.</b>试题 011</a></li>
+<li class="chapter" data-level="4.1.12" data-path="questions/012.html"><a href="questions/012.html" title="试题 012"><b>4.1.12.</b>试题 012</a></li>
+<li class="chapter" data-level="4.1.13" data-path="questions/013.html"><a href="questions/013.html" title="试题 013"><b>4.1.13.</b>试题 013</a></li>
+<li class="chapter" data-level="4.1.14" data-path="questions/014.html"><a href="questions/014.html" title="试题 014"><b>4.1.14.</b>试题 014</a></li>
+<li class="chapter" data-level="4.1.15" data-path="questions/015.html"><a href="questions/015.html" title="试题 015"><b>4.1.15.</b>试题 015</a></li>
+<li class="chapter" data-level="4.1.16" data-path="questions/016.html"><a href="questions/016.html" title="试题 016"><b>4.1.16.</b>试题 016</a></li>
+<li class="chapter" data-level="4.1.17" data-path="questions/017.html"><a href="questions/017.html" title="试题 017"><b>4.1.17.</b>试题 017</a></li>
+<li class="chapter" data-level="4.1.18" data-path="questions/018.html"><a href="questions/018.html" title="试题 018"><b>4.1.18.</b>试题 018</a></li>
+<li class="chapter" data-level="4.1.19" data-path="questions/019.html"><a href="questions/019.html" title="试题 019"><b>4.1.19.</b>试题 019</a></li>
+<li class="chapter" data-level="4.1.20" data-path="questions/020.html"><a href="questions/020.html" title="试题 020"><b>4.1.20.</b>试题 020</a></li>
+<li class="chapter" data-level="4.1.21" data-path="questions/021.html"><a href="questions/021.html" title="试题 021"><b>4.1.21.</b>试题 021</a></li>
+<li class="chapter" data-level="4.1.22" data-path="questions/022.html"><a href="questions/022.html" title="试题 022"><b>4.1.22.</b>试题 022</a></li>
+<li class="chapter" data-level="4.1.23" data-path="questions/023.html"><a href="questions/023.html" title="试题 023"><b>4.1.23.</b>试题 023</a></li>
+<li class="chapter" data-level="4.1.24" data-path="questions/024.html"><a href="questions/024.html" title="试题 024"><b>4.1.24.</b>试题 024</a></li>
+<li class="chapter" data-level="4.1.25" data-path="questions/025.html"><a href="questions/025.html" title="试题 025"><b>4.1.25.</b>试题 025</a></li>
+<li class="chapter" data-level="4.1.26" data-path="questions/026.html"><a href="questions/026.html" title="试题 026"><b>4.1.26.</b>试题 026</a></li>
+<li class="chapter" data-level="4.1.27" data-path="questions/027.html"><a href="questions/027.html" title="试题 027"><b>4.1.27.</b>试题 027</a></li>
+<li class="chapter" data-level="4.1.28" data-path="questions/028.html"><a href="questions/028.html" title="试题 028"><b>4.1.28.</b>试题 028</a></li>
+<li class="chapter" data-level="4.1.29" data-path="questions/029.html"><a href="questions/029.html" title="试题 029"><b>4.1.29.</b>试题 029</a></li>
+<li class="chapter" data-level="4.1.30" data-path="questions/030.html"><a href="questions/030.html" title="试题 030"><b>4.1.30.</b>试题 030</a></li>
+<li class="chapter" data-level="4.1.31" data-path="questions/031.html"><a href="questions/031.html" title="试题 031"><b>4.1.31.</b>试题 031</a></li>
+<li class="chapter" data-level="4.1.32" data-path="questions/032.html"><a href="questions/032.html" title="试题 032"><b>4.1.32.</b>试题 032</a></li>
+<li class="chapter" data-level="4.1.33" data-path="questions/033.html"><a href="questions/033.html" title="试题 033"><b>4.1.33.</b>试题 033</a></li>
+<li class="chapter" data-level="4.1.34" data-path="questions/034.html"><a href="questions/034.html" title="试题 034"><b>4.1.34.</b>试题 034</a></li>
+<li class="chapter" data-level="4.1.35" data-path="questions/035.html"><a href="questions/035.html" title="试题 035"><b>4.1.35.</b>试题 035</a></li>
+<li class="chapter" data-level="4.1.36" data-path="questions/036.html"><a href="questions/036.html" title="试题 036"><b>4.1.36.</b>试题 036</a></li>
+<li class="chapter" data-level="4.1.37" data-path="questions/037.html"><a href="questions/037.html" title="试题 037"><b>4.1.37.</b>试题 037</a></li>
+<li class="chapter" data-level="4.1.38" data-path="questions/038.html"><a href="questions/038.html" title="试题 038"><b>4.1.38.</b>试题 038</a></li>
+<li class="chapter" data-level="4.1.39" data-path="questions/039.html"><a href="questions/039.html" title="试题 039"><b>4.1.39.</b>试题 039</a></li>
+<li class="chapter" data-level="4.1.40" data-path="questions/040.html"><a href="questions/040.html" title="试题 040"><b>4.1.40.</b>试题 040</a></li>
+<li class="chapter" data-level="4.1.41" data-path="questions/041.html"><a href="questions/041.html" title="试题 041"><b>4.1.41.</b>试题 041</a></li>
+<li class="chapter" data-level="4.1.42" data-path="questions/042.html"><a href="questions/042.html" title="试题 042"><b>4.1.42.</b>试题 042</a></li>
+<li class="chapter" data-level="4.1.43" data-path="questions/043.html"><a href="questions/043.html" title="试题 043"><b>4.1.43.</b>试题 043</a></li>
+<li class="chapter" data-level="4.1.44" data-path="questions/044.html"><a href="questions/044.html" title="试题 044"><b>4.1.44.</b>试题 044</a></li>
+<li class="chapter" data-level="4.1.45" data-path="questions/045.html"><a href="questions/045.html" title="试题 045"><b>4.1.45.</b>试题 045</a></li>
+<li class="chapter" data-level="4.1.46" data-path="questions/046.html"><a href="questions/046.html" title="试题 046"><b>4.1.46.</b>试题 046</a></li>
+<li class="chapter" data-level="4.1.47" data-path="questions/047.html"><a href="questions/047.html" title="试题 047"><b>4.1.47.</b>试题 047</a></li>
+<li class="chapter" data-level="4.1.48" data-path="questions/048.html"><a href="questions/048.html" title="试题 048"><b>4.1.48.</b>试题 048</a></li>
+<li class="chapter" data-level="4.1.49" data-path="questions/049.html"><a href="questions/049.html" title="试题 049"><b>4.1.49.</b>试题 049</a></li>
+<li class="chapter" data-level="4.1.50" data-path="questions/050.html"><a href="questions/050.html" title="试题 050"><b>4.1.50.</b>试题 050</a></li>
+<li class="chapter" data-level="4.1.51" data-path="questions/051.html"><a href="questions/051.html" title="试题 051"><b>4.1.51.</b>试题 051</a></li>
+<li class="chapter" data-level="4.1.52" data-path="questions/052.html"><a href="questions/052.html" title="试题 052"><b>4.1.52.</b>试题 052</a></li>
+<li class="chapter" data-level="4.1.53" data-path="questions/053.html"><a href="questions/053.html" title="试题 053"><b>4.1.53.</b>试题 053</a></li>
+<li class="chapter" data-level="4.1.54" data-path="questions/054.html"><a href="questions/054.html" title="试题 054"><b>4.1.54.</b>试题 054</a></li>
+<li class="chapter" data-level="4.1.55" data-path="questions/055.html"><a href="questions/055.html" title="试题 055"><b>4.1.55.</b>试题 055</a></li>
+<li class="chapter" data-level="4.1.56" data-path="questions/056.html"><a href="questions/056.html" title="试题 056"><b>4.1.56.</b>试题 056</a></li>
+<li class="chapter" data-level="4.1.57" data-path="questions/057.html"><a href="questions/057.html" title="试题 057"><b>4.1.57.</b>试题 057</a></li>
+<li class="chapter" data-level="4.1.58" data-path="questions/058.html"><a href="questions/058.html" title="试题 058"><b>4.1.58.</b>试题 058</a></li>
+<li class="chapter" data-level="4.1.59" data-path="questions/059.html"><a href="questions/059.html" title="试题 059"><b>4.1.59.</b>试题 059</a></li>
+<li class="chapter" data-level="4.1.60" data-path="questions/060.html"><a href="questions/060.html" title="试题 060"><b>4.1.60.</b>试题 060</a></li>
+<li class="chapter" data-level="4.1.61" data-path="questions/061.html"><a href="questions/061.html" title="试题 061"><b>4.1.61.</b>试题 061</a></li>
+<li class="chapter" data-level="4.1.62" data-path="questions/062.html"><a href="questions/062.html" title="试题 062"><b>4.1.62.</b>试题 062</a></li>
+<li class="chapter" data-level="4.1.63" data-path="questions/064.html"><a href="questions/064.html" title="试题 064"><b>4.1.63.</b>试题 064</a></li>
+<li class="chapter" data-level="4.1.64" data-path="questions/065.html"><a href="questions/065.html" title="试题 065"><b>4.1.64.</b>试题 065</a></li></ul></li></ul>
+            <li class="divider"></li>
+            <li>
+                <a class="lsbook-link" href="https://github.com/liushilive/lsbook" target="blank">
+                    本书使用 LsBook 发布
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+<div class="book-body">
+    <div class="body-inner">
+    <div class="book-header" role="navigation">
+        <!-- Title -->
+        <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i>
+            <a href="..">Python 练习</a>
+        </h1>
+    </div>
+
+    <div class="page-wrapper" role="main" tabindex="-1">
+        <div class="page-inner">
+            <div class="search-plus" id="book-search-results">
+                <div class="search-noresults">
+                    <section class="normal markdown-section">
+                        <div id='anchor-navigation-ex-navbar'><i class='fa fa-anchor'></i><ul><li><span class='title-icon fa fa-hand-o-right'></span><a aria-label class='on-toolbar-action' href='' onclick="$('.fa.fa-align-justify').parent()[0].click();">目录</a></li><li><span class='title-icon fa fa-hand-o-right'></span><a href='#anchor_1'><b></b>Python 练习</a></li><ul><li><span class='title-icon fa fa-hand-o-right'></span><a href='#anchor_2'><b>1. </b>填空题</a></li><li><span class='title-icon fa fa-hand-o-right'></span><a href='#anchor_3'><b>2. </b>判断题</a></li><li><span class='title-icon fa fa-hand-o-right'></span><a href='#anchor_4'><b>3. </b>选择题</a></li><li><span class='title-icon fa fa-hand-o-right'></span><a href='#anchor_5'><b>4. </b>简答题</a></li><li><span class='title-icon fa fa-hand-o-right'></span><a href='#anchor_6'><b>5. </b>编程题</a></li><li><span class='title-icon fa fa-hand-o-right'></span><a href='#anchor_7'><b>6. </b>程序分析题</a></li></ul></ul></div><a href='#anchor_1' id='anchorNavigationExGoTop'><i class='fa fa-arrow-up'></i></a>
+                        <h1 id="anchor_1"><a class="anchor-navigation-ex-anchor" href="#anchor_1" name="anchor_1"><i aria-hidden="true" class="fa fa-link"></i></a>Python 练习</h1>
+<h2 id="anchor_2"><a class="anchor-navigation-ex-anchor" href="#anchor_2" name="anchor_2"><i aria-hidden="true" class="fa fa-link"></i></a>1. 填空题</h2>
+<ol>
+<li>
+<p>Python 是一种面向<span class="spoiler"><span class="spoiler_span"><code class="language-vim">对象</code></span></span>的高级语言。</p>
+</li>
+<li>
+<p>Python 可以在多种平台运行，这体现了 Python 语言的<span class="spoiler"><span class="spoiler_span"><code class="language-vim">可移植性</code></span></span>特性。</p>
+</li>
+<li>
+<p>Python 3.x 默认使用的编码是<span class="spoiler"><span class="spoiler_span"><code class="language-vim">UTF-8</code></span></span>。</p>
+</li>
+<li>
+<p>在 Python 中，int 表示的是数据类型是<span class="spoiler"><span class="spoiler_span"><code class="language-vim">int</code></span></span>。</p>
+</li>
+<li>
+<p>布尔类型的值包括<span class="spoiler"><span class="spoiler_span"><code class="language-vim">True</code></span></span> 和<span class="spoiler"><span class="spoiler_span"><code class="language-vim">False</code></span></span>。</p>
+</li>
+<li>
+<p>如果想知道变量的类型，可以使用<span class="spoiler"><span class="spoiler_span"><code class="language-vim">type( )</code></span></span> 函数来实现。</p>
+</li>
+<li>
+<p>字符串是一种表示<span class="spoiler"><span class="spoiler_span"><code class="language-vim">文本</code></span></span>数据的类型。</p>
+</li>
+<li>
+<p>Python 3 提供了<span class="spoiler"><span class="spoiler_span"><code class="language-vim">input</code></span></span>函数从控制台读入一行文本。</p>
+</li>
+<li>
+<p>Python 序列类型包括字符串、列表和元组三种，<span class="spoiler"><span class="spoiler_span"><code class="language-vim">字典</code></span></span>是 Python 中唯一的映射类型。</p>
+</li>
+<li>
+<p>Python 中的可变数据类型有<span class="spoiler"><span class="spoiler_span"><code class="language-vim">字典</code></span></span>和<span class="spoiler"><span class="spoiler_span"><code class="language-vim">列表</code></span></span>。</p>
+</li>
+<li>
+<p>判断列表中是否存在该元素时可以使用<span class="spoiler"><span class="spoiler_span"><code class="language-vim">not in</code></span></span>和 in 运算符。</p>
+</li>
+<li>
+<p>如果要从小到大地排列列表的元素，可以使用<span class="spoiler"><span class="spoiler_span"><code class="language-vim">sort</code></span></span>方法实现。</p>
+</li>
+<li>
+<p>元组使用<span class="spoiler"><span class="spoiler_span"><code class="language-vim">小括号</code></span></span>存放元素，列表使用的是方括号。</p>
+</li>
+<li>
+<p>在循环体中使用<span class="spoiler"><span class="spoiler_span"><code class="language-vim">break</code></span></span>语句可以跳出循环体。</p>
+</li>
+<li>
+<p><span class="spoiler"><span class="spoiler_span"><code class="language-vim">elif</code></span></span> 语句是 else 语句和 if 语句的组合。</p>
+</li>
+<li>
+<p>在循环体中可以使用<span class="spoiler"><span class="spoiler_span"><code class="language-vim">continue</code></span></span>语句跳过本次循环后面的代码，重新开始下一次循环。</p>
+</li>
+<li>
+<p>如果希望循环是无限的，我们可以通过设置条件表达式永远为<span class="spoiler"><span class="spoiler_span"><code class="language-vim">True</code></span></span>来实现无限循环。</p>
+</li>
+<li>
+<p>函数可以有多个参数，参数之间使用<span class="spoiler"><span class="spoiler_span"><code class="language-vim">逗号</code></span></span>分隔。</p>
+</li>
+<li>
+<p>使用<span class="spoiler"><span class="spoiler_span"><code class="language-vim">return</code></span></span>语句可以返回函数值并退出函数。</p>
+</li>
+<li>
+<p>通过<span class="spoiler"><span class="spoiler_span"><code class="language-vim">return</code></span></span>结束函数，从而选择性地返回一个值给调用方。</p>
+</li>
+<li>
+<p>函数能处理比声明时更多的参数，它们是<span class="spoiler"><span class="spoiler_span"><code class="language-vim">不定长</code></span></span>参数。</p>
+</li>
+<li>
+<p>在函数里面调用另外一个函数，这就是函数<span class="spoiler"><span class="spoiler_span"><code class="language-vim">递归（嵌套）</code></span></span> 调用。</p>
+</li>
+<li>
+<p>在函数内部定义的变量称作<span class="spoiler"><span class="spoiler_span"><code class="language-vim">局部</code></span></span>变量。</p>
+</li>
+<li>
+<p>全局变量定义在函数外，可以在<span class="spoiler"><span class="spoiler_span"><code class="language-vim">整个程序</code></span></span>范围内访问。</p>
+</li>
+<li>
+<p>如果想在函数中修改全局变量，需要在变量的前面加上<span class="spoiler"><span class="spoiler_span"><code class="language-vim">global</code></span></span>关键字。</p>
+</li>
+<li>
+<p>要调用 <code class="language-vim">random</code> 模块的 <code class="language-vim">randint</code> 函数，书写形式为<span class="spoiler"><span class="spoiler_span"><code class="language-vim">random.randint</code></span></span>。</p>
+</li>
+<li>
+<p>每个 Python 文件都可以作为一个模块，模块的名字就是<span class="spoiler"><span class="spoiler_span"><code class="language-vim">文件</code></span></span>的名字。</p>
+</li>
+<li>
+<p>每个模块都有一个<span class="spoiler"><span class="spoiler_span"><code class="language-vim">__name__</code></span></span>属性，使程序块只能在模块自身运行时执行。</p>
+</li>
+<li>
+<p>为了更好地组织模块，通常会把多个模块放在一个<span class="spoiler"><span class="spoiler_span"><code class="language-vim">包</code></span></span>中。</p>
+</li>
+<li>
+<p>当程序中需要引入外部模块时，需要从外面下载并<span class="spoiler"><span class="spoiler_span"><code class="language-vim">安装</code></span></span>。</p>
+</li>
+<li>
+<p>如果要搜索模块的路径，可以使用 <code class="language-vim">sys</code> 模块的<span class="spoiler"><span class="spoiler_span"><code class="language-vim">path</code></span></span>变量。</p>
+</li>
+<li>
+<p>Python 源代码被解释器转换后的格式为<span class="spoiler"><span class="spoiler_span"><code class="language-vim">字节码（.pyc）</code></span></span>。</p>
+</li>
+<li>
+<p>Python 中的<span class="spoiler"><span class="spoiler_span"><code class="language-vim">pass</code></span></span>表示的是空语句。</p>
+</li>
+<li>
+<p>在 Python 中，可以使用<span class="spoiler"><span class="spoiler_span"><code class="language-vim">class</code></span></span>关键字来声明一个类。</p>
+</li>
+<li>
+<p>面向对象需要把问题划分为多个独立的<span class="spoiler"><span class="spoiler_span"><code class="language-vim">对象</code></span></span>，然后调用其方法解决问题。</p>
+</li>
+<li>
+<p>对象的方法中必须有一个<span class="spoiler"><span class="spoiler_span"><code class="language-vim">self</code></span></span>参数，位于参数列表的开头。</p>
+</li>
+<li>
+<p>类的方法中必须有一个<span class="spoiler"><span class="spoiler_span"><code class="language-vim">cls</code></span></span>参数，位于参数列表的开头。</p>
+</li>
+<li>
+<p>Python 提供了名称为<span class="spoiler"><span class="spoiler_span"><code class="language-vim">__init__</code></span></span>的初始化方法，实现让类的对象完成初始化。</p>
+</li>
+<li>
+<p>如果想修改属性的默认值，可以在初始化方法中使用<span class="spoiler"><span class="spoiler_span"><code class="language-vim">参数</code></span></span>设置。</p>
+</li>
+<li>
+<p>如果属性名的前面加了两个<span class="spoiler"><span class="spoiler_span"><code class="language-vim">__</code>（下划线）</span></span>，就表明它是私有属性。</p>
+</li>
+<li>
+<p>在现有类基础上构建新类，新的类称作子类，现有的类称作<span class="spoiler"><span class="spoiler_span"><code class="language-vim">父类</code></span></span>。</p>
+</li>
+<li>
+<p>父类的<span class="spoiler"><span class="spoiler_span"><code class="language-vim">私有</code></span></span>属性和方法是不能被子类继承的，更不能被子类访问。</p>
+</li>
+<li>
+<p>Python 语言既支持单继承，也支持<span class="spoiler"><span class="spoiler_span"><code class="language-vim">多</code></span></span>继承。</p>
+</li>
+<li>
+<p>子类想按照自己的方式实现方法，需要<span class="spoiler"><span class="spoiler_span"><code class="language-vim">重写</code></span></span>从父类继承的方法。</p>
+</li>
+<li>
+<p>子类通过<span class="spoiler"><span class="spoiler_span"><code class="language-vim">super()</code></span></span>可以成功地访问父类的成员。</p>
+</li>
+<li>
+<p>位于类内部、方法外部的方法是 <span class="spoiler"><span class="spoiler_span"><code class="language-vim">类</code></span></span>方法。</p>
+</li>
+<li>
+<p>类方法是类拥有的方法，使用修饰器<span class="spoiler"><span class="spoiler_span"><code class="language-vim">@classmethod</code></span></span>来标识。</p>
+</li>
+<li>
+<p>内部函数引用了外部函数作用域的变量，那么内部函数叫作<span class="spoiler"><span class="spoiler_span"><code class="language-vim">闭包</code></span></span>。</p>
+</li>
+<li>
+<p>装饰器本质上是一个<span class="spoiler"><span class="spoiler_span"><code class="language-vim">函数</code></span></span>。</p>
+</li>
+<li>
+<p>装饰器函数需要接收一个参数，这个参数表示<span class="spoiler"><span class="spoiler_span"><code class="language-vim">被修饰的函数</code></span></span>。</p>
+</li>
+<li>
+<p>在函数定义的前面添加装饰器名和<span class="spoiler"><span class="spoiler_span"><code class="language-vim">@</code></span></span>符号，实现对函数的包装。</p>
+</li>
+<li>
+<p>支持参数的装饰器函数需要再多一层<span class="spoiler"><span class="spoiler_span"><code class="language-vim">内嵌</code></span></span>函数。</p>
+</li>
+<li>
+<p><span class="spoiler"><span class="spoiler_span"><code class="language-vim">map</code></span></span>函数会根据提供的函数对指定的序列做映射。</p>
+</li>
+<li>
+<p>map 的两个序列的元素个数不一致，那么元素少的序列会以<span class="spoiler"><span class="spoiler_span"><code class="language-vim">None</code></span></span>补齐。</p>
+</li>
+<li>
+<p><span class="spoiler"><span class="spoiler_span"><code class="language-vim">filter</code></span></span>函数会对指定序列执行过滤操作。</p>
+</li>
+<li>
+<p><code class="language-vim">filter</code> 传入的函数的返回值是<span class="spoiler"><span class="spoiler_span"><code class="language-vim">布尔</code></span></span>值。</p>
+</li>
+<li>
+<p><code class="language-vim">reduce</code> 传入的是带有<span class="spoiler"><span class="spoiler_span"><code class="language-vim">两</code></span></span>个参数的函数。</p>
+</li>
+</ol>
+<h2 id="anchor_3"><a class="anchor-navigation-ex-anchor" href="#anchor_3" name="anchor_3"><i aria-hidden="true" class="fa fa-link"></i></a>2. 判断题</h2>
+<ol>
+<li>
+<p>Python 是开源的，它可以被移植到许多平台上。（<span class="spoiler"><span class="spoiler_span">对</span></span>）</p>
+</li>
+<li>
+<p>Python 的优点之一是具有伪代码的本质。（<span class="spoiler"><span class="spoiler_span">对</span></span>）</p>
+</li>
+<li>
+<p>Python 可以开发 Web 程序，也可以管理操作系统。（<span class="spoiler"><span class="spoiler_span">对</span></span>）</p>
+</li>
+<li>
+<p>Python 3.x 版本的代码完全兼容 Python 2.x。（<span class="spoiler"><span class="spoiler_span">错</span></span>）</p>
+</li>
+<li>
+<p>PyCharm 是开发 Python 的集成开发环境。（<span class="spoiler"><span class="spoiler_span">对</span></span>）</p>
+</li>
+<li>
+<p>Python 使用符号 <code class="language-vim">#</code> 表示单行注释。（<span class="spoiler"><span class="spoiler_span">对</span></span>）</p>
+</li>
+<li>
+<p>标识符可以以数字开头。（<span class="spoiler"><span class="spoiler_span">错</span></span>）</p>
+</li>
+<li>
+<p><code class="language-vim">type()</code> 方法可以查看变量的数据类型。（<span class="spoiler"><span class="spoiler_span">对</span></span>）</p>
+</li>
+<li>
+<p>Python 中的代码块使用缩进来表示。（<span class="spoiler"><span class="spoiler_span">对</span></span>）</p>
+</li>
+<li>
+<p>Python 中的多行语句可以使用反斜杠来连接。（<span class="spoiler"><span class="spoiler_span">对</span></span>）</p>
+</li>
+<li>
+<p>Python 中的标识符不区分大小写。（<span class="spoiler"><span class="spoiler_span">错</span></span>）</p>
+</li>
+<li>
+<p>Python 中的标识符不能使用关键字。（<span class="spoiler"><span class="spoiler_span">对</span></span>）</p>
+</li>
+<li>
+<p>Python 中的成员运算符 <code class="language-vim">in</code> 用于判断指定序列中是否包含某个值。（<span class="spoiler"><span class="spoiler_span">对</span></span>）</p>
+</li>
+<li>
+<p>比较运算符用于比较两个数，其返回的结果只能是 <code class="language-vim">True</code> 或 <code class="language-vim">False</code>。（<span class="spoiler"><span class="spoiler_span">对</span></span>）</p>
+</li>
+<li>
+<p>无论使用单引号或双引号包含字符，使用 <code class="language-vim">print</code> 输出的结果都一样。（<span class="spoiler"><span class="spoiler_span">对</span></span>）</p>
+</li>
+<li>
+<p>Python 中字符串的下标是从 1 开始的。（<span class="spoiler"><span class="spoiler_span">错</span></span>）</p>
+</li>
+<li>
+<p>切片选取的区间范围是从起始位开始，到结束位结束，不包含结束位置。（<span class="spoiler"><span class="spoiler_span">对</span></span>）</p>
+</li>
+<li>
+<p>无论 <code class="language-vim">input</code> 接收任何的数据，都会以字符串的方式进行保存。（<span class="spoiler"><span class="spoiler_span">对</span></span>）</p>
+</li>
+<li>
+<p>列表的索引是从 0 开始的。（<span class="spoiler"><span class="spoiler_span">对</span></span>）</p>
+</li>
+<li>
+<p>通过 insert 方法可以在指定位置插入元素。（<span class="spoiler"><span class="spoiler_span">对</span></span>）</p>
+</li>
+<li>
+<p>使用下标能修改列表的元素。（<span class="spoiler"><span class="spoiler_span">对</span></span>）</p>
+</li>
+<li>
+<p>列表的嵌套指的是一个列表的元素是另一个列表。（<span class="spoiler"><span class="spoiler_span">对</span></span>）</p>
+</li>
+<li>
+<p>通过下标索引可以修改和访问元组的元素。（<span class="spoiler"><span class="spoiler_span">错</span></span>）</p>
+</li>
+<li>
+<p>字典中的值只能是字符串类型。（<span class="spoiler"><span class="spoiler_span">错</span></span>）</p>
+</li>
+<li>
+<p>在字典中，可以使用 count 方法计算键值对的个数。（<span class="spoiler"><span class="spoiler_span">错</span></span>）</p>
+</li>
+<li>
+<p><code class="language-vim">elif</code> 可以单独使用。（<span class="spoiler"><span class="spoiler_span">错</span></span>）</p>
+</li>
+<li>
+<p>每个 <code class="language-vim">if</code> 条件后面都要使用冒号。（<span class="spoiler"><span class="spoiler_span">对</span></span>）</p>
+</li>
+<li>
+<p>循环语句可以嵌套使用。（<span class="spoiler"><span class="spoiler_span">对</span></span>）</p>
+</li>
+<li>
+<p>函数的名称可以随意命名。（<span class="spoiler"><span class="spoiler_span">错</span></span>）</p>
+</li>
+<li>
+<p>不带 <code class="language-vim">return</code> 的函数代表返回 <code class="language-vim">None</code>。（<span class="spoiler"><span class="spoiler_span">对</span></span>）</p>
+</li>
+<li>
+<p>默认情况下，参数值和参数名称是跟函数声明定义的顺序匹配的。（<span class="spoiler"><span class="spoiler_span">对</span></span>）</p>
+</li>
+<li>
+<p>函数定义完成后，系统会自动执行其内部的功能。（<span class="spoiler"><span class="spoiler_span">错</span></span>）</p>
+</li>
+<li>
+<p>函数体以冒号起始，并且是缩进格式的。（<span class="spoiler"><span class="spoiler_span">对</span></span>）</p>
+</li>
+<li>
+<p>带有默认值的参数一定位于参数列表的末尾。（<span class="spoiler"><span class="spoiler_span">对</span></span>）</p>
+</li>
+<li>
+<p>局部变量的作用域是整个程序，任何时候使用都有效。（<span class="spoiler"><span class="spoiler_span">错</span></span>）</p>
+</li>
+<li>
+<p>每个 Python 文件都是一个模块。（<span class="spoiler"><span class="spoiler_span">对</span></span>）</p>
+</li>
+<li>
+<p>当<code class="language-vim">__name__</code>属性的值为<code class="language-vim">__main__</code>时，代表该模块自身在运行。（<span class="spoiler"><span class="spoiler_span">对</span></span>）</p>
+</li>
+<li>
+<p>包目录下必须有一个<code class="language-vim">__init__.py</code> 文件。（<span class="spoiler"><span class="spoiler_span">对</span></span>）</p>
+</li>
+<li>
+<p>Python 程序被解释器转换后的文件格式后缀名为 <code class="language-vim">.pyc</code>。（<span class="spoiler"><span class="spoiler_span">对</span></span>）</p>
+</li>
+<li>
+<p>使用 <code class="language-vim">help()</code> 函数可以查看帮助。（<span class="spoiler"><span class="spoiler_span">对</span></span>）</p>
+</li>
+<li>
+<p><code class="language-vim">pass</code> 语句的出现是为了保持程序结构的完整性。（<span class="spoiler"><span class="spoiler_span">对</span></span>）</p>
+</li>
+<li>
+<p>面向对象是基于面向过程的。（<span class="spoiler"><span class="spoiler_span">错</span></span>）</p>
+</li>
+<li>
+<p>通过类可以创建对象，有且只有一个对象实例。（<span class="spoiler"><span class="spoiler_span">错</span></span>）</p>
+</li>
+<li>
+<p>方法和函数的格式是完全一样的。（<span class="spoiler"><span class="spoiler_span">错</span></span>）</p>
+</li>
+<li>
+<p>创建类的对象时，系统会自动调用初始化方法进行初始化。（<span class="spoiler"><span class="spoiler_span">对</span></span>）</p>
+</li>
+<li>
+<p>创建完对象后，其属性的初始值是固定的，外界无法进行修改。（<span class="spoiler"><span class="spoiler_span">错</span></span>）</p>
+</li>
+<li>
+<p>使用 del 语句删除对象，可以手动释放它所占用的资源。（<span class="spoiler"><span class="spoiler_span">对</span></span>）</p>
+</li>
+<li>
+<p>Python 中没有任何关键字区分公有属性和私有属性。（<span class="spoiler"><span class="spoiler_span">对</span></span>）</p>
+</li>
+<li>
+<p>继承会在原有类的基础上产生新的类，这个新类就是父类。（<span class="spoiler"><span class="spoiler_span">错</span></span>）</p>
+</li>
+<li>
+<p>带有两个下划线的方法一定是私有方法。（<span class="spoiler"><span class="spoiler_span">对</span></span>）</p>
+</li>
+<li>
+<p>子类能继承父类的一切属性和方法。（<span class="spoiler"><span class="spoiler_span">错</span></span>）</p>
+</li>
+<li>
+<p>子类通过重写继承的方法，覆盖掉跟父类同名的方法。（<span class="spoiler"><span class="spoiler_span">对</span></span>）</p>
+</li>
+<li>
+<p>如果类属性和实例属性重名，对象优先访问类属性的值。（<span class="spoiler"><span class="spoiler_span">错</span></span>）</p>
+</li>
+<li>
+<p>使用类获取的值一定是类属性的值。（<span class="spoiler"><span class="spoiler_span">对</span></span>）</p>
+</li>
+<li>
+<p>静态方法中一定不能访问实例变量的值。（<span class="spoiler"><span class="spoiler_span">对</span></span>）</p>
+</li>
+<li>
+<p>使用下标可以访问字符串中的每个字符。（<span class="spoiler"><span class="spoiler_span">对</span></span>）</p>
+</li>
+<li>
+<p>如果 index 方法没有在字符串中找到子串，则会返回 <code class="language-vim">−1</code>。（<span class="spoiler"><span class="spoiler_span">错</span></span>）</p>
+</li>
+<li>
+<p>闭包是内部函数对外部作用域的变量进行引用。（<span class="spoiler"><span class="spoiler_span">错</span></span>）</p>
+</li>
+<li>
+<p>当外部函数执行结束，其内部闭包引用的变量一定会立即释放。（<span class="spoiler"><span class="spoiler_span">错</span></span>）</p>
+</li>
+<li>
+<p>装饰器是一个变量。（<span class="spoiler"><span class="spoiler_span">错</span></span>）</p>
+</li>
+<li>
+<p>装饰器函数至少要接收一个参数。（<span class="spoiler"><span class="spoiler_span">对</span></span>）</p>
+</li>
+<li>
+<p>装饰器既能装饰带参数的函数，也能自己带参数。（<span class="spoiler"><span class="spoiler_span">对</span></span>）</p>
+</li>
+<li>
+<p>如果 <code class="language-vim">map</code> 函数传入的两个序列个数不同，那么个数多的序列会把多余的元素删除。（<span class="spoiler"><span class="spoiler_span">错</span></span>）</p>
+</li>
+<li>
+<p><code class="language-vim">map</code> 函数只能传递一个序列。（<span class="spoiler"><span class="spoiler_span">错</span></span>）</p>
+</li>
+<li>
+<p><code class="language-vim">map</code> 传入函数的参数个数必须跟序列的个数一样。（<span class="spoiler"><span class="spoiler_span">对</span></span>）</p>
+</li>
+<li>
+<p><code class="language-vim">filter</code> 传入的函数可以为 <code class="language-vim">None</code>。（<span class="spoiler"><span class="spoiler_span">对</span></span>）</p>
+</li>
+<li>
+<p><code class="language-vim">filter</code> 函数只能对序列执行过滤操作。（<span class="spoiler"><span class="spoiler_span">错</span></span>）</p>
+</li>
+<li>
+<p><code class="language-vim">filter</code> 函数的返回值为字符串，它的序列类型一定是字符串。（<span class="spoiler"><span class="spoiler_span">对</span></span>）</p>
+</li>
+</ol>
+<h2 id="anchor_4"><a class="anchor-navigation-ex-anchor" href="#anchor_4" name="anchor_4"><i aria-hidden="true" class="fa fa-link"></i></a>3. 选择题</h2>
+<ol>
+<li>
+<p>下列选项中，（<span class="spoiler"><span class="spoiler_span">D</span></span>）的布尔值不是 False。</p>
+<p>A. <code class="language-vim">[]</code></p>
+<p>B. <code class="language-vim">0</code></p>
+<p>C. <code class="language-vim">()</code></p>
+<p>D. <code class="language-vim">1</code></p>
+</li>
+<li>
+<p>假设 <code class="language-vim">a = 9</code>，<code class="language-vim">b = 2</code>，那么下列运算中，错误的是（<span class="spoiler"><span class="spoiler_span">D</span></span>）。</p>
+<p>A. <code class="language-vim">a + b</code> 的值是 <code class="language-vim">11</code></p>
+<p>B. <code class="language-vim">a // b</code> 的值是 <code class="language-vim">4</code></p>
+<p>C. <code class="language-vim">a % b</code> 的值是 <code class="language-vim">1</code></p>
+<p>D. <code class="language-vim">a ** b</code> 的值是 <code class="language-vim">18</code></p>
+</li>
+<li>
+<p>下列标识符中，合法的是（<span class="spoiler"><span class="spoiler_span">D</span></span>）。</p>
+<p>A. <code class="language-vim">hello World</code></p>
+<p>B. <code class="language-vim">2ndObj</code></p>
+<p>C. <code class="language-vim">hello#world</code></p>
+<p>D. <code class="language-vim">_helloworld</code></p>
+</li>
+<li>
+<p>下列符号中，表示 Python 中单行注释的是（<span class="spoiler"><span class="spoiler_span">A</span></span>）。</p>
+<p>A. <code class="language-vim">#</code></p>
+<p>B. <code class="language-vim">//</code></p>
+<p>C. <code class="language-vim">&lt;!----&gt;</code></p>
+<p>D. <code class="language-vim">&quot;&quot;</code></p>
+</li>
+<li>
+<p>下列选项中，符合 Python 命名规范的标识符是（<span class="spoiler"><span class="spoiler_span">C</span></span>）。</p>
+<p>A. <code class="language-vim">user-Passwd</code></p>
+<p>B. <code class="language-vim">if</code></p>
+<p>C. <code class="language-vim">_name</code></p>
+<p>D. <code class="language-vim">setup.exe</code></p>
+</li>
+<li>
+<p>下列选项中，Python 不支持的数据类型有（<span class="spoiler"><span class="spoiler_span">B</span></span>）。</p>
+<p>A. <code class="language-vim">int</code></p>
+<p>B. <code class="language-vim">char</code></p>
+<p>C. <code class="language-vim">float</code></p>
+<p>D. <code class="language-vim">dict</code></p>
+</li>
+<li>
+<p>下列表达式中，返回 <code class="language-vim">True</code> 的是（<span class="spoiler"><span class="spoiler_span">B</span></span>）。</p>
+<p>A. <code class="language-vim">a = 2</code></p>
+<p>B. <code class="language-vim">3 &gt; 2 &gt; 1</code></p>
+<p>C. <code class="language-vim">True and False</code></p>
+<p>D. <code class="language-vim">2 != 2</code></p>
+</li>
+<li>
+<p>下列语句中，（<span class="spoiler"><span class="spoiler_span">B</span></span>）在 Python 中是非法的。</p>
+<p>A. <code class="language-vim">x = y = z = 1</code></p>
+<p>B. <code class="language-vim">x = (y = z + 1)</code></p>
+<p>C. <code class="language-vim">2 &lt; 3 == 2 &lt; 4</code></p>
+</li>
+<li>
+<p>下列选项中，幂运算的符号为（<span class="spoiler"><span class="spoiler_span">D</span></span>）。</p>
+<p>A. <code class="language-vim">*</code></p>
+<p>B. <code class="language-vim">++</code></p>
+<p>C. <code class="language-vim">%</code></p>
+<p>D. <code class="language-vim">**</code></p>
+</li>
+<li>
+<p>当需要在字符串中使用特殊字符时，Python 使用（<span class="spoiler"><span class="spoiler_span">A</span></span>）作为转义字符。</p>
+<p>A. <code class="language-vim">\</code></p>
+<p>B. <code class="language-vim">/</code></p>
+<p>C. <code class="language-vim">#</code></p>
+<p>D. <code class="language-vim">%</code></p>
+</li>
+<li>
+<p>下列数据中，不属于字符串的是（<span class="spoiler"><span class="spoiler_span">D</span></span>）。</p>
+<p>A. <code class="language-vim">&#x27;ab&#x27;</code></p>
+<p>B. <code class="language-vim">&#x27;&#x27;&#x27;perfect&#x27;&#x27;&#x27;</code></p>
+<p>C. <code class="language-vim">&quot;52wo&quot;</code></p>
+<p>D. <code class="language-vim">abc</code></p>
+</li>
+<li>
+<p>下列数据类型中，不支持切片操作的是（<span class="spoiler"><span class="spoiler_span">C</span></span>）。</p>
+<p>A. 字符串</p>
+<p>B. 列表</p>
+<p>C. 字典</p>
+<p>D. 元组</p>
+</li>
+<li>
+<p>关于列表的说法，描述错误的是（<span class="spoiler"><span class="spoiler_span">D</span></span>）。</p>
+<p>A. list 是一个有序集合，没有固定大小</p>
+<p>B. list 可以存放任意类型的元素</p>
+<p>C. 使用 list 时，其下标可以是负数</p>
+<p>D. list 是不可变的数据类型</p>
+</li>
+<li>
+<p>以下程序的输出结果是（<span class="spoiler"><span class="spoiler_span">B</span></span>）。</p>
+<pre class="line-numbers"><code class="lang-python rainbow-braces">list = [1, 2, 3, 4, 5, &#x27;a&#x27;, &#x27;b&#x27;]
+print(list[1], list[5])
+</code></pre>
+<p>A. <code class="language-vim">1　5</code></p>
+<p>B. <code class="language-vim">2　a</code></p>
+<p>C. <code class="language-vim">1　97</code></p>
+<p>D. <code class="language-vim">2　97</code></p>
+</li>
+<li>
+<p>执行下面的操作后，list2 的值为（<span class="spoiler"><span class="spoiler_span">C</span></span>）。</p>
+<pre class="line-numbers"><code class="lang-python rainbow-braces">list1 = [4, 5, 6]
+list2 = list1
+list1[2] = 3
+</code></pre>
+<p>A. <code class="language-vim">[4, 5, 6]</code></p>
+<p>B. <code class="language-vim">[4, 3, 6]</code></p>
+<p>C. <code class="language-vim">[4, 5, 3]</code></p>
+<p>D. <code class="language-vim">A，B，C 都不正确</code></p>
+</li>
+<li>
+<p>阅读下面的程序：</p>
+<pre class="line-numbers"><code class="lang-python rainbow-braces">list = [1, 2, 1, 3]
+nums = set(list)
+for i in nums:
+    print(i, end=&quot;&quot;)
+</code></pre>
+<p>程序执行的结果为（<span class="spoiler"><span class="spoiler_span">D</span></span>）。</p>
+<p>A. <code class="language-vim">1213</code></p>
+<p>B. <code class="language-vim">213</code></p>
+<p>C. <code class="language-vim">321</code></p>
+<p>D. <code class="language-vim">123</code></p>
+</li>
+<li>
+<p>下列选项中，正确定义了一个字典的是（<span class="spoiler"><span class="spoiler_span">D</span></span>）。</p>
+<p>A. <code class="language-vim">a=[&#x27;a&#x27;, 1, &#x27;b&#x27;, 2, &#x27;c&#x27;, 3]</code></p>
+<p>B. <code class="language-vim">b=(&#x27;a&#x27;, 1, &#x27;b&#x27;, 2, &#x27;c&#x27;, 3)</code></p>
+<p>C. <code class="language-vim">c={&#x27;a&#x27;, 1, &#x27;b&#x27;, 2, &#x27;c&#x27;, 3}</code></p>
+<p>D. <code class="language-vim">d={&#x27;a&#x27;:1, &#x27;b&#x27;:2, &#x27;c&#x27;:3}</code></p>
+</li>
+<li>
+<p>下列选项中，不能使用下标运算的是（<span class="spoiler"><span class="spoiler_span">C</span></span>）。</p>
+<p>A. 列表（list）</p>
+<p>B. 元组（tuple）</p>
+<p>C. 集合（set）</p>
+<p>D. 字符串（str）</p>
+</li>
+<li>
+<p>下列程序执行后输出的结果为（<span class="spoiler"><span class="spoiler_span">A</span></span>）。</p>
+<pre class="line-numbers"><code class="lang-python rainbow-braces">x = &#x27;abc&#x27;
+y = x
+y = 100
+print(x)
+</code></pre>
+<p>A. <code class="language-vim">”abc”</code></p>
+<p>B. <code class="language-vim">100</code></p>
+<p>C. <code class="language-vim">97,98,99</code></p>
+<p>D. 以上三项均是错误的</p>
+</li>
+<li>
+<p>删除列表中最后一个元素的函数是（<span class="spoiler"><span class="spoiler_span">B</span></span>）。</p>
+<p>A. <code class="language-vim">del</code></p>
+<p>B. <code class="language-vim">pop</code></p>
+<p>C. <code class="language-vim">remove</code></p>
+<p>D. <code class="language-vim">cut</code></p>
+</li>
+<li>
+<p>下列函数中，用于返回元组中元素最小值的是（<span class="spoiler"><span class="spoiler_span">C</span></span>）。</p>
+<p>A. <code class="language-vim">len</code></p>
+<p>B. <code class="language-vim">max</code></p>
+<p>C. <code class="language-vim">min</code></p>
+<p>D. <code class="language-vim">tuple</code></p>
+</li>
+<li>
+<p>下列选项中，会输出 1，2，3 三个数字的是（<span class="spoiler"><span class="spoiler_span">C</span></span>）。</p>
+<p>A.</p>
+<pre class="line-numbers"><code class="lang-python rainbow-braces">for i in range(3):
+    print(i)
+</code></pre>
+<p>B.</p>
+<pre class="line-numbers"><code class="lang-python rainbow-braces">for i in range(2):
+    print(i + 1)
+</code></pre>
+<p>C.</p>
+<pre class="line-numbers"><code class="lang-python rainbow-braces">aList = [0, 1, 2]
+for i in aList:
+    print(i + 1)
+</code></pre>
+<p>D.</p>
+<pre class="line-numbers"><code class="lang-python rainbow-braces">i = 1
+while i &lt; 3:
+    print(i)
+    i = i + 1
+</code></pre>
+</li>
+<li>
+<p>阅读下面的代码：</p>
+<pre class="line-numbers"><code class="lang-python rainbow-braces">sum=0
+
+for i in range(100):
+    if i % 10:
+        continue
+    sum = sum + i
+
+print(sum)
+</code></pre>
+<p>上述程序的执行结果是（<span class="spoiler"><span class="spoiler_span">C</span></span>）。</p>
+<p>A. <code class="language-vim">5050</code></p>
+<p>B. <code class="language-vim">4950</code></p>
+<p>C. <code class="language-vim">450</code></p>
+<p>D. <code class="language-vim">45</code></p>
+</li>
+<li>
+<p>已知 <code class="language-vim">x = 10</code>，<code class="language-vim">y = 20</code>，<code class="language-vim">z = 30</code>；以下语句执行后 <code class="language-vim">x</code>，<code class="language-vim">y</code>，<code class="language-vim">z</code> 的值是（<span class="spoiler"><span class="spoiler_span">C</span></span>）。</p>
+<pre class="line-numbers"><code class="lang-python rainbow-braces">if x &lt; y:
+    z = x
+    x = y
+    y = z
+</code></pre>
+<p>A. <code class="language-vim">10</code>，<code class="language-vim">20</code>，<code class="language-vim">30</code></p>
+<p>B. <code class="language-vim">10</code>，<code class="language-vim">20</code>，<code class="language-vim">20</code></p>
+<p>C. <code class="language-vim">20</code>，<code class="language-vim">10</code>，<code class="language-vim">10</code></p>
+<p>D. <code class="language-vim">20</code>，<code class="language-vim">10</code>，<code class="language-vim">30</code></p>
+</li>
+<li>
+<p>有一个函数关系表如下所示：</p>
+<table>
+<thead>
+<tr>
+<th align="center">x</th>
+<th align="center">y</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><code class="language-vim">x &lt; 0</code></td>
+<td align="center"><code class="language-vim">x - 1</code></td>
+</tr>
+<tr>
+<td align="center"><code class="language-vim">x = 0</code></td>
+<td align="center"><code class="language-vim">x</code></td>
+</tr>
+<tr>
+<td align="center"><code class="language-vim">x &gt; 0</code></td>
+<td align="center"><code class="language-vim">x + 1</code></td>
+</tr>
+</tbody>
+</table>
+<p>下面程序段中，能正确表示上面关系的是（<span class="spoiler"><span class="spoiler_span">C</span></span>）。</p>
+<p>A.</p>
+<pre class="line-numbers"><code class="lang-python rainbow-braces">y = x + 1
+if x &gt;= 0:
+    if x == 0:
+        y = x
+    else:
+        y = x - 1
+</code></pre>
+<p>B.</p>
+<pre class="line-numbers"><code class="lang-python rainbow-braces">y = x - 1
+if x != 0:
+    if x &gt; 0:
+        y = x + 1
+    else:
+        y = x
+</code></pre>
+<p>C.</p>
+<pre class="line-numbers"><code class="lang-python rainbow-braces">if x &lt;= 0:
+    if x &lt; 0:
+        y = x - 1
+    else:
+        y = x
+else:
+    y = x + 1
+</code></pre>
+<p>D.</p>
+<pre class="line-numbers"><code class="lang-python rainbow-braces">y = x
+if x &lt;= 0:
+    if x &lt; 0:
+        y = x - 1
+    else:
+        y = x + 1
+</code></pre>
+</li>
+<li>
+<p>阅读下面的程序：</p>
+<pre class="line-numbers"><code class="lang-python rainbow-braces">def func():
+    print(x)
+    x = 100
+
+func()
+</code></pre>
+<p>执行上述语句后，输出的结果为（<span class="spoiler"><span class="spoiler_span">C</span></span>）。</p>
+<p>A. <code class="language-vim">0</code></p>
+<p>B. <code class="language-vim">100</code></p>
+<p>C. <code class="language-vim">程序出现异常</code></p>
+<p>D. <code class="language-vim">程序编译失败</code></p>
+</li>
+<li>
+<p>下面关于函数的说法，错误的是（<span class="spoiler"><span class="spoiler_span">C</span></span>）。</p>
+<p>A. 函数可以减少代码的重复，使得程序更加模块化</p>
+<p>B. 在不同的函数中可以使用相同名字的变量</p>
+<p>C. 调用函数时，位置传参的顺序和函数定义时的顺序可以不同</p>
+<p>D. 函数体中如果没有 <code class="language-vim">return</code> 语句，也会返回一个 <code class="language-vim">None</code> 值</p>
+</li>
+<li>
+<p>下列有关函数的说法中，正确的是（<span class="spoiler"><span class="spoiler_span">C</span></span>）。</p>
+<p>A. 函数的定义必须在程序的开头</p>
+<p>B. 函数定义后，其中的程序就可以自动执行</p>
+<p>C. 函数定义后需要调用才会执行</p>
+<p>D. 函数体与关键字 <code class="language-vim">def</code> 必须左对齐</p>
+</li>
+<li>
+<p>下列函数调用使用的参数传递方式是（<span class="spoiler"><span class="spoiler_span">A</span></span>）。</p>
+<pre class="line-numbers"><code class="lang-python rainbow-braces">result = sum(1, 2)
+</code></pre>
+<p>A. 位置</p>
+<p>B. 关键字</p>
+<p>C. 变量类型</p>
+<p>D. 变量名称</p>
+</li>
+<li>
+<p>使用（<span class="spoiler"><span class="spoiler_span">C</span></span>）关键字创建自定义函数。</p>
+<p>A. <code class="language-vim">function</code></p>
+<p>B. <code class="language-vim">func</code></p>
+<p>C. <code class="language-vim">def</code></p>
+<p>D. <code class="language-vim">procedure</code></p>
+</li>
+<li>
+<p>下列关键字中，用来引入模块的是（<span class="spoiler"><span class="spoiler_span">C</span></span>）。</p>
+<p>A. <code class="language-vim">include</code></p>
+<p>B. <code class="language-vim">from</code></p>
+<p>C. <code class="language-vim">import</code></p>
+<p>D. <code class="language-vim">continue</code></p>
+</li>
+<li>
+<p>关于引入模块的方式，错误的是（<span class="spoiler"><span class="spoiler_span">D</span></span>）。</p>
+<p>A. <code class="language-vim">import math</code></p>
+<p>B. <code class="language-vim">from fib import fibonacci</code></p>
+<p>C. <code class="language-vim">from math import *</code></p>
+<p>D. <code class="language-vim">from * import fib</code></p>
+</li>
+<li>
+<p>关于<code class="language-vim">__name__</code>的说法，下列描述错误的是（<span class="spoiler"><span class="spoiler_span">A</span></span>）。</p>
+<p>A. 它是 Python 提供的一个方法</p>
+<p>B. 每个模块内部都有一个 <code class="language-vim">__name__</code> 属性</p>
+<p>C. 当它的值为 <code class="language-vim">__main__</code> 时，表示模块自身在运行</p>
+<p>D. 当它的值不为 <code class="language-vim">__main__</code> 时，表示模块被引用</p>
+</li>
+<li>
+<p>关于面向过程和面向对象，下列说法错误的是（<span class="spoiler"><span class="spoiler_span">B</span></span>）。</p>
+<p>A. 面向过程和面向对象都是解决问题的一种思路</p>
+<p>B. 面向过程是基于面向对象的</p>
+<p>C. 面向过程强调的是解决问题的步骤</p>
+<p>D. 面向对象强调的是解决问题的对象</p>
+</li>
+<li>
+<p>关于类和对象的关系，下列描述正确的是（<span class="spoiler"><span class="spoiler_span">D</span></span>）。</p>
+<p>A. 类是面向对象的核心</p>
+<p>B. 类是现实中事物的个体</p>
+<p>C. 对象是根据类创建的，并且一个类只能对应一个对象</p>
+<p>D. 对象描述的是现实的个体，它是类的实例</p>
+</li>
+<li>
+<p>构造方法的作用是（<span class="spoiler"><span class="spoiler_span">D</span></span>）。</p>
+<p>A. 一般成员方法</p>
+<p>B. 类的初始化</p>
+<p>C. 对象的初始化</p>
+<p>D. 对象的建立</p>
+</li>
+<li>
+<p>初始化方法是类的一个特殊方法，Python 中它的名称为（<span class="spoiler"><span class="spoiler_span">C</span></span>）。</p>
+<p>A.  与类同名</p>
+<p>B. <code class="language-vim">_construct</code></p>
+<p>C. <code class="language-vim">__init__</code></p>
+<p>D. <code class="language-vim">init</code></p>
+</li>
+<li>
+<p>Python 类中包含一个特殊的变量（<span class="spoiler"><span class="spoiler_span">A</span></span>），它表示当前对象自身，可以访问类的成员。</p>
+<p>A. <code class="language-vim">self</code></p>
+<p>B. <code class="language-vim">me</code></p>
+<p>C. <code class="language-vim">this</code></p>
+<p>D. <code class="language-vim">与类同名</code></p>
+</li>
+<li>
+<p>下列选项中，符合类的命名规范的是（<span class="spoiler"><span class="spoiler_span">A</span></span>）。</p>
+<p>A. <code class="language-vim">HolidayResort</code></p>
+<p>B. <code class="language-vim">Holiday Resort</code></p>
+<p>C. <code class="language-vim">holidayResort</code></p>
+<p>D. <code class="language-vim">holidayresort</code></p>
+</li>
+<li>
+<p>Python 中用于释放类占用资源的方法是（<span class="spoiler"><span class="spoiler_span">B</span></span>）。</p>
+<p>A. <code class="language-vim">__init__</code></p>
+<p>B. <code class="language-vim">__del__</code></p>
+<p>C. <code class="language-vim">_del</code></p>
+<p>D. <code class="language-vim">delete</code></p>
+</li>
+<li>
+<p>Python 中定义私有属性的方法是（<span class="spoiler"><span class="spoiler_span">D</span></span>）。</p>
+<p>A. 使用 <code class="language-vim">private</code> 关键字</p>
+<p>B. 使用 <code class="language-vim">public</code> 关键字</p>
+<p>C. 使用 <code class="language-vim">__XX__</code> 定义属性名</p>
+<p>D. 使用 <code class="language-vim">__XX</code> 定义属性名</p>
+</li>
+<li>
+<p>下列选项中，不属于面向对象程序设计的三个特征的是（<span class="spoiler"><span class="spoiler_span">A</span></span>）。</p>
+<p>A. 抽象</p>
+<p>B. 封装</p>
+<p>C. 继承</p>
+<p>D. 多态</p>
+</li>
+<li>
+<p>以下 C 类继承 A 类和 B 类的格式中，正确的是（<span class="spoiler"><span class="spoiler_span">C</span></span>）。</p>
+<p>A. <code class="language-vim">class C A, B:</code></p>
+<p>B. <code class="language-vim">class C(A: B):</code></p>
+<p>C. <code class="language-vim">class C(A, B):</code></p>
+<p>D. <code class="language-vim">class C A and B:</code></p>
+</li>
+<li>
+<p>下列关于类属性和实例属性的说法中，描述正确的是（<span class="spoiler"><span class="spoiler_span">B</span></span>）。</p>
+<p>A. 类属性既可以显式定义，又能在方法中定义</p>
+<p>B. 公有类属性可以通过类和类的实例访问</p>
+<p>C. 通过类可以获取实例属性的值</p>
+<p>D. 类的实例只能获取实例属性的值</p>
+</li>
+<li>
+<p>下列选项中，用于标识为静态方法的是（<span class="spoiler"><span class="spoiler_span">C</span></span>）。</p>
+<p>A. <code class="language-vim">@classmethod</code></p>
+<p>B. <code class="language-vim">@instancemethod</code></p>
+<p>C. <code class="language-vim">@staticmethod</code></p>
+<p>D. <code class="language-vim">@privatemethod</code></p>
+</li>
+<li>
+<p>下列选项中，用于标识为类方法的是（<span class="spoiler"><span class="spoiler_span">A</span></span>）。</p>
+<p>A. <code class="language-vim">@classmethod</code></p>
+<p>B. <code class="language-vim">@instancemethod</code></p>
+<p>C. <code class="language-vim">@staticmethod</code></p>
+<p>D. <code class="language-vim">@privatemethod</code></p>
+</li>
+<li>
+<p>下列方法中，不可以使用类名访问的是（<span class="spoiler"><span class="spoiler_span">A</span></span>）。</p>
+<p>A. 实例方法</p>
+<p>B. 类方法</p>
+<p>C. 静态方法</p>
+<p>D. 以上 3 项都不符合</p>
+</li>
+<li>
+<p>下列方法中，能够返回某个子串在字符串中出现次数的是（<span class="spoiler"><span class="spoiler_span">C</span></span>）。</p>
+<p>A. <code class="language-vim">length</code></p>
+<p>B. <code class="language-vim">index</code></p>
+<p>C. <code class="language-vim">count</code></p>
+<p>D. <code class="language-vim">find</code></p>
+</li>
+<li>
+<p>下列方法中，能够让所有单词的首字母变成大写的方法是（<span class="spoiler"><span class="spoiler_span">B</span></span>）。</p>
+<p>A. <code class="language-vim">capitalize</code></p>
+<p>B. <code class="language-vim">title</code></p>
+<p>C. <code class="language-vim">upper</code></p>
+<p>D. <code class="language-vim">ljust</code></p>
+</li>
+<li>
+<p>字符串的 strip 方法的作用是（<span class="spoiler"><span class="spoiler_span">A</span></span>）。</p>
+<p>A. 删除字符串头尾指定的字符</p>
+<p>B. 删除字符串末尾的指定字符</p>
+<p>C. 删除字符串头部的指定字符</p>
+<p>D. 通过指定分隔符对字符串切片</p>
+</li>
+<li>
+<p>使用（<span class="spoiler"><span class="spoiler_span">D</span></span>）关键字声明匿名函数。</p>
+<p>A. <code class="language-vim">function</code></p>
+<p>B. <code class="language-vim">func</code></p>
+<p>C. <code class="language-vim">def</code></p>
+<p>D. <code class="language-vim">lambda</code></p>
+</li>
+<li>
+<p>关于装饰器，下列说法错误的是（<span class="spoiler"><span class="spoiler_span">B</span></span>）。</p>
+<p>A. 装饰器是一个包裹函数</p>
+<p>B. 装饰器只能有一个参数</p>
+<p>C. 通过在函数定义的前面加上 @ 符号和装饰器名，使得装饰器函数生效</p>
+<p>D. 如果装饰器支持参数，其必须再嵌套一层函数</p>
+</li>
+<li>
+<p>下列函数中，用于使用函数对指定序列进行过滤的是（<span class="spoiler"><span class="spoiler_span">C</span></span>）。</p>
+<p>A. <code class="language-vim">map</code> 函数</p>
+<p>B. <code class="language-vim">select</code> 函数</p>
+<p>C. <code class="language-vim">filter</code> 函数</p>
+<p>D. <code class="language-vim">reduce</code> 函数</p>
+</li>
+<li>
+<p>下列选项中，不能作为 filter 函数参数的是（<span class="spoiler"><span class="spoiler_span">D</span></span>）。</p>
+<p>A. 列表</p>
+<p>B. 元组</p>
+<p>C. 字符串</p>
+<p>D. 整数</p>
+</li>
+<li>
+<p>阅读下面一段程序：</p>
+<pre class="line-numbers"><code class="lang-python rainbow-braces">def foo():
+    a = 1
+
+    def bar():
+        a = a + 1
+        return a
+
+    return bar
+
+print(foo()())
+</code></pre>
+<p>上述程序执行的结果为（<span class="spoiler"><span class="spoiler_span">B</span></span>）。</p>
+<p>A. 程序出现异常</p>
+<p>B. 2</p>
+<p>C. 1</p>
+<p>D. 没有输出结果</p>
+</li>
+</ol>
+<h2 id="anchor_5"><a class="anchor-navigation-ex-anchor" href="#anchor_5" name="anchor_5"><i aria-hidden="true" class="fa fa-link"></i></a>4. 简答题</h2>
+<ol>
+<li>
+<p>简述 Python 中标识符的命名规则。</p>
+<sec data-title="点我看分析"><div class="panel panel-default"><div class="panel-heading"><b>点我看分析<a class="pull-right section atTitle btn btn-default " target="sectionx1"><span class="fa fa-angle-down" /></a></b></div><div class="panel-collapse collapse" id="sectionx1"><div class="panel-body"><ol>
+<li>第一个字符只能是字母、下划线（_）、Unicode 字符（中文）</li>
+<li>标识符的其他部分可以有字母、下划线、数字、Unicode 字符组成</li>
+<li>标识符严格区分大小写</li>
+<li>标识符不允许为关键字</li>
+<li>标识符建议为有意义的命名</li>
+</ol></div></div></div></sec>
+</li>
+<li>
+<p>请简述元组、列表和字典的区别。</p>
+<sec data-title="点我看分析"><div class="panel panel-default"><div class="panel-heading"><b>点我看分析<a class="pull-right section atTitle btn btn-default " target="sectionx2"><span class="fa fa-angle-down" /></a></b></div><div class="panel-collapse collapse" id="sectionx2"><div class="panel-body"><ol>
+<li>外形：列表是中括号括起来的数据；元组是圆括号括起来的数据；字典是花括号括起来的数据</li>
+<li>存储结构：列表可以存储多个不同类型的数据，以逗号分隔；元组同样能存储多个不同类型的数据，以逗号分隔；字典能存储多个键值对，以逗号分隔，键是唯一的，值是任何类型的。</li>
+<li>访问方式：列表可以通过下标索引访问元素，索引从 0 开始；元组可以通过下标索引访问值，索引从 0 开始；字典通过键来访问值。</li>
+<li>是否可变类型：列表是可变类型，列表是不可变类型，字典是可变类型。</li>
+</ol></div></div></div></sec>
+</li>
+<li>
+<p>简述 <code class="language-vim">break</code> 和 <code class="language-vim">continue</code> 的区别。</p>
+<sec data-title="点我看分析"><div class="panel panel-default"><div class="panel-heading"><b>点我看分析<a class="pull-right section atTitle btn btn-default " target="sectionx3"><span class="fa fa-angle-down" /></a></b></div><div class="panel-collapse collapse" id="sectionx3"><div class="panel-body"><p>break 语句用于结束整个循环；continue 的作用是用来结束本次循环，紧接着执行下一次的循环。</p></div></div></div></sec>
+</li>
+<li>
+<p>请简述局部变量和全局变量的区别。</p>
+<sec data-title="点我看分析"><div class="panel panel-default"><div class="panel-heading"><b>点我看分析<a class="pull-right section atTitle btn btn-default " target="sectionx4"><span class="fa fa-angle-down" /></a></b></div><div class="panel-collapse collapse" id="sectionx4"><div class="panel-body"><p>局部变量：</p><ol>
+<li>函数内部定义的变量；</li>
+<li>作用域是函数的内部。</li>
+</ol><p>全局变量：</p><ol>
+<li>函数外部定义的变量；</li>
+<li>作用域是整个程序。</li>
+</ol></div></div></div></sec>
+</li>
+<li>
+<p>请简要说明函数定义的规则。</p>
+<sec data-title="点我看分析"><div class="panel panel-default"><div class="panel-heading"><b>点我看分析<a class="pull-right section atTitle btn btn-default " target="sectionx5"><span class="fa fa-angle-down" /></a></b></div><div class="panel-collapse collapse" id="sectionx5"><div class="panel-body"><ol>
+<li>以 <code class="language-vim">def</code> 关键字开头，后面接函数标识符名称和圆括号；</li>
+<li>给函数起名字的时候，规则跟变量的名字是一样的；</li>
+<li>任何传入参数和自变量必须放在圆括号中间；</li>
+<li>函数的第一行语句可以选择性地使用文档字符串—用于存放函数说明；</li>
+<li>函数内容以冒号起始，并且缩进；</li>
+<li><code class="language-vim">return [表达式]</code> 结束函数，选择性地返回一个值给调用方。不带表达式的 return 相当于返回 None。</li>
+</ol></div></div></div></sec>
+</li>
+<li>
+<p>解释 Python 脚本程序的 <code class="language-vim">__name__</code> 的作用。</p>
+<sec data-title="点我看分析"><div class="panel panel-default"><div class="panel-heading"><b>点我看分析<a class="pull-right section atTitle btn btn-default " target="sectionx6"><span class="fa fa-angle-down" /></a></b></div><div class="panel-collapse collapse" id="sectionx6"><div class="panel-body"><p>每个 Python 脚本在运行时都有一个<code class="language-vim">__name__</code>属性。如果脚本作为模块被导入，则其<code class="language-vim">__name__</code>属性的值被自动设置为模块名；如果脚本独立运行，则其<code class="language-vim">__name__</code>属性值被自动设置为<code class="language-vim">__main__</code>属性。利用<code class="language-vim">__name__</code>属性即可控制 Python 程序的运行方式。</p></div></div></div></sec>
+</li>
+<li>
+<p>请简述模块的概念。</p>
+<sec data-title="点我看分析"><div class="panel panel-default"><div class="panel-heading"><b>点我看分析<a class="pull-right section atTitle btn btn-default " target="sectionx7"><span class="fa fa-angle-down" /></a></b></div><div class="panel-collapse collapse" id="sectionx7"><div class="panel-body"><p><code class="language-vim">.py</code> 文件都是一个模块，</p></div></div></div></sec>
+</li>
+<li>
+<p>请简述导入模块的方法。</p>
+<sec data-title="点我看分析"><div class="panel panel-default"><div class="panel-heading"><b>点我看分析<a class="pull-right section atTitle btn btn-default " target="sectionx8"><span class="fa fa-angle-down" /></a></b></div><div class="panel-collapse collapse" id="sectionx8"><div class="panel-body"><p>在 Python 中用关键字 import 来引入某个模块：</p><ol>
+<li>导入模块，使用<code class="language-vim">import 模块</code>引入；</li>
+<li>导入模块中的某个函数，使用<code class="language-vim">from 模块名 import 函数名</code>引入；</li>
+<li>导入模块的全部内容，使用<code class="language-vim">from 模块 import *</code>；</li>
+<li>从模块包中导入模块，使用<code class="language-vim">from 模块包 import 模块</code>。</li>
+</ol></div></div></div></sec>
+</li>
+<li>
+<p>简述 Python 中 <code class="language-vim">pass</code> 语句的作用。</p>
+<sec data-title="点我看分析"><div class="panel panel-default"><div class="panel-heading"><b>点我看分析<a class="pull-right section atTitle btn btn-default " target="sectionx9"><span class="fa fa-angle-down" /></a></b></div><div class="panel-collapse collapse" id="sectionx9"><div class="panel-body"><p>Pass 语句 Python 中的 pass 是空语句，它的出现是为了保持程序结构的完整性。pass 不做任何事情，一般用做占位语句。</p></div></div></div></sec>
+</li>
+<li>
+<p>请简述 <code class="language-vim">self</code> 在类中的意义。</p>
+<sec data-title="点我看分析"><div class="panel panel-default"><div class="panel-heading"><b>点我看分析<a class="pull-right section atTitle btn btn-default " target="sectionx10"><span class="fa fa-angle-down" /></a></b></div><div class="panel-collapse collapse" id="sectionx10"><div class="panel-body"><p>不用实例化对象就能够在本类中访问自身的属性或方法。</p></div></div></div></sec>
+</li>
+<li>
+<p>类是由哪三个部分组成的？</p>
+<sec data-title="点我看分析"><div class="panel panel-default"><div class="panel-heading"><b>点我看分析<a class="pull-right section atTitle btn btn-default " target="sectionx11"><span class="fa fa-angle-down" /></a></b></div><div class="panel-collapse collapse" id="sectionx11"><div class="panel-body"><p>类名，属性，方法</p></div></div></div></sec>
+</li>
+<li>
+<p>请简述构造方法和析构方法的作用。</p>
+<sec data-title="点我看分析"><div class="panel panel-default"><div class="panel-heading"><b>点我看分析<a class="pull-right section atTitle btn btn-default " target="sectionx12"><span class="fa fa-angle-down" /></a></b></div><div class="panel-collapse collapse" id="sectionx12"><div class="panel-body"><p>分别用于初始化对象的属性和释放类所占用的资源。</p></div></div></div></sec>
+</li>
+<li>
+<p>什么是继承？</p>
+<sec data-title="点我看分析"><div class="panel panel-default"><div class="panel-heading"><b>点我看分析<a class="pull-right section atTitle btn btn-default " target="sectionx13"><span class="fa fa-angle-down" /></a></b></div><div class="panel-collapse collapse" id="sectionx13"><div class="panel-body"><p>类的继承是指在一个现有类的基础上构建一个新的类，构建出来的新类被称作子类，现有类被称作父类，子类会自动拥有父类的属性和方法。</p></div></div></div></sec>
+</li>
+<li>
+<p>请简述私有属性或私有方法无法访问的原理。</p>
+<sec data-title="点我看分析"><div class="panel panel-default"><div class="panel-heading"><b>点我看分析<a class="pull-right section atTitle btn btn-default " target="sectionx14"><span class="fa fa-angle-down" /></a></b></div><div class="panel-collapse collapse" id="sectionx14"><div class="panel-body"><p>当在一个类的内部定义了私有方法或者私有属性的时候，Python 在运行的过程中，把属性或者方法的名字进行了修改，即在属性或者方法名称的前面加上<code class="language-vim">__类名</code>，导致原有的方法无法访问到。</p></div></div></div></sec>
+</li>
+<li>
+<p>什么是多态？</p>
+<sec data-title="点我看分析"><div class="panel panel-default"><div class="panel-heading"><b>点我看分析<a class="pull-right section atTitle btn btn-default " target="sectionx15"><span class="fa fa-angle-down" /></a></b></div><div class="panel-collapse collapse" id="sectionx15"><div class="panel-body"><p>在 Python 中，多态是指在不考虑对象类型的情况下使用对象。</p><p>多态的体现：对不同对象调用同一方法，自动根据对象所属类不同，而做出不同的响应。</p></div></div></div></sec>
+</li>
+<li>
+<p>请简述实例方法、类方法和静态方法的区别。</p>
+<sec data-title="点我看分析"><div class="panel panel-default"><div class="panel-heading"><b>点我看分析<a class="pull-right section atTitle btn btn-default " target="sectionx16"><span class="fa fa-angle-down" /></a></b></div><div class="panel-collapse collapse" id="sectionx16"><div class="panel-body"><p>类方法需要使用 <code class="language-vim">@classmethod</code> 进行标识，该方法可以访问类属性，无法访问实例属性，可以通过类实例和类进行调用。</p><p>静态方法使用 <code class="language-vim">@staticmethod</code> 进行标识，该方法无法访问实例属性和类属性，起到类似于函数的作用，使用类或者类实例进行调用。</p><p>实例方法直接在类中使用 <code class="language-vim">def</code> 进行定义，可以访问其实例属性和类属性，使用类实例进行调用。</p><p>如果要修改实例属性的值，就直接使用实例方法；如果要修改类属性的值，就直接使用类方法；如果是辅助功能，比如打印菜单，这时可以考虑使用静态方法，可以在不创建对象的前提下使用。</p></div></div></div></sec>
+</li>
+<li>
+<p>请简述 Python 中以下划线开头的变量名的特点。</p>
+<sec data-title="点我看分析"><div class="panel panel-default"><div class="panel-heading"><b>点我看分析<a class="pull-right section atTitle btn btn-default " target="sectionx17"><span class="fa fa-angle-down" /></a></b></div><div class="panel-collapse collapse" id="sectionx17"><div class="panel-body"><p>在 Python 中，以下划线开头的变量名有着特殊的含义，尤其是在类的定义中。用下划线作为变量前缀和后缀来表示类的特殊成员：</p><ol>
+<li><code class="language-vim">_xx</code>：这样的对象叫做保护变量，可用，但不建议用，只有类对象和子类对象能够访问这些变量。</li>
+<li><code class="language-vim">__xx__</code>：系统定义的特殊成员名字。</li>
+<li><code class="language-vim">__xx</code>：类中的私有成员，只有类对象自己能访问，子类对象也不能访问到这个成员。</li>
+</ol></div></div></div></sec>
+</li>
+<li>
+<p>请简述闭包满足的三个条件。</p>
+<sec data-title="点我看分析"><div class="panel panel-default"><div class="panel-heading"><b>点我看分析<a class="pull-right section atTitle btn btn-default " target="sectionx18"><span class="fa fa-angle-down" /></a></b></div><div class="panel-collapse collapse" id="sectionx18"><div class="panel-body"><ol>
+<li>存在于嵌套关系的函数中；</li>
+<li>嵌套的内部函数引用了外部函数的变量；</li>
+<li>嵌套的外部函数会将内部函数名作为返回值返回。</li>
+</ol></div></div></div></sec>
+</li>
+<li>
+<p>请简述装饰器的应用场景。</p>
+<sec data-title="点我看分析"><div class="panel panel-default"><div class="panel-heading"><b>点我看分析<a class="pull-right section atTitle btn btn-default " target="sectionx19"><span class="fa fa-angle-down" /></a></b></div><div class="panel-collapse collapse" id="sectionx19"><div class="panel-body"><ol>
+<li>引入日志；</li>
+<li>函数执行时间统计；</li>
+<li>执行函数前预备处理；</li>
+<li>执行函数后清理功能；</li>
+<li>权限校验；</li>
+<li>缓存。</li>
+</ol></div></div></div></sec>
+</li>
+<li>
+<p>请简述 <code class="language-vim">map</code>、<code class="language-vim">filter</code>、<code class="language-vim">reduce</code> 函数的作用。</p>
+<sec data-title="点我看分析"><div class="panel panel-default"><div class="panel-heading"><b>点我看分析<a class="pull-right section atTitle btn btn-default " target="sectionx20"><span class="fa fa-angle-down" /></a></b></div><div class="panel-collapse collapse" id="sectionx20"><div class="panel-body"><ol>
+<li>map 函数会根据提供的函数对指定的序列做映射。</li>
+<li>filter 函数会对指定序列执行过滤操作。</li>
+<li>reduce 函数会对参数序列中的元素进行累积。</li>
+</ol></div></div></div></sec>
+</li>
+</ol>
+<h2 id="anchor_6"><a class="anchor-navigation-ex-anchor" href="#anchor_6" name="anchor_6"><i aria-hidden="true" class="fa fa-link"></i></a>5. 编程题</h2>
+<ol>
+<li>
+<p>已知直角三角形的两个直角边的长度 <code class="language-vim">a = 3</code>、<code class="language-vim">b = 4</code>，求斜边 <code class="language-vim">c</code> 的长度。</p>
+<sec data-title="点我看分析"><div class="panel panel-default"><div class="panel-heading"><b>点我看分析<a class="pull-right section atTitle btn btn-default " target="sectionx21"><span class="fa fa-angle-down" /></a></b></div><div class="panel-collapse collapse" id="sectionx21"><div class="panel-body"><pre class="line-numbers"><code class="lang-python rainbow-braces">import math
+
+a = float(input(&quot;请输入直角边 1 的长度:&quot;))
+b = float(input(&quot;请输入直角边 2 的长度:&quot;))
+c = a * a + b * b
+c = math.sqrt(c)  # 开方，得到的是斜边长
+
+print(&quot;斜边长为:&quot;, c)
+</code></pre></div></div></div></sec>
+</li>
+<li>
+<p>编写一个程序，用于实现两个数的交换。</p>
+<sec data-title="点我看分析"><div class="panel panel-default"><div class="panel-heading"><b>点我看分析<a class="pull-right section atTitle btn btn-default " target="sectionx22"><span class="fa fa-angle-down" /></a></b></div><div class="panel-collapse collapse" id="sectionx22"><div class="panel-body"><pre class="line-numbers"><code class="lang-python rainbow-braces">x = input(&#x27;输入 x 值: &#x27;)
+y = input(&#x27;输入 y 值: &#x27;)
+
+x, y = y, x
+
+print(f&#x27;交换后 x 的值为: {x}\ty 的值为: {y}&#x27;)
+</code></pre></div></div></div></sec>
+</li>
+<li>
+<p>请根据下述需求，编写一个程序。</p>
+<p>用户输入一个字符串，将下标为偶数的字符提出来合并成一个新的字符串 A，再将下标为奇数的字符提出来合并成一个新的字符串 B，再将字符串 A 和 B 连接起来并输出。</p>
+<sec data-title="点我看分析"><div class="panel panel-default"><div class="panel-heading"><b>点我看分析<a class="pull-right section atTitle btn btn-default " target="sectionx23"><span class="fa fa-angle-down" /></a></b></div><div class="panel-collapse collapse" id="sectionx23"><div class="panel-body"><pre class="line-numbers"><code class="lang-python rainbow-braces">arr = []
+even_A = &quot;&quot;
+odd_B = &quot;&quot;
+
+message = input(&quot;请输入任意字符串：&quot;)
+
+for string in message:
+    arr.append(string)
+
+for s in (arr[::2]):
+    even_A = even_A + s
+
+for s in (arr[1::2]):
+    odd_B = odd_B + s
+
+print(even_A + odd_B)
+</code></pre></div></div></div></sec>
+</li>
+<li>
+<p>请编写一个程序，用于统计字符串中每个字符的出现次数（字母忽略大小写，a 和 A 看做是同一个字母），统计出的结果，请按照 ['a':3,'b':2] 的格式输出。</p>
+<sec data-title="点我看分析"><div class="panel panel-default"><div class="panel-heading"><b>点我看分析<a class="pull-right section atTitle btn btn-default " target="sectionx24"><span class="fa fa-angle-down" /></a></b></div><div class="panel-collapse collapse" id="sectionx24"><div class="panel-body"><pre class="line-numbers"><code class="lang-python rainbow-braces">message = input(&quot;请输入字符串：&quot;).lower()
+
+a = {}
+
+for s in set(message):
+    if message.count(s) &gt;= 1:
+        a[s] = message.count(s)
+
+print(a)
+</code></pre></div></div></div></sec>
+</li>
+<li>
+<p>请根据下列需求，编写一个程序。</p>
+<p>用户输入一个字符串，请将字符串中的所有字符全部向后移动一位，最后一个字符放到字符串的开头，最后将新的字符串输出。</p>
+<sec data-title="点我看分析"><div class="panel panel-default"><div class="panel-heading"><b>点我看分析<a class="pull-right section atTitle btn btn-default " target="sectionx25"><span class="fa fa-angle-down" /></a></b></div><div class="panel-collapse collapse" id="sectionx25"><div class="panel-body"><pre class="line-numbers"><code class="lang-python rainbow-braces">message = list(input(&quot;请输入字符串：&quot;))
+
+new = &quot;&quot;.join([message[-1]] + message[:-1])
+
+print(new)
+
+</code></pre></div></div></div></sec>
+</li>
+<li>
+<p>假设有个列表存储了奇数个无序数字 <code class="language-vim">arr = [2, 1, 4, 3, 6, 7, 5]</code>，请编写程序，输出数值居中的数字 <code class="language-vim">4</code>。</p>
+<sec data-title="点我看分析"><div class="panel panel-default"><div class="panel-heading"><b>点我看分析<a class="pull-right section atTitle btn btn-default " target="sectionx26"><span class="fa fa-angle-down" /></a></b></div><div class="panel-collapse collapse" id="sectionx26"><div class="panel-body"><pre class="line-numbers"><code class="lang-python rainbow-braces">arr = [2, 1, 4, 3, 6, 7, 5]
+
+arr.sort()
+
+print(arr[len(arr) // 2])
+
+</code></pre></div></div></div></sec>
+</li>
+<li>
+<p>已知 <code class="language-vim">info = [1, 2, 3, 4, 5]</code>，请通过两种编程方法，将列表编程为 <code class="language-vim">info = [5, 4, 3, 2, 1]</code>。</p>
+<sec data-title="点我看分析"><div class="panel panel-default"><div class="panel-heading"><b>点我看分析<a class="pull-right section atTitle btn btn-default " target="sectionx27"><span class="fa fa-angle-down" /></a></b></div><div class="panel-collapse collapse" id="sectionx27"><div class="panel-body"><pre class="line-numbers"><code class="lang-python rainbow-braces"># 第一种
+info_1 = [1, 2, 3, 4, 5]
+
+info_1.sort(reverse=True)
+print(info_1)
+
+# 第二种
+info_2 = [1, 2, 3, 4, 5]
+
+info_2.reverse()
+print(info_2)
+</code></pre></div></div></div></sec>
+</li>
+<li>
+<p>用户输入 n，然后输入 n 个整数到列表中，列表中的 n 个整数需要使用冒泡进行排序，并将排序后的结果输出。</p>
+<sec data-title="点我看分析"><div class="panel panel-default"><div class="panel-heading"><b>点我看分析<a class="pull-right section atTitle btn btn-default " target="sectionx28"><span class="fa fa-angle-down" /></a></b></div><div class="panel-collapse collapse" id="sectionx28"><div class="panel-body"><pre class="line-numbers"><code class="lang-python rainbow-braces">n = int(input(&quot;请输入一个整数 n：&quot;))
+arr = []
+for i in range(n):
+    t = int(input(f&quot;请输入第 {n} 个整数：&quot;))
+    arr.append(t)
+
+print(f&quot;原始列表：{arr}&quot;)
+
+for i in range(1, len(arr)):
+    for j in range(0, len(arr) - i):
+        if arr[j] &gt; arr[j + 1]:
+            arr[j], arr[j + 1] = arr[j + 1], arr[j]
+
+print(f&quot;排序后列表：{arr}&quot;)
+</code></pre></div></div></div></sec>
+</li>
+<li>
+<p>实现删除列表 <code class="language-vim">info = [1, 2, 3, 2, 1]</code> 重复元素。</p>
+<sec data-title="点我看分析"><div class="panel panel-default"><div class="panel-heading"><b>点我看分析<a class="pull-right section atTitle btn btn-default " target="sectionx29"><span class="fa fa-angle-down" /></a></b></div><div class="panel-collapse collapse" id="sectionx29"><div class="panel-body"><pre class="line-numbers"><code class="lang-python rainbow-braces">info = [1, 2, 3, 2, 1]
+
+print(set(info))
+
+</code></pre></div></div></div></sec>
+</li>
+<li>
+<p>假设有两个 3 x 3 的矩阵 \(a = \begin{bmatrix}3 & -1 & 2 \\ 1 & 5 & 7 \\ 2 & 4 & 5 \end{bmatrix}\) \(b = \begin{bmatrix}7 & 5 & -2 \\ 5 & 1 & 9 \\ 4 & 2 & 1 \end{bmatrix}\)，请编写一个程序，计算这两个矩阵的和并输出。</p>
+<sec data-title="点我看分析"><div class="panel panel-default"><div class="panel-heading"><b>点我看分析<a class="pull-right section atTitle btn btn-default " target="sectionx30"><span class="fa fa-angle-down" /></a></b></div><div class="panel-collapse collapse" id="sectionx30"><div class="panel-body"><pre class="line-numbers"><code class="lang-python rainbow-braces">a = [[3, -1, 2], [1, 5, 7], [2, 4, 5]]
+b = [[7, 5, -2], [5, 1, 9], [4, 2, 1]]
+c = []
+
+for i in range(3):
+    c.append(list(map(lambda x: sum(x), zip(a[i], b[i]))))
+
+for a1 in c:
+    for a2 in a1:
+        print(a2, end=&quot;\t&quot;)
+    print()
+</code></pre></div></div></div></sec>
+</li>
+<li>
+<p>请编写一个程序，使用字典存储学生信息，学生信息包括学号和姓名，请根据学生学号从小到大输出学生的信息。</p>
+<sec data-title="点我看分析"><div class="panel panel-default"><div class="panel-heading"><b>点我看分析<a class="pull-right section atTitle btn btn-default " target="sectionx31"><span class="fa fa-angle-down" /></a></b></div><div class="panel-collapse collapse" id="sectionx31"><div class="panel-body"><pre class="line-numbers"><code class="lang-python rainbow-braces">dic = {}
+for i in range(3):
+    number = input(&quot;输入学生学号：&quot;)
+    name = input(&quot;输入学生姓名：&quot;)
+    dic.setdefault(number, name)
+
+print(f&quot;排序前：{dic}&quot;)
+
+new = {k: v for k, v in sorted(dic.items(), key=lambda a: a[0])}
+
+print(f&quot;排序后：{new}&quot;)
+</code></pre></div></div></div></sec>
+</li>
+<li>
+<p>已知一个字典包含若干员工信息（姓名和性别）<code class="language-vim">dic = {&quot;小明&quot;: &quot;男&quot;, &quot;小红&quot;: &quot;女&quot;, &quot;小兰&quot;: &quot;女&quot;, &quot;小白&quot;: &quot;男&quot;}</code>，请编写一个函数，删除性别为男的员工信息。</p>
+<sec data-title="点我看分析"><div class="panel panel-default"><div class="panel-heading"><b>点我看分析<a class="pull-right section atTitle btn btn-default " target="sectionx32"><span class="fa fa-angle-down" /></a></b></div><div class="panel-collapse collapse" id="sectionx32"><div class="panel-body"><pre class="line-numbers"><code class="lang-python rainbow-braces">def del_male(infos):
+    return dict(filter(lambda x: x[1] != &quot;男&quot;, infos.items()))
+
+
+dic = {&quot;小明&quot;: &quot;男&quot;, &quot;小红&quot;: &quot;女&quot;, &quot;小兰&quot;: &quot;女&quot;, &quot;小白&quot;: &quot;男&quot;}
+
+print(f&quot;删除后：{del_male(dic)}&quot;)
+</code></pre></div></div></div></sec>
+</li>
+<li>
+<p>已知一个列表存储了多个整数 <code class="language-vim">arr = [12, 3, 37, 7, 91, 67, 27, 45, 6]</code>，请编写函数，删除列表中的素数。</p>
+<sec data-title="点我看分析"><div class="panel panel-default"><div class="panel-heading"><b>点我看分析<a class="pull-right section atTitle btn btn-default " target="sectionx33"><span class="fa fa-angle-down" /></a></b></div><div class="panel-collapse collapse" id="sectionx33"><div class="panel-body"><pre class="line-numbers"><code class="lang-python rainbow-braces">arr = [12, 3, 37, 7, 91, 67, 27, 45, 6]
+
+
+def del_prime(info):
+    for element in info:
+        # 素数大于 1
+        if element &gt; 1:
+            # 查看因子
+            for i in range(2, element):
+                if (element % i) == 0:
+                    break
+            else:
+                info.remove(element)
+
+
+del_prime(arr)
+print(arr)
+
+</code></pre></div></div></div></sec>
+</li>
+<li>
+<p>编写一个程序，使用 <code class="language-vim">for</code> 循环输出 <code class="language-vim">0～10</code> 之间的偶数。</p>
+<sec data-title="点我看分析"><div class="panel panel-default"><div class="panel-heading"><b>点我看分析<a class="pull-right section atTitle btn btn-default " target="sectionx34"><span class="fa fa-angle-down" /></a></b></div><div class="panel-collapse collapse" id="sectionx34"><div class="panel-body"><pre class="line-numbers"><code class="lang-python rainbow-braces">for i in range(0, 11, 2):
+    print(i)
+</code></pre></div></div></div></sec>
+</li>
+<li>
+<p>编写一个程序，判断用户输入的数是正数还是负数。</p>
+<sec data-title="点我看分析"><div class="panel panel-default"><div class="panel-heading"><b>点我看分析<a class="pull-right section atTitle btn btn-default " target="sectionx35"><span class="fa fa-angle-down" /></a></b></div><div class="panel-collapse collapse" id="sectionx35"><div class="panel-body"><pre class="line-numbers"><code class="lang-python rainbow-braces">a = int(input(&quot;请输入一个数：&quot;))
+
+if a &gt; 0:
+    print(f&quot;{a} 是一个正数&quot;)
+elif a &lt; 0:
+    print(f&quot;{a} 是一个负数&quot;)
+else:
+    print(f&quot;{a} 等于0&quot;)
+
+</code></pre></div></div></div></sec>
+</li>
+<li>
+<p>编写一个程序，输出九九乘法表。</p>
+<sec data-title="点我看分析"><div class="panel panel-default"><div class="panel-heading"><b>点我看分析<a class="pull-right section atTitle btn btn-default " target="sectionx36"><span class="fa fa-angle-down" /></a></b></div><div class="panel-collapse collapse" id="sectionx36"><div class="panel-body"><pre class="line-numbers"><code class="lang-python rainbow-braces">for i in range(1, 10):
+    for j in range(1, i + 1):
+        print(f&quot;{j} * {i} = {i*j}&quot;, end=&quot;\t&quot;)
+    print()
+</code></pre></div></div></div></sec>
+</li>
+<li>
+<p>定义一个 <code class="language-vim">get_max</code> 函数，返回三个数（从键盘输入的整数）中的最大值。</p>
+<p>例如：</p>
+<ul>
+<li>
+<p>请输入第 <code class="language-vim">1</code> 个整数：<code class="language-vim">10</code></p>
+</li>
+<li>
+<p>请输入第 <code class="language-vim">2</code> 个整数：<code class="language-vim">15</code></p>
+</li>
+<li>
+<p>请输入第 <code class="language-vim">3</code> 个整数：<code class="language-vim">20</code></p>
+</li>
+<li>
+<p>其中最大值为：<code class="language-vim">20</code></p>
+</li>
+</ul>
+<sec data-title="点我看分析"><div class="panel panel-default"><div class="panel-heading"><b>点我看分析<a class="pull-right section atTitle btn btn-default " target="sectionx37"><span class="fa fa-angle-down" /></a></b></div><div class="panel-collapse collapse" id="sectionx37"><div class="panel-body"><pre class="line-numbers"><code class="lang-python rainbow-braces">def get_max():
+    arr = []
+
+    for i in range(1, 4):
+        arr.append(int(input(f&quot;请输入第 {i} 个数：&quot;)))
+
+    return max(arr)
+
+
+print(get_max())
+
+</code></pre></div></div></div></sec>
+</li>
+<li>
+<p>编写函数，求出 <code class="language-vim">1/(1×2)−1/(2×3)+1/(3×4)−1/(4×5)+⋯</code> 前 <code class="language-vim">n</code> 项的和，函数以 <code class="language-vim">n</code> 为参数，它是用户输入的。</p>
+<sec data-title="点我看分析"><div class="panel panel-default"><div class="panel-heading"><b>点我看分析<a class="pull-right section atTitle btn btn-default " target="sectionx38"><span class="fa fa-angle-down" /></a></b></div><div class="panel-collapse collapse" id="sectionx38"><div class="panel-body"><pre class="line-numbers"><code class="lang-python rainbow-braces">def compute(n):
+    res = 0
+    for i in range(1, n + 1):
+        if i % 2 == 0:
+            res -= 1.0 / (i * (i + 1))
+        else:
+            res += 1.0 / (i * (i + 1))
+    return res
+
+
+num = int(input(&quot;请输入一个整数：&quot;))
+print(compute(num))
+
+</code></pre></div></div></div></sec>
+</li>
+<li>
+<p>回文数是一个正向和逆向都相同的整数，如 <code class="language-vim">123454321</code>、<code class="language-vim">9889</code>。编写函数判断一个整数是否是回文数。</p>
+<sec data-title="点我看分析"><div class="panel panel-default"><div class="panel-heading"><b>点我看分析<a class="pull-right section atTitle btn btn-default " target="sectionx39"><span class="fa fa-angle-down" /></a></b></div><div class="panel-collapse collapse" id="sectionx39"><div class="panel-body"><pre class="line-numbers"><code class="lang-python rainbow-braces">def palindrome(n):
+    s = str(n)
+    return f&quot;{n} 是回文&quot; if s[:] == s[::-1] else f&quot;{n} 不是回文&quot;
+
+
+print(palindrome(12321))
+
+</code></pre></div></div></div></sec>
+</li>
+<li>
+<p>编写函数，判断输入的三个数字是否能构成三角形的三条边。</p>
+<sec data-title="点我看分析"><div class="panel panel-default"><div class="panel-heading"><b>点我看分析<a class="pull-right section atTitle btn btn-default " target="sectionx40"><span class="fa fa-angle-down" /></a></b></div><div class="panel-collapse collapse" id="sectionx40"><div class="panel-body"><pre class="line-numbers"><code class="lang-python rainbow-braces">def is_triangle(a, b, c):
+    if a + b &gt; c and a + c &gt; b and b + c &gt; a:
+        print(&quot;YES&quot;)
+    else:
+        print(&quot;NO&quot;)
+
+
+is_triangle(3, 4, 5)
+
+</code></pre></div></div></div></sec>
+</li>
+<li>
+<p>编写函数，求两个正整数的最小公倍数。</p>
+<sec data-title="点我看分析"><div class="panel panel-default"><div class="panel-heading"><b>点我看分析<a class="pull-right section atTitle btn btn-default " target="sectionx41"><span class="fa fa-angle-down" /></a></b></div><div class="panel-collapse collapse" id="sectionx41"><div class="panel-body"><pre class="line-numbers"><code class="lang-python rainbow-braces">def lcm(x, y):
+    for i in range(max(x, y), x * y + 1):
+        if i % x == 0 and i % y == 0:
+            return i
+
+
+num1 = int(input(&quot;输入第一个数字: &quot;))
+num2 = int(input(&quot;输入第二个数字: &quot;))
+
+print(num1, &quot;和&quot;, num2, &quot;的最小公倍数为&quot;, lcm(num1, num2))
+
+</code></pre></div></div></div></sec>
+</li>
+<li>
+<p>设计一个 Circle（圆）类，包括圆心位置、半径、颜色等属性。编写初始化方法和其他方法，计算周长和面积。请编写程序验证类的功能。</p>
+<sec data-title="点我看分析"><div class="panel panel-default"><div class="panel-heading"><b>点我看分析<a class="pull-right section atTitle btn btn-default " target="sectionx42"><span class="fa fa-angle-down" /></a></b></div><div class="panel-collapse collapse" id="sectionx42"><div class="panel-body"><pre class="line-numbers"><code class="lang-python rainbow-braces">from math import pi
+
+
+class Circle(object):
+    def __init__(self, tup, radius, color):
+        self.center = tup
+        self.radius = radius
+        self.color = color
+
+    def perimeter(self):
+        return 2 * pi * self.radius
+
+    def area(self):
+        return pi * self.radius ** 2
+
+
+circle = Circle((0, 0), 5, &quot;蓝色&quot;)
+print(circle.perimeter())
+print(circle.area())
+
+</code></pre></div></div></div></sec>
+</li>
+<li>
+<p>设计一个表示学生的（Student）类，该类的属性有姓名（name）、年龄（age）、成绩（scores）（类型为列表，成绩包含语文、数学和英语三科成绩，每科成绩的类型为整数），另外有 3 个方法：</p>
+<ul>
+<li>获取学生姓名的方法：<code class="language-vim">get_name()</code></li>
+<li>获取学生年龄的方法：<code class="language-vim">get_age()</code></li>
+<li>返回 3 门科目中最高的成绩：<code class="language-vim">get_score()</code></li>
+</ul>
+<p>写好类以后用 <code class="language-vim">li = Student(&quot;李四&quot;, 20, [69, 88, 100])</code> 测试，并输出结果。</p>
+<sec data-title="点我看分析"><div class="panel panel-default"><div class="panel-heading"><b>点我看分析<a class="pull-right section atTitle btn btn-default " target="sectionx43"><span class="fa fa-angle-down" /></a></b></div><div class="panel-collapse collapse" id="sectionx43"><div class="panel-body"><pre class="line-numbers"><code class="lang-python rainbow-braces">class Student(object):
+    &quot;&quot;&quot;学生类&quot;&quot;&quot;
+
+    def __init__(self, name, age, scores):
+        &quot;&quot;&quot;初始化方法
+
+        :param name: 姓名
+        :param age: 年龄
+        :param scores: 三科成绩（语文、数学、英语）
+        :type name: str
+        :type age: int
+        :type scores: list[int, int, int]
+        &quot;&quot;&quot;
+        self.name = name
+        self.age = age
+        self.scores = scores
+
+    def get_name(self):
+        &quot;&quot;&quot;获取名字
+
+        :return: 名字
+        :rtype: str
+        &quot;&quot;&quot;
+        return self.name
+
+    def get_age(self):
+        &quot;&quot;&quot;获取年龄
+
+        :return: 年龄
+        :rtype: int
+        &quot;&quot;&quot;
+        return self.age
+
+    def get_score(self):
+        &quot;&quot;&quot;三科最高成绩
+
+        :return: 三科最高成绩
+        :rtype: int
+        &quot;&quot;&quot;
+        return max(self.scores)
+
+li = Student(&quot;李四&quot;, 20, [69, 88, 100])
+print(li.get_name())
+print(li.get_age())
+print(li.get_score())
+</code></pre></div></div></div></sec>
+</li>
+<li>
+<p>设计一个表示动物（Animal）的类，该类包括颜色（color）属性和叫（call）方法。再设计一个表示鱼（Fish）的类，包括尾巴（tail）和颜色（color）两个属性，及叫（call）方法。</p>
+<blockquote>
+<p>提示：让 <code class="language-vim">Fish</code> 类继承自 <code class="language-vim">Animal</code> 类，重写<code class="language-vim">__init__()</code> 和 <code class="language-vim">call</code> 方法。</p>
+</blockquote>
+<sec data-title="点我看分析"><div class="panel panel-default"><div class="panel-heading"><b>点我看分析<a class="pull-right section atTitle btn btn-default " target="sectionx44"><span class="fa fa-angle-down" /></a></b></div><div class="panel-collapse collapse" id="sectionx44"><div class="panel-body"><pre class="line-numbers"><code class="lang-python rainbow-braces">class Animal(object):
+    def __init__(self, color):
+        &quot;&quot;&quot;初始化动物
+
+        :param color: 颜色
+        &quot;&quot;&quot;
+        self.color = color
+
+    def call(self):
+        &quot;&quot;&quot;叫&quot;&quot;&quot;
+        print(&quot;动物叫&quot;)
+
+
+class Fish(Animal):
+    def __init__(self, color, tail):
+        &quot;&quot;&quot;初始化鱼
+
+        :param color: 颜色
+        :param tail: 尾巴
+        &quot;&quot;&quot;
+        super().__init__(color)
+        self.tail = tail
+
+    def call(self):
+        &quot;&quot;&quot;叫&quot;&quot;&quot;
+        print(&quot;鱼叫&quot;)
+
+</code></pre></div></div></div></sec>
+</li>
+<li>
+<p>已知有个列表 <code class="language-vim">[1, 2, 3, 4, 5]</code>，让列表的每个元素加 <code class="language-vim">1</code>，把结果不能被 <code class="language-vim">2</code> 整除的元素筛选出来。</p>
+<sec data-title="点我看分析"><div class="panel panel-default"><div class="panel-heading"><b>点我看分析<a class="pull-right section atTitle btn btn-default " target="sectionx45"><span class="fa fa-angle-down" /></a></b></div><div class="panel-collapse collapse" id="sectionx45"><div class="panel-body"><pre class="line-numbers"><code class="lang-python rainbow-braces">arr = [1, 2, 3, 4, 5]
+
+print(list(filter(lambda x: x % 2 != 0, map(lambda x: x + 1, arr))))
+
+</code></pre></div></div></div></sec>
+</li>
+</ol>
+<h2 id="anchor_7"><a class="anchor-navigation-ex-anchor" href="#anchor_7" name="anchor_7"><i aria-hidden="true" class="fa fa-link"></i></a>6. 程序分析题</h2>
+<p>阅读下面的程序，分析代码输出结果。</p>
+<ol>
+<li>
+<p>代码一：</p>
+<pre class="line-numbers"><code class="lang-python rainbow-braces">tup = (&#x27;a&#x27;, &#x27;b&#x27;, &#x27;c&#x27;)
+tup[3] = &#x27;d&#x27;
+print(tup)
+</code></pre>
+<sec data-title="点我看分析"><div class="panel panel-default"><div class="panel-heading"><b>点我看分析<a class="pull-right section atTitle btn btn-default " target="sectionx46"><span class="fa fa-angle-down" /></a></b></div><div class="panel-collapse collapse" id="sectionx46"><div class="panel-body"><p>程序运行错误，元组不能使用下标增加元素。</p></div></div></div></sec>
+</li>
+<li>
+<p>代码二：</p>
+<pre class="line-numbers"><code class="lang-python rainbow-braces">dic = {&quot;a&quot;: 1, &quot;b&quot;: 2, &quot;a&quot;: 3}
+print(dic[&#x27;a&#x27;])
+
+</code></pre>
+<sec data-title="点我看分析"><div class="panel panel-default"><div class="panel-heading"><b>点我看分析<a class="pull-right section atTitle btn btn-default " target="sectionx47"><span class="fa fa-angle-down" /></a></b></div><div class="panel-collapse collapse" id="sectionx47"><div class="panel-body"><p>3</p></div></div></div></sec>
+</li>
+<li>
+<p>代码三：</p>
+<pre class="line-numbers"><code class="lang-python rainbow-braces">arr = [10, 23, 66, 26, 35, 1, 76, 88, 58]
+arr.reverse()
+print(arr[3])
+arr.sort()
+print(arr[3])
+
+</code></pre>
+<sec data-title="点我看分析"><div class="panel panel-default"><div class="panel-heading"><b>点我看分析<a class="pull-right section atTitle btn btn-default " target="sectionx48"><span class="fa fa-angle-down" /></a></b></div><div class="panel-collapse collapse" id="sectionx48"><div class="panel-body"><p>1</p><p>26</p></div></div></div></sec>
+</li>
+<li>
+<p>代码四：</p>
+<pre class="line-numbers"><code class="lang-python rainbow-braces">num1 = input(&quot;请输入一个整数：&quot;)
+num2 = input(&quot;请输入一个整数：&quot;)
+
+if num1 % num2 == 0:
+    print(&quot;验证码正确&quot;)
+</code></pre>
+<sec data-title="点我看分析"><div class="panel panel-default"><div class="panel-heading"><b>点我看分析<a class="pull-right section atTitle btn btn-default " target="sectionx49"><span class="fa fa-angle-down" /></a></b></div><div class="panel-collapse collapse" id="sectionx49"><div class="panel-body"><p>TypeError 异常，num1 和 num2 属于字符串类型，不能执行取余操作</p></div></div></div></sec>
+</li>
+<li>
+<p>代码五：</p>
+<pre class="line-numbers"><code class="lang-python rainbow-braces">name = &#x27;Steve Jobs&#x27;
+
+print(name[6])
+</code></pre>
+<sec data-title="点我看分析"><div class="panel panel-default"><div class="panel-heading"><b>点我看分析<a class="pull-right section atTitle btn btn-default " target="sectionx50"><span class="fa fa-angle-down" /></a></b></div><div class="panel-collapse collapse" id="sectionx50"><div class="panel-body"><p>抛出 ValueError 异常</p></div></div></div></sec>
+</li>
+<li>
+<p>代码六：</p>
+<pre class="line-numbers"><code class="lang-python rainbow-braces">def func():
+    x = 200
+
+    def func2():
+        print(x)
+
+    func2()
+
+
+x = 100
+
+func()
+
+print(x)
+
+</code></pre>
+<sec data-title="点我看分析"><div class="panel panel-default"><div class="panel-heading"><b>点我看分析<a class="pull-right section atTitle btn btn-default " target="sectionx51"><span class="fa fa-angle-down" /></a></b></div><div class="panel-collapse collapse" id="sectionx51"><div class="panel-body"><p>200</p><p>100</p></div></div></div></sec>
+</li>
+</ol>
+
+                        <footer class="page-footer">
+<span class="copyright">© 2021 刘士. All rights reserved.</span>
+<span class="footer-modification">
+<span id="busuanzi_container_site_uv" style="display:none">本站访客数 <span id="busuanzi_value_site_uv">
+</span> 人次</span></span>
+</footer><script>
+function busuanzi(){
+    if (document.domain != "127.0.0.1") {$.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");}
+}
+setTimeout('busuanzi()', 2000);
+</script><script>
+
+</script>
+                    </section>
+                </div>
+                <div class="search-results">
+                    <div class="has-results">
+                        <h1 class="search-results-title"><span class='search-results-count'></span> 结果匹配 "<span class='search-query'></span>"</h1>
+                        <ul class="search-results-list"></ul>
+                    </div>
+                    <div class="no-results">
+                        <h1 class="search-results-title">没有匹配的结果 "<span class='search-query'></span>"</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<a aria-label="Previous page: Python 速记" class="navigation navigation-prev" href="py速记.html">
+    <i class="fa fa-angle-left"></i>
+</a>
+
+
+<a aria-label="Next page: Python 3 排序算法" class="navigation navigation-next" href="sort/index.html">
+    <i class="fa fa-angle-right"></i>
+</a>
+
+
+</div>
+<script>
+    var lsbook = lsbook || [];
+    lsbook.push(function () {
+        lsbook.page.hasChanged({
+            "config": {
+                "github_url":"https://liushilive.github.io/",
+                "language": "zh-cn",
+                "previous_page_link": "py速记.html",
+                "next_page_link": "sort/index.html"
+            },
+            "basePath": "..",
+            "js": {'katex': ['../../asserts/lsbook/katex/katex.min.js', '../../asserts/lsbook/katex/contrib/auto-render.min.js'], 'prism': ['../../asserts/lsbook/prismjs/clipboard.min.js', '../../asserts/lsbook/prismjs/prism.js']}
+        });
+    });
+</script>
+</div>
+
+<script src="../../asserts/lsbook/jquery-3.3.1.min.js"></script>
+<script charset="UTF-8" src="../../asserts/lsbook/jquery_mar/jquery.mark.js"></script>
+<script src="../../asserts/lsbook/lightbox/js/lightbox.min.js"></script>
+<script src="../../asserts/lsbook/lsbook.min.js"></script>
+
+</body>
+</html>
