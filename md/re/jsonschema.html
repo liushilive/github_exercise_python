@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-<title>Python 相关 - 归并排序</title>
+<title>Python 相关 - json 模式校验</title>
 <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
 <meta content="" name="description">
 <meta content="刘士" name="author">
@@ -20,7 +20,7 @@
       rel="apple-touch-icon-precomposed" sizes="152x152">
 <link href="../../../asserts/lsbook/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
 <!--分页-->
-<link href="快速排序.html" rel="next"/>
+<link href="../py3总结.html" rel="next"/>
 </head>
 <body>
 <div class="book match-braces"><div class="book-summary">
@@ -32,23 +32,23 @@
             <li class="header" title="Summary">Summary</li>
 <ul class="articles"><li class="chapter" data-level="1.1" data-path="../../index.html"><a href="../../index.html" title="介绍"><b>1.1.</b>介绍</a></li>
 <li class="chapter" data-level="1.2" data-path="../pep8/index.html"><a href="../pep8/index.html" title="PEP 8"><b>1.2.</b>PEP 8</a></li>
-<li class="chapter" data-level="1.3" data-path="../re/re_model.html"><a href="../re/re_model.html" title="正则表达式"><b>1.3.</b>正则表达式</a></li>
-<li class="chapter" data-level="1.4" data-path="../re/jsonschema.html"><a href="../re/jsonschema.html" title="json 模式校验"><b>1.4.</b>json 模式校验</a></li>
+<li class="chapter" data-level="1.3" data-path="re_model.html"><a href="re_model.html" title="正则表达式"><b>1.3.</b>正则表达式</a></li>
+<li class="chapter active" data-level="1.4" data-path="jsonschema.html"><a href="jsonschema.html" title="json 模式校验"><b>1.4.</b>json 模式校验</a></li>
 <li class="chapter" data-level="1.5" data-path="../py3总结.html"><a href="../py3总结.html" title="Python 3 总结"><b>1.5.</b>Python 3 总结</a></li>
 <li class="chapter" data-level="1.6" data-path="../py速记.html"><a href="../py速记.html" title="Python 速记"><b>1.6.</b>Python 速记</a></li>
 <li class="chapter" data-level="1.7" data-path="../py练习.html"><a href="../py练习.html" title="Python 练习"><b>1.7.</b>Python 练习</a></li></ul>
 <li class="header" title="算法">算法</li>
-<ul class="articles"><li class="chapter" data-level="2.1" data-path="index.html"><a href="index.html" title="Python 3 排序算法"><b>2.1.</b>Python 3 排序算法</a>
-<ul class="articles"><li class="chapter" data-level="2.1.1" data-path="冒泡排序.html"><a href="冒泡排序.html" title="冒泡排序"><b>2.1.1.</b>冒泡排序</a></li>
-<li class="chapter" data-level="2.1.2" data-path="选择排序.html"><a href="选择排序.html" title="选择排序"><b>2.1.2.</b>选择排序</a></li>
-<li class="chapter" data-level="2.1.3" data-path="插入排序.html"><a href="插入排序.html" title="插入排序"><b>2.1.3.</b>插入排序</a></li>
-<li class="chapter" data-level="2.1.4" data-path="希尔排序.html"><a href="希尔排序.html" title="希尔排序"><b>2.1.4.</b>希尔排序</a></li>
-<li class="chapter active" data-level="2.1.5" data-path="归并排序.html"><a href="归并排序.html" title="归并排序"><b>2.1.5.</b>归并排序</a></li>
-<li class="chapter" data-level="2.1.6" data-path="快速排序.html"><a href="快速排序.html" title="快速排序"><b>2.1.6.</b>快速排序</a></li>
-<li class="chapter" data-level="2.1.7" data-path="堆排序.html"><a href="堆排序.html" title="堆排序"><b>2.1.7.</b>堆排序</a></li>
-<li class="chapter" data-level="2.1.8" data-path="计数排序.html"><a href="计数排序.html" title="计数排序"><b>2.1.8.</b>计数排序</a></li>
-<li class="chapter" data-level="2.1.9" data-path="桶排序.html"><a href="桶排序.html" title="桶排序"><b>2.1.9.</b>桶排序</a></li>
-<li class="chapter" data-level="2.1.10" data-path="基数排序.html"><a href="基数排序.html" title="基数排序"><b>2.1.10.</b>基数排序</a></li></ul></li></ul>
+<ul class="articles"><li class="chapter" data-level="2.1" data-path="../sort/index.html"><a href="../sort/index.html" title="Python 3 排序算法"><b>2.1.</b>Python 3 排序算法</a>
+<ul class="articles"><li class="chapter" data-level="2.1.1" data-path="../sort/冒泡排序.html"><a href="../sort/冒泡排序.html" title="冒泡排序"><b>2.1.1.</b>冒泡排序</a></li>
+<li class="chapter" data-level="2.1.2" data-path="../sort/选择排序.html"><a href="../sort/选择排序.html" title="选择排序"><b>2.1.2.</b>选择排序</a></li>
+<li class="chapter" data-level="2.1.3" data-path="../sort/插入排序.html"><a href="../sort/插入排序.html" title="插入排序"><b>2.1.3.</b>插入排序</a></li>
+<li class="chapter" data-level="2.1.4" data-path="../sort/希尔排序.html"><a href="../sort/希尔排序.html" title="希尔排序"><b>2.1.4.</b>希尔排序</a></li>
+<li class="chapter" data-level="2.1.5" data-path="../sort/归并排序.html"><a href="../sort/归并排序.html" title="归并排序"><b>2.1.5.</b>归并排序</a></li>
+<li class="chapter" data-level="2.1.6" data-path="../sort/快速排序.html"><a href="../sort/快速排序.html" title="快速排序"><b>2.1.6.</b>快速排序</a></li>
+<li class="chapter" data-level="2.1.7" data-path="../sort/堆排序.html"><a href="../sort/堆排序.html" title="堆排序"><b>2.1.7.</b>堆排序</a></li>
+<li class="chapter" data-level="2.1.8" data-path="../sort/计数排序.html"><a href="../sort/计数排序.html" title="计数排序"><b>2.1.8.</b>计数排序</a></li>
+<li class="chapter" data-level="2.1.9" data-path="../sort/桶排序.html"><a href="../sort/桶排序.html" title="桶排序"><b>2.1.9.</b>桶排序</a></li>
+<li class="chapter" data-level="2.1.10" data-path="../sort/基数排序.html"><a href="../sort/基数排序.html" title="基数排序"><b>2.1.10.</b>基数排序</a></li></ul></li></ul>
 <li class="header" title="练习">练习</li>
 <ul class="articles"><li class="chapter" data-level="3.1" data-path="../exercise/index.html"><a href="../exercise/index.html" title="Python 3 练习"><b>3.1.</b>Python 3 练习</a>
 <ul class="articles"><li class="chapter" data-level="3.1.1" data-path="../exercise/001.html"><a href="../exercise/001.html" title="Python 3 练习 001"><b>3.1.1.</b>Python 3 练习 001</a></li>
@@ -260,7 +260,7 @@
         <!-- Title -->
         <h1>
             <i class="fa fa-circle-o-notch fa-spin"></i>
-            <a href="../..">归并排序</a>
+            <a href="../..">json 模式校验</a>
         </h1>
     </div>
 
@@ -269,47 +269,459 @@
             <div class="search-plus" id="book-search-results">
                 <div class="search-noresults">
                     <section class="normal markdown-section">
-                        <div id='anchor-navigation-ex-navbar'><i class='fa fa-anchor'></i><ul><li><span class='title-icon fa fa-hand-o-right'></span><a aria-label class='on-toolbar-action' href='' onclick="$('.fa.fa-align-justify').parent()[0].click();">目录</a></li><li><span class='title-icon fa fa-hand-o-right'></span><a href='#anchor_1'><b></b>归并排序（Merge Sort）</a></li><ul><li><span class='title-icon fa fa-hand-o-right'></span><a href='#anchor_2'><b>1. </b>算法描述</a></li><li><span class='title-icon fa fa-hand-o-right'></span><a href='#anchor_3'><b>2. </b>动图演示</a></li><li><span class='title-icon fa fa-hand-o-right'></span><a href='#anchor_4'><b>3. </b>代码实现</a></li><li><span class='title-icon fa fa-hand-o-right'></span><a href='#anchor_5'><b>4. </b>算法分析</a></li></ul></ul></div><a href='#anchor_1' id='anchorNavigationExGoTop'><i class='fa fa-arrow-up'></i></a>
-                        <h1 id="anchor_1"><a class="anchor-navigation-ex-anchor" href="#anchor_1" name="anchor_1"><i aria-hidden="true" class="fa fa-link"></i></a>归并排序（Merge Sort）</h1>
-<p>归并排序是建立在归并操作上的一种有效的排序算法。该算法是采用分治法（Divide and Conquer）的一个非常典型的应用。将已有序的子序列合并，得到完全有序的序列；即先使每个子序列有序，再使子序列段间有序。若将两个有序表合并成一个有序表，称为 2- 路归并。</p>
-<h2 id="anchor_2"><a class="anchor-navigation-ex-anchor" href="#anchor_2" name="anchor_2"><i aria-hidden="true" class="fa fa-link"></i></a>1. 算法描述</h2>
+                        <div id='anchor-navigation-ex-navbar'><i class='fa fa-anchor'></i><ul><li><span class='title-icon fa fa-hand-o-right'></span><a aria-label class='on-toolbar-action' href='' onclick="$('.fa.fa-align-justify').parent()[0].click();">目录</a></li><li><span class='title-icon fa fa-hand-o-right'></span><a href='#anchor_1'><b></b>jsonschema 模式校验</a></li><ul><li><span class='title-icon fa fa-hand-o-right'></span><a href='#anchor_2'><b>1. </b>什么是模式</a></li><li><span class='title-icon fa fa-hand-o-right'></span><a href='#anchor_3'><b>2. </b>总纲</a></li><li><span class='title-icon fa fa-hand-o-right'></span><a href='#anchor_4'><b>3. </b>JSON 模式参考</a></li><ul><li><span class='title-icon fa fa-hand-o-right'></span><a href='#anchor_5'><b>3.1. </b>特定类型的关键字</a></li><li><span class='title-icon fa fa-hand-o-right'></span><a href='#anchor_6'><b>3.2. </b>正则表达式</a></li><li><span class='title-icon fa fa-hand-o-right'></span><a href='#anchor_7'><b>3.3. </b>数值类型</a></li><li><span class='title-icon fa fa-hand-o-right'></span><a href='#anchor_8'><b>3.4. </b>对象</a></li><li><span class='title-icon fa fa-hand-o-right'></span><a href='#anchor_9'><b>3.5. </b>数组</a></li><li><span class='title-icon fa fa-hand-o-right'></span><a href='#anchor_10'><b>3.6. </b>布尔值</a></li><li><span class='title-icon fa fa-hand-o-right'></span><a href='#anchor_11'><b>3.7. </b>空</a></li></ul></ul></ul></div><a href='#anchor_1' id='anchorNavigationExGoTop'><i class='fa fa-arrow-up'></i></a>
+                        <h1 id="anchor_1"><a class="anchor-navigation-ex-anchor" href="#anchor_1" name="anchor_1"><i aria-hidden="true" class="fa fa-link"></i></a>jsonschema 模式校验</h1>
+<p><a target=_Blank href="https://python-jsonschema.readthedocs.io/en/latest/">https://python-jsonschema.readthedocs.io/en/latest/</a></p>
+<pre class="line-numbers"><code class="lang-python rainbow-braces">pip install jsonschema -i https://mirrors.aliyun.com/pypi/simple/
+</code></pre>
+<h2 id="anchor_2"><a class="anchor-navigation-ex-anchor" href="#anchor_2" name="anchor_2"><i aria-hidden="true" class="fa fa-link"></i></a>1. 什么是模式</h2>
+<p><a target=_Blank href="https://json-schema.org/understanding-json-schema/about.html">https://json-schema.org/understanding-json-schema/about.html</a></p>
+<p>如果你曾经使用过 XML Schema，RelaxNG 或 ASN.1，那么你可能已经知道什么是模式，并且可以高兴地跳到下一节。如果你听起来像个傻瓜，那你来对地方了。要定义什么是 JSON 模式，我们可能应该首先定义什么是 JSON。</p>
+<p>JSON 代表<code class="language-vim">JavaScript 对象表示法</code>，这是一种简单的数据交换格式。它最初是作为万维网的一种表示法。由于大多数网络浏览器中都存在 JavaScript，并且 JSON 基于 JavaScript，因此很容易在其中进行支持。但是，它已经被证明足够有用和足够简单，现在可以在许多不涉及网络冲浪的情况下使用它。</p>
+<p>JSON 本质上是基于以下数据结构构建的：</p>
 <ul>
 <li>
-<p>把长度为 n 的输入序列分成两个长度为 n/2 的子序列；</p>
+<p>object:</p>
+<pre class="line-numbers"><code class="lang-json rainbow-braces">{ &quot;key1&quot;: &quot;value1&quot;, &quot;key2&quot;: &quot;value2&quot; }
+</code></pre>
 </li>
 <li>
-<p>对这两个子序列分别采用归并排序；</p>
+<p>array:</p>
+<pre class="line-numbers"><code class="lang-json rainbow-braces">[ &quot;first&quot;, &quot;second&quot;, &quot;third&quot; ]
+</code></pre>
 </li>
 <li>
-<p>将两个排序好的子序列合并成一个最终的排序序列。</p>
+<p>number:</p>
+<pre class="line-numbers"><code class="lang-json rainbow-braces">42
+3.1415926
+</code></pre>
+</li>
+<li>
+<p>string:</p>
+<pre class="line-numbers"><code class="lang-json rainbow-braces">&quot;This is a string&quot;
+</code></pre>
+</li>
+<li>
+<p>boolean:</p>
+<pre class="line-numbers"><code class="lang-json rainbow-braces">true
+false
+</code></pre>
+</li>
+<li>
+<p>null:</p>
+<pre class="line-numbers"><code class="lang-json rainbow-braces">null
+</code></pre>
 </li>
 </ul>
-<h2 id="anchor_3"><a class="anchor-navigation-ex-anchor" href="#anchor_3" name="anchor_3"><i aria-hidden="true" class="fa fa-link"></i></a>2. 动图演示</h2>
-<p><a data-lightbox="1" href="../../screenshot/mergeSort.gif"><img src="../../screenshot/mergeSort.gif" alt="归并排序" title="归并排序" /></a></p>
-<h2 id="anchor_4"><a class="anchor-navigation-ex-anchor" href="#anchor_4" name="anchor_4"><i aria-hidden="true" class="fa fa-link"></i></a>3. 代码实现</h2>
-<pre class="line-numbers"><code class="lang-python rainbow-braces">def mergeSort(arr):
-    import math
-    if(len(arr)&lt;2):
-        return arr
-    middle = math.floor(len(arr)/2)
-    left, right = arr[0:middle], arr[middle:]
-    return merge(mergeSort(left), mergeSort(right))
+<p>这些类型在大多数编程语言中都有类似物，尽管它们的名称可能不同。</p>
+<p>下表从 JavaScript 类型的名称映射到 Python 中的类似类型：</p>
+<table>
+<thead>
+<tr>
+<th align="center">JavaScript</th>
+<th align="center">Python</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">string</td>
+<td align="center">string</td>
+</tr>
+<tr>
+<td align="center">number</td>
+<td align="center">int/float</td>
+</tr>
+<tr>
+<td align="center">object</td>
+<td align="center">dict</td>
+</tr>
+<tr>
+<td align="center">array</td>
+<td align="center">list</td>
+</tr>
+<tr>
+<td align="center">boolean</td>
+<td align="center">bool</td>
+</tr>
+<tr>
+<td align="center">null</td>
+<td align="center">None</td>
+</tr>
+</tbody>
+</table>
+<p>JavaScript 没有针对整数和浮点数的单独类型。</p>
+<p>使用这些简单的数据类型，可以表示所有类型的结构化数据。但是，随着灵活性的提高，责任也就增加了，因为同一概念可以用多种方式表示。例如，你可以想象以不同的方式用 JSON 表示有关一个人的信息：</p>
+<pre class="line-numbers"><code class="lang-json rainbow-braces">{
+  &quot;姓名&quot;: &quot;张三&quot;,
+  &quot;出生日期&quot;: &quot;1990年01月01日&quot;,
+  &quot;地址&quot;: &quot;中国广东省深圳市宝安区&quot;
+}
 
-def merge(left,right):
-    result = []
-    while left and right:
-        if left[0] &lt;= right[0]:
-            result.append(left.pop(0));
-        else:
-            result.append(right.pop(0));
-    while left:
-        result.append(left.pop(0));
-    while right:
-        result.append(right.pop(0));
-    return result
+{
+  &quot;姓&quot;: &quot;张&quot;,
+  &quot;名&quot;: &quot;三&quot;,
+  &quot;出生日期&quot;: &quot;1990-01-01&quot;,
+  &quot;地址&quot;: {
+    &quot;国家&quot;: &quot;中国&quot;,
+    &quot;省&quot;: &quot;广东省&quot;,
+    &quot;市&quot;: &quot;深圳市&quot;,
+    &quot;区&quot;: &quot;宝安区&quot;
+  }
+}
 </code></pre>
-<h2 id="anchor_5"><a class="anchor-navigation-ex-anchor" href="#anchor_5" name="anchor_5"><i aria-hidden="true" class="fa fa-link"></i></a>4. 算法分析</h2>
-<p>归并排序是一种稳定的排序方法。和选择排序一样，归并排序的性能不受输入数据的影响，但表现比选择排序好的多，因为始终都是 O(nlogn）的时间复杂度。代价是需要额外的内存空间。</p>
+<p>两种陈述都同样有效，尽管其中一种显然比另一种更为正式。记录的设计将在很大程度上取决于其在应用程序中的预期用途，因此这里没有正确或错误的答案。但是，当应用程序说“给我一个人的 JSON 记录”时，准确知道该记录的组织方式非常重要。</p>
+<p>例如，我们需要知道需要哪些字段以及如何表示值。</p>
+<p>这就是 JSON Schema 的来源。以下 JSON Schema 片段描述了上面第二个示例的结构。现在不必担心太多细节。在随后将对它们进行说明。</p>
+<pre class="line-numbers"><code class="lang-json rainbow-braces">{
+  &quot;type&quot;: &quot;object&quot;,
+  &quot;properties&quot;: {
+    &quot;姓&quot;: { &quot;type&quot;: &quot;string&quot; },
+    &quot;名&quot;: { &quot;type&quot;: &quot;string&quot; },
+    &quot;出生日期&quot;: { &quot;type&quot;: &quot;string&quot;, &quot;format&quot;: &quot;date&quot; },
+    &quot;地址&quot;: {
+      &quot;type&quot;: &quot;object&quot;,
+      &quot;properties&quot;: {
+        &quot;国家&quot;: { &quot;type&quot;: &quot;string&quot; },
+        &quot;省&quot;: { &quot;type&quot;: &quot;string&quot; },
+        &quot;市&quot;: { &quot;type&quot;: &quot;string&quot; },
+        &quot;区&quot;: { &quot;type&quot; : &quot;string&quot; }
+      }
+    }
+  }
+}
+</code></pre>
+<p>通过针对该模式“验证”第一个示例，你可以看到它失败了。但是，第二个示例通过了：</p>
+<p>你可能已经注意到 JSON Schema 本身是用 JSON 编写的。它是数据本身，而不是计算机程序。它只是“描述其他数据的结构”的声明性格式。</p>
+<p>这既是它的强项，也是它的弱项（与其他类似的模式语言共享）。简明扼要地描述数据的表面结构，并根据它自动进行数据验证很容易。</p>
+<p>但是，由于 JSON 模式不能包含任意代码，因此无法表达的数据元素之间的关系受到某些限制。</p>
+<p>因此，任何用于足够复杂的数据格式的“验证工具”都可能具有两个验证阶段：一个在<strong>模式</strong>（或结构）级别，另一个在<strong>语义</strong>级别。后者检查可能需要使用更通用的编程语言来实现。</p>
+<h2 id="anchor_3"><a class="anchor-navigation-ex-anchor" href="#anchor_3" name="anchor_3"><i aria-hidden="true" class="fa fa-link"></i></a>2. 总纲</h2>
+<p><a target=_Blank href="https://www.jsonschema.net/home">https://www.jsonschema.net/home</a></p>
+<h2 id="anchor_4"><a class="anchor-navigation-ex-anchor" href="#anchor_4" name="anchor_4"><i aria-hidden="true" class="fa fa-link"></i></a>3. JSON 模式参考</h2>
+<p><a target=_Blank href="https://json-schema.org/understanding-json-schema/reference/index.html">https://json-schema.org/understanding-json-schema/reference/index.html</a></p>
+<h3 id="anchor_5"><a class="anchor-navigation-ex-anchor" href="#anchor_5" name="anchor_5"><i aria-hidden="true" class="fa fa-link"></i></a>3.1. 特定类型的关键字</h3>
+<ul>
+<li>字符串：string</li>
+<li>数值类型：integer、number、Multiples、Range</li>
+<li>对象：object</li>
+<li>数组：array</li>
+<li>布尔值：boolean</li>
+<li>空：null</li>
+</ul>
+<pre class="line-numbers"><code class="lang-json rainbow-braces">{ &quot;type&quot;: &quot;number&quot; }
+// 成功：10、20.5
+// 失败：&quot;10&quot;
+
+{ &quot;type&quot;: [&quot;number&quot;, &quot;string&quot;] }
+// 成功：10、20.5、&quot;10&quot;、&quot;你好&quot;
+// 失败：[1, 2, 3]
+</code></pre>
+<p>type 关键字可以是一个字符串或数组：</p>
+<ul>
+<li>如果是字符串，则为上述基本类型之一的名称。</li>
+<li>如果是数组，则必须是字符串数组，其中每个字符串是一种基本类型的名称，并且每个元素都是唯一的。在这种情况下，如果 JSON 代码段与任何给定类型匹配，则该代码段有效。</li>
+</ul>
+<h3 id="anchor_6"><a class="anchor-navigation-ex-anchor" href="#anchor_6" name="anchor_6"><i aria-hidden="true" class="fa fa-link"></i></a>3.2. 正则表达式</h3>
+<p>该模式和模式属性关键字使用正则表达式来表示约束。使用的正则表达式语法来自 JavaScript（尤其是 ECMA 262）。</p>
+<p>但是，不完全支持完整的语法，因此建议你坚持下面描述的该语法的子集。</p>
+<ul>
+<li>单个 unicode 字符（下面的特殊字符除外）与自己匹配。</li>
+<li><code class="language-vim">.</code>：匹配除换行符以外的任何字符。（请注意，组成换行符的内容在某种程度上取决于你的平台和语言环境，但实际上这并不重要）。</li>
+<li><code class="language-vim">^</code>：仅在字符串开头匹配。</li>
+<li><code class="language-vim">$</code>：仅在字符串末尾匹配。</li>
+<li><code class="language-vim">(...)</code>：将一系列正则表达式分组为一个正则表达式。</li>
+<li><code class="language-vim">|</code>：匹配|符号之前或之后的正则表达式。</li>
+<li><code class="language-vim">[abc]</code>：匹配方括号内的任何字符。</li>
+<li><code class="language-vim">[a-z]</code>：匹配字符范围。</li>
+<li><code class="language-vim">[^abc]</code>：匹配未列出的任何字符。</li>
+<li><code class="language-vim">[^a-z]</code>：匹配范围之外的任何字符。</li>
+<li><code class="language-vim">+</code>：匹配前一个正则表达式的一个或多个重复。</li>
+<li><code class="language-vim">*</code>：匹配零个或多个前面的正则表达式重复。</li>
+<li><code class="language-vim">?</code>：匹配前一个正则表达式的零个或一个重复。</li>
+<li><code class="language-vim">+?</code>，<code class="language-vim">*?</code>，<code class="language-vim">??</code>：的<code class="language-vim">*</code>，<code class="language-vim">+</code> 和<code class="language-vim">?</code>预选赛都是贪婪的；它们匹配尽可能多的文本。有时，这种行为是不希望的，并且你想要匹配的字符越少越好。</li>
+<li><code class="language-vim">(?!x)</code>，<code class="language-vim">(?=x)</code>：阴性和阳性预测先行。</li>
+<li><code class="language-vim">{x}</code>：精确 x 匹配前面的正则表达式的出现。</li>
+<li><code class="language-vim">{x,y}</code>：至少匹配 x 并且最多 y 匹配前面的正则表达式。</li>
+<li><code class="language-vim">{x,}</code>：匹配 x 出现的一个或多个前面的正则表达式。</li>
+<li><code class="language-vim">{x}?</code>，<code class="language-vim">{x,y}?</code>，<code class="language-vim">{x,}?</code>：上述表达式的非贪婪版本。</li>
+</ul>
+<p>腾讯 QQ 号：纯数字，至少 5 位</p>
+<pre class="line-numbers"><code class="lang-json rainbow-braces">{
+   &quot;type&quot;: &quot;string&quot;,
+   &quot;pattern&quot;: &quot;^[1-9][0-9]{4,}$&quot;
+}
+</code></pre>
+<h3 id="anchor_7"><a class="anchor-navigation-ex-anchor" href="#anchor_7" name="anchor_7"><i aria-hidden="true" class="fa fa-link"></i></a>3.3. 数值类型</h3>
+<ul>
+<li>
+<p>integer</p>
+<p>integer 类型用于整数。在 Python 中，类似于该 int 类型。</p>
+<pre class="line-numbers"><code class="lang-json rainbow-braces">{ &quot;type&quot;: &quot;integer&quot; }
+</code></pre>
+</li>
+<li>
+<p>number</p>
+<p>number 类型可用于任何数字类型，整数或浮点数。在 Python 中，类似于 float 类型。</p>
+<pre class="line-numbers"><code class="lang-json rainbow-braces">{ &quot;type&quot;: &quot;number&quot; }
+</code></pre>
+</li>
+<li>
+<p>Multiples</p>
+<p>multipleOf 关键字可以将数字限制为给定数字的倍数。可以将其设置为任何正数。</p>
+<pre class="line-numbers"><code class="lang-json rainbow-braces">{
+    &quot;type&quot;       : &quot;number&quot;,
+    &quot;multipleOf&quot; : 10
+}
+</code></pre>
+</li>
+<li>
+<p>Range</p>
+<p>数字范围是使用 minimum 与 maximum 关键字（或 exclusiveMinimum 和 exclusiveMaximum 用于表示互斥范围）的组合来指定的 。</p>
+<p>如果 x 是要验证的值，则以下条件必须为 true：</p>
+<ul>
+<li><code class="language-vim">X ≥</code> minimum</li>
+<li><code class="language-vim">x &gt;</code> exclusiveMinimum</li>
+<li><code class="language-vim">X ≤</code> maximum</li>
+<li><code class="language-vim">x &lt;</code> exclusiveMaximum</li>
+</ul>
+<p>虽然我们可以同时指定的 minimum 和 exclusiveMinimum 或两者的 maximum 和 exclusiveMaximum，它并没有真正意义的做到这一点。</p>
+<pre class="line-numbers"><code class="lang-json rainbow-braces">{
+  &quot;type&quot;: &quot;number&quot;,
+  &quot;minimum&quot;: 0,
+  &quot;exclusiveMaximum&quot;: 100
+}
+// 取值：0-99 排除 100
+</code></pre>
+</li>
+</ul>
+<h3 id="anchor_8"><a class="anchor-navigation-ex-anchor" href="#anchor_8" name="anchor_8"><i aria-hidden="true" class="fa fa-link"></i></a>3.4. 对象</h3>
+<p>对象是 JSON 中的映射类型。他们将“键”映射到“值”。在 JSON 中，“键”必须始终为字符串。这些对中的每对通常都称为“属性”。</p>
+<p>在 Python 中，“对象”类似于 dict 类型。但是，一个重要的区别是，尽管 Python 词典可以使用任何不可变对象作为键，但在 JSON 中，所有键都必须是字符串。</p>
+<p>尽量不要被“对象”一词的两种用法所混淆：Python 使用该词 object 来表示所有事物的通用基类，而在 JSON 中，它仅用于表示从字符串键到值的映射。</p>
+<pre class="line-numbers"><code class="lang-json rainbow-braces">{ &quot;type&quot;: &quot;object&quot; }
+// 类型为字典，key 为字符串
+</code></pre>
+<ul>
+<li>
+<p>属性</p>
+<p>properties 关键字定义对象上的属性（键值对）的值是一个对象，其中每个键是属性的名称，每个值是用于验证该属性的 JSON 模式。</p>
+<p>例如，假设我们要为由数字，街道名称和街道类型组成的地址定义一个简单的模式：</p>
+<pre class="line-numbers"><code class="lang-json rainbow-braces">{
+  &quot;type&quot;: &quot;object&quot;,
+  &quot;properties&quot;: {
+    &quot;街道&quot;: { &quot;type&quot;: &quot;string&quot; },
+    &quot;楼号&quot;: { &quot;type&quot;: &quot;number&quot; }
+  }
+}
+// 成功：{ &quot;街道&quot;: &quot;新安街道&quot;, &quot;楼号&quot;: 123 }、{ &quot;街道&quot;: &quot;新安街道&quot;, &quot;楼号&quot;: 123, &quot;区&quot;: &quot;宝安区&quot;}
+// 失败：{ &quot;街道&quot;: &quot;新安街道&quot;, &quot;楼号&quot;: &quot;123&quot; }
+</code></pre>
+<p>additionalProperties 关键字用于控制的额外的东西，默认情况下，允许任何其他属性。如果 additionalProperties 为 boolean 并将其设置为 false，则不允许使用其他属性。</p>
+<pre class="line-numbers"><code class="lang-json rainbow-braces">{
+  &quot;type&quot;: &quot;object&quot;,
+  &quot;properties&quot;: {
+    &quot;街道&quot;: { &quot;type&quot;: &quot;string&quot; },
+    &quot;楼号&quot;: { &quot;type&quot;: &quot;number&quot; }
+  },
+  &quot;additionalProperties&quot;: false
+}
+// 成功：{ &quot;街道&quot;: &quot;新安街道&quot;, &quot;楼号&quot;: 123 }
+// 失败：{ &quot;街道&quot;: &quot;新安街道&quot;, &quot;楼号&quot;: &quot;123&quot; }、{ &quot;街道&quot;: &quot;新安街道&quot;, &quot;楼号&quot;: 123, &quot;区&quot;: &quot;宝安区&quot;}
+</code></pre>
+</li>
+<li>
+<p>必须的属性</p>
+<p>required 关键字可以指定必须存在的属性。</p>
+<pre class="line-numbers"><code class="lang-json rainbow-braces">{
+  &quot;type&quot;: &quot;object&quot;,
+  &quot;properties&quot;: {
+    &quot;姓名&quot;: { &quot;type&quot;: &quot;string&quot; },
+    &quot;街道&quot;: { &quot;type&quot;: &quot;string&quot; },
+    &quot;楼号&quot;: { &quot;type&quot;: &quot;number&quot; }
+  },
+  &quot;required&quot;: [&quot;姓名&quot;, &quot;街道&quot;]
+}
+// 成功：{ &quot;姓名&quot;: &quot;张三&quot;, &quot;街道&quot;: &quot;新安街道&quot; }、{ &quot;姓名&quot;: &quot;张三&quot;, &quot;街道&quot;: &quot;新安街道&quot;, &quot;楼号&quot;: 123, &quot;区&quot;: &quot;宝安区&quot;}
+// 失败：{ &quot;街道&quot;: &quot;新安街道&quot;, &quot;楼号&quot;: &quot;123&quot; }
+</code></pre>
+</li>
+<li>
+<p>属性数量</p>
+<p>minProperties 和 maxProperties 关键字限制对象上的属性数量 。每个参数都必须是非负整数。</p>
+<pre class="line-numbers"><code class="lang-json rainbow-braces">{
+&quot;type&quot;: &quot;object&quot;,
+&quot;minProperties&quot;: 2,
+&quot;maxProperties&quot;: 3
+}
+// 成功：{ &quot;a&quot;: 0, &quot;b&quot;: 1 }、{ &quot;a&quot;: 0, &quot;b&quot;: 1, &quot;c&quot;: 2 }
+// 失败：{}、{ &quot;a&quot;: 0 }、{ &quot;a&quot;: 0, &quot;b&quot;: 1, &quot;c&quot;: 2, &quot;d&quot;: 3 }
+</code></pre>
+</li>
+<li>
+<p>依赖</p>
+<p>dependencies 关键字允许基于某些特殊属性是变化的模式。</p>
+<p>JSON 模式中有两种形式的依赖关系：</p>
+<ul>
+<li>属性依赖项声明如果存在给定的属性，则必须存在某些其他属性。</li>
+<li>模式依赖项声明存在给定属性时模式会更改。</li>
+</ul>
+<p>比如，如果街道存在时，楼号也必须存在。</p>
+<pre class="line-numbers"><code class="lang-json rainbow-braces">{
+  &quot;type&quot;: &quot;object&quot;,
+  &quot;properties&quot;: {
+    &quot;姓名&quot;: { &quot;type&quot;: &quot;string&quot; },
+    &quot;街道&quot;: { &quot;type&quot;: &quot;string&quot; },
+    &quot;楼号&quot;: { &quot;type&quot;: &quot;number&quot; }
+  },
+  &quot;required&quot;: [&quot;姓名&quot;],
+  &quot;dependencies&quot;: {
+    &quot;街道&quot;: [&quot;楼号&quot;]
+  }
+}
+// 成功：{ &quot;姓名&quot;: &quot;张三&quot;}、{ &quot;姓名&quot;: &quot;张三&quot;, &quot;街道&quot;: &quot;新安街道&quot;, &quot;楼号&quot;: 123}、{ &quot;姓名&quot;: &quot;张三&quot;, &quot;楼号&quot;: 123}
+// 失败：{ &quot;姓名&quot;: &quot;张三&quot;, &quot;街道&quot;: &quot;新安街道&quot; }
+</code></pre>
+<p>当然也可以明确定义双向依赖性</p>
+<pre class="line-numbers"><code class="lang-json rainbow-braces">{
+  &quot;type&quot;: &quot;object&quot;,
+  &quot;properties&quot;: {
+    &quot;姓名&quot;: { &quot;type&quot;: &quot;string&quot; },
+    &quot;街道&quot;: { &quot;type&quot;: &quot;string&quot; },
+    &quot;楼号&quot;: { &quot;type&quot;: &quot;number&quot; }
+  },
+  &quot;required&quot;: [&quot;姓名&quot;],
+  &quot;dependencies&quot;: {
+    &quot;街道&quot;: [&quot;楼号&quot;],
+    &quot;楼号&quot;: [&quot;街道&quot;]
+  }
+}
+// 成功：{ &quot;姓名&quot;: &quot;张三&quot;}、{ &quot;姓名&quot;: &quot;张三&quot;, &quot;街道&quot;: &quot;新安街道&quot;, &quot;楼号&quot;: 123}
+// 失败：{ &quot;姓名&quot;: &quot;张三&quot;, &quot;街道&quot;: &quot;新安街道&quot; }、{ &quot;姓名&quot;: &quot;张三&quot;, &quot;楼号&quot;: 123}
+</code></pre>
+</li>
+<li>
+<p>模式依赖</p>
+<p>模式依赖项的工作方式类似于属性依赖项，但是它们不仅可以指定其他必需的属性，还可以扩展模式使其具有其他约束。</p>
+<pre class="line-numbers"><code class="lang-json rainbow-braces">{
+  &quot;type&quot;: &quot;object&quot;,
+  &quot;properties&quot;: {
+    &quot;姓名&quot;: { &quot;type&quot;: &quot;string&quot; },
+    &quot;街道&quot;: { &quot;type&quot;: &quot;string&quot; }
+  },
+  &quot;required&quot;: [&quot;姓名&quot;],
+  &quot;dependencies&quot;: {
+    &quot;街道&quot;: {
+      &quot;properties&quot;: {
+        &quot;楼号&quot;: { &quot;type&quot;: &quot;number&quot; }
+      },
+      &quot;required&quot;: [&quot;楼号&quot;]
+    }
+  }
+}
+// 成功：{ &quot;姓名&quot;: &quot;张三&quot;}、{ &quot;姓名&quot;: &quot;张三&quot;, &quot;街道&quot;: &quot;新安街道&quot;, &quot;楼号&quot;: 123}
+// 失败：{ &quot;姓名&quot;: &quot;张三&quot;, &quot;街道&quot;: &quot;新安街道&quot; }
+</code></pre>
+</li>
+</ul>
+<h3 id="anchor_9"><a class="anchor-navigation-ex-anchor" href="#anchor_9" name="anchor_9"><i aria-hidden="true" class="fa fa-link"></i></a>3.5. 数组</h3>
+<p>数组用于有序元素。在 JSON 中，数组中的每个元素都可以具有不同的类型。</p>
+<p>JSON 中通常使用两种方式使用数组：</p>
+<ul>
+<li>
+<p>列表验证：任意长度的序列，其中每个项目都匹配相同的模式。</p>
+</li>
+<li>
+<p>元组验证：固定长度的序列，其中每个项目可能具有不同的模式。在这种用法中，每个项目的索引（或位置）对于如何解释该值都是有意义的。</p>
+</li>
+<li>
+<p>列表验证</p>
+<p>定义数组中的每个项目都是一个数字：</p>
+<pre class="line-numbers"><code class="lang-json rainbow-braces">{
+  &quot;type&quot;: &quot;array&quot;,
+  &quot;items&quot;: {
+    &quot;type&quot;: &quot;number&quot;
+  }
+}
+// 成功：[1, 2, 3, 4, 5]、[]
+// 失败：[1, 2, &quot;3&quot;, 4, 5]
+</code></pre>
+<p>items 模式必须对数组中的每个项目都有效，但是 contains 模式仅需要针对数组中的一个或多个项目进行验证。</p>
+<pre class="line-numbers"><code class="lang-json rainbow-braces">{
+  &quot;type&quot;: &quot;array&quot;,
+  &quot;contains&quot;: {
+    &quot;type&quot;: &quot;number&quot;
+  }
+}
+// 成功：[1, 2, 3, 4, 5]、[&quot;a&quot;, 4, &quot;b&quot;]
+// 失败：[&quot;a&quot;, &quot;b&quot;]
+</code></pre>
+</li>
+<li>
+<p>元组验证</p>
+<p>当数组是项目的集合时，其中每个项目具有不同的模式并且每个项目的序号索引都有意义，则元组验证很有用。</p>
+<p>比如一个描述地理位置的元组：<code class="language-vim">[街道, 经度, 维度, 朝向]</code></p>
+<ul>
+<li>街道：必须是字符串</li>
+<li>经度：必须是数字</li>
+<li>纬度：必须是数字</li>
+<li>朝向：只能是东南西北</li>
+</ul>
+<pre class="line-numbers"><code class="lang-json rainbow-braces">{
+  &quot;type&quot;: &quot;array&quot;,
+  &quot;items&quot; [
+    {
+      &quot;type&quot;: &quot;string&quot;
+    },
+    {
+      &quot;type&quot;: &quot;number&quot;
+    },
+    {
+      &quot;type&quot;: &quot;number&quot;
+    },
+    {
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;enum&quot;: [&quot;东&quot;, &quot;南&quot;, &quot;西&quot;, &quot;北&quot;]
+    }
+  ]
+}
+</code></pre>
+</li>
+<li>
+<p>长度</p>
+<p>可以使用 <code class="language-vim">minItems</code> <code class="language-vim">maxItems</code> 关键字指定数组的长度。每个关键字的值必须为非负数。</p>
+<pre class="line-numbers"><code class="lang-json rainbow-braces">{
+  &quot;type&quot;: &quot;array&quot;,
+  &quot;minItems&quot;: 2,
+  &quot;maxItems&quot;: 3
+}
+// 成功：[1, 2]、[1, 2, 3]
+// 失败：[]、[1]、[1, 2, 3, 4]
+</code></pre>
+</li>
+<li>
+<p>唯一</p>
+<p>可以确保数组中的每个项目都是唯一的。只需将 uniqueItems 关键字设置为即可 true。</p>
+<pre class="line-numbers"><code class="lang-json rainbow-braces">{
+  &quot;type&quot;: &quot;array&quot;,
+  &quot;uniqueItems&quot;: true
+}
+// 成功：[1, 2, 3, 4]、[]
+// 失败：[1, 2, 3, 1]
+</code></pre>
+</li>
+</ul>
+<h3 id="anchor_10"><a class="anchor-navigation-ex-anchor" href="#anchor_10" name="anchor_10"><i aria-hidden="true" class="fa fa-link"></i></a>3.6. 布尔值</h3>
+<p>布尔类型仅匹配两个特殊值：true 和 false。</p>
+<pre class="line-numbers"><code class="lang-json rainbow-braces">{ &quot;type&quot;: &quot;boolean&quot; }
+// 成功：true、false
+// 失败：&quot;true&quot;、0
+</code></pre>
+<h3 id="anchor_11"><a class="anchor-navigation-ex-anchor" href="#anchor_11" name="anchor_11"><i aria-hidden="true" class="fa fa-link"></i></a>3.7. 空</h3>
+<p>空类型通常用于表示缺失值。当模式指定 atype 时 null，它只有一个可接受的值：null。</p>
+<pre class="line-numbers"><code class="lang-json rainbow-braces">{ &quot;type&quot;: &quot;null&quot; }
+// 成功：null
+// 失败：false、0、&quot;&quot;
+</code></pre>
 
                         <footer class="page-footer">
 <span class="copyright">© 2021 刘士. All rights reserved.</span>
@@ -341,12 +753,12 @@ setTimeout('busuanzi()', 2000);
 </div>
 
 
-<a aria-label="Previous page: 希尔排序" class="navigation navigation-prev" href="希尔排序.html">
+<a aria-label="Previous page: 正则表达式" class="navigation navigation-prev" href="re_model.html">
     <i class="fa fa-angle-left"></i>
 </a>
 
 
-<a aria-label="Next page: 快速排序" class="navigation navigation-next" href="快速排序.html">
+<a aria-label="Next page: Python 3 总结" class="navigation navigation-next" href="../py3总结.html">
     <i class="fa fa-angle-right"></i>
 </a>
 
@@ -359,8 +771,8 @@ setTimeout('busuanzi()', 2000);
             "config": {
                 "github_url":"https://liushilive.github.io/",
                 "language": "zh-cn",
-                "previous_page_link": "希尔排序.html",
-                "next_page_link": "快速排序.html"
+                "previous_page_link": "re_model.html",
+                "next_page_link": "../py3总结.html"
             },
             "basePath": "../..",
             "js": {'prism': ['../../../asserts/lsbook/prismjs/clipboard.min.js', '../../../asserts/lsbook/prismjs/prism.js']}
