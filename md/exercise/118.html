@@ -270,12 +270,24 @@
                 <div class="search-noresults">
                     <section class="normal markdown-section">
                         <div id='anchor-navigation-ex-navbar'><i class='fa fa-anchor'></i><ul><li><span class='title-icon fa fa-hand-o-right'></span><a aria-label class='on-toolbar-action' href='' onclick="$('.fa.fa-align-justify').parent()[0].click();">目录</a></li><li><span class='title-icon fa fa-hand-o-right'></span><a href='#anchor_1'><b></b>Python 练习</a></li><ul><li><span class='title-icon fa fa-hand-o-right'></span><a href='#anchor_2'><b>1. </b>题目</a></li><li><span class='title-icon fa fa-hand-o-right'></span><a href='#anchor_3'><b>2. </b>分析</a></li><li><span class='title-icon fa fa-hand-o-right'></span><a href='#anchor_4'><b>3. </b>实例</a></li></ul></ul></div><a href='#anchor_1' id='anchorNavigationExGoTop'><i class='fa fa-arrow-up'></i></a>
-                        <h1 id="anchor_1"><a class="anchor-navigation-ex-anchor" href="#anchor_1" name="anchor_1"><i aria-hidden="true" class="fa fa-link"></i></a>Python 练习</h1>
-<h2 id="anchor_2"><a class="anchor-navigation-ex-anchor" href="#anchor_2" name="anchor_2"><i aria-hidden="true" class="fa fa-link"></i></a>1. 题目</h2>
+                        <h1 id="anchor_1">
+    <a class="anchor-navigation-ex-anchor" href="#anchor_1" name="anchor_1">
+        <i aria-hidden="true" class="fa fa-link"></i>
+    </a>Python 练习
+</h1>
+<h2 id="anchor_2">
+    <a class="anchor-navigation-ex-anchor" href="#anchor_2" name="anchor_2">
+        <i aria-hidden="true" class="fa fa-link"></i>
+    </a>1. 题目
+</h2>
 <p>哥德巴赫猜想说是说，任何一个超过 2 的偶数都可以写成两个素数之和</p>
 <p>例如，4=2+2，8=5+3 等。</p>
 <p>本例要求根据用户输入的偶数找出其素数和的分解形式</p>
-<h2 id="anchor_3"><a class="anchor-navigation-ex-anchor" href="#anchor_3" name="anchor_3"><i aria-hidden="true" class="fa fa-link"></i></a>2. 分析</h2>
+<h2 id="anchor_3">
+    <a class="anchor-navigation-ex-anchor" href="#anchor_3" name="anchor_3">
+        <i aria-hidden="true" class="fa fa-link"></i>
+    </a>2. 分析
+</h2>
 <p>一个简单的方法的，对于输入的偶数 N，找出其所有分解，逐一验证每一个满足 N=k1+k2 的分解中 k1 和 k2 是否都是素数。</p>
 <p>比如对于数字 12，验证分解（2，10），（3，9）、（4，8）、（5、7）、（6，6）中有没有两个数都是素数的情形。</p>
 <p>如果有，哥德巴赫猜想该数就是成立的。</p>
@@ -284,7 +296,11 @@
 <p>比如需要验证 10、12、16 三个数，它们有分解 5+5、5+7、5+11，这样验证这几个分解时就要判断 5 是不是素数，重复的运算会很多。</p>
 <p>本案例采用另一种思路，首先建立一个素数表，该素数表要足够长，可以覆盖偶数 N 所有分解中可能遇到的素数。</p>
 <p>而后考察 N 的每个分解，看看分解出来的两个数是否都包含在素数表中，若是，则找到一种素数分解。</p>
-<h2 id="anchor_4"><a class="anchor-navigation-ex-anchor" href="#anchor_4" name="anchor_4"><i aria-hidden="true" class="fa fa-link"></i></a>3. 实例</h2>
+<h2 id="anchor_4">
+    <a class="anchor-navigation-ex-anchor" href="#anchor_4" name="anchor_4">
+        <i aria-hidden="true" class="fa fa-link"></i>
+    </a>3. 实例
+</h2>
 <sec data-title="点我看答案"><div class="panel panel-default"><div class="panel-heading"><b>点我看答案<a class="pull-right section atTitle btn btn-default " target="sectionx1"><span class="fa fa-angle-down" /></a></b></div><div class="panel-collapse collapse" id="sectionx1"><div class="panel-body"><pre class="line-numbers"><code class="lang-python rainbow-braces">def main():
     # 输入待验证的偶数
     N = int(input(&quot;请输入待验证的偶数：&quot;))

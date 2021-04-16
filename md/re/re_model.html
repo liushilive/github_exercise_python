@@ -270,10 +270,18 @@
                 <div class="search-noresults">
                     <section class="normal markdown-section">
                         <div id='anchor-navigation-ex-navbar'><i class='fa fa-anchor'></i><ul><li><span class='title-icon fa fa-hand-o-right'></span><a aria-label class='on-toolbar-action' href='' onclick="$('.fa.fa-align-justify').parent()[0].click();">目录</a></li><li><span class='title-icon fa fa-hand-o-right'></span><a href='#anchor_1'><b></b>Python 正则学习</a></li><ul><li><span class='title-icon fa fa-hand-o-right'></span><a href='#anchor_2'><b>1. </b>re</a></li></ul><li><span class='title-icon fa fa-hand-o-right'></span><a href='#anchor_3'><b></b>如何写正则表达式</a></li><li><span class='title-icon fa fa-hand-o-right'></span><a href='#anchor_4'><b></b>信息提取</a></li><ul><li><span class='title-icon fa fa-hand-o-right'></span><a href='#anchor_5'><b>1. </b>正则表达式对象</a></li><li><span class='title-icon fa fa-hand-o-right'></span><a href='#anchor_6'><b>2. </b>多行搜索</a></li><li><span class='title-icon fa fa-hand-o-right'></span><a href='#anchor_7'><b>3. </b>忽略大小写</a></li></ul></ul></div><a href='#anchor_1' id='anchorNavigationExGoTop'><i class='fa fa-arrow-up'></i></a>
-                        <h1 id="anchor_1"><a class="anchor-navigation-ex-anchor" href="#anchor_1" name="anchor_1"><i aria-hidden="true" class="fa fa-link"></i></a>Python 正则学习</h1>
+                        <h1 id="anchor_1">
+    <a class="anchor-navigation-ex-anchor" href="#anchor_1" name="anchor_1">
+        <i aria-hidden="true" class="fa fa-link"></i>
+    </a>Python 正则学习
+</h1>
 <p><a target=_Blank href="https://docs.python.org/3/library/re.html">参考官方文档</a></p>
 <p><strong>正则表达式</strong> <code class="language-vim">Regular Expression</code> 的主要功能是从字符串（string）中通过特定的模式，搜索希望找到的内容。</p>
-<h2 id="anchor_2"><a class="anchor-navigation-ex-anchor" href="#anchor_2" name="anchor_2"><i aria-hidden="true" class="fa fa-link"></i></a>1. re</h2>
+<h2 id="anchor_2">
+    <a class="anchor-navigation-ex-anchor" href="#anchor_2" name="anchor_2">
+        <i aria-hidden="true" class="fa fa-link"></i>
+    </a>1. re
+</h2>
 <p>Python 中可以使用包 <code class="language-vim">re</code> 来处理正则表达式。</p>
 <p>下面是一个简单的应用，目的是找到字符串中的数字：</p>
 <pre class="line-numbers"><code class="lang-python rainbow-braces">import re
@@ -302,7 +310,11 @@ re.split()
 # 放在一个列表(list)中返回
 re.findall()
 </code></pre>
-<h1 id="anchor_3"><a class="anchor-navigation-ex-anchor" href="#anchor_3" name="anchor_3"><i aria-hidden="true" class="fa fa-link"></i></a>如何写正则表达式</h1>
+<h1 id="anchor_3">
+    <a class="anchor-navigation-ex-anchor" href="#anchor_3" name="anchor_3">
+        <i aria-hidden="true" class="fa fa-link"></i>
+    </a>如何写正则表达式
+</h1>
 <p>正则表达式的功能其实非常强大，关键在于如何写出有效的正则表达式。</p>
 <p>我们先看正则表达式的常用语法。</p>
 <p>正则表达式用某些符号代表单个字符：</p>
@@ -449,7 +461,11 @@ re.findall()
 </tr>
 </tbody>
 </table>
-<h1 id="anchor_4"><a class="anchor-navigation-ex-anchor" href="#anchor_4" name="anchor_4"><i aria-hidden="true" class="fa fa-link"></i></a>信息提取</h1>
+<h1 id="anchor_4">
+    <a class="anchor-navigation-ex-anchor" href="#anchor_4" name="anchor_4">
+        <i aria-hidden="true" class="fa fa-link"></i>
+    </a>信息提取
+</h1>
 <p>有的时候，我们想在搜索的同时，对结果进一步提炼。比如说，我们从下面一个字符串中提取信息：</p>
 <pre class="line-numbers"><code class="lang-python rainbow-braces">s = &quot;abcd_output_1994_abcd_1912_abcd&quot;
 </code></pre>
@@ -471,17 +487,29 @@ m = re.search(r&quot;output_(?P&lt;year&gt;\d{4})&quot;, &quot;output_1986.txt&q
 print(m.group(&quot;year&quot;)) # 打印1986
 </code></pre>
 <p>上面的 <code class="language-vim">(?P&lt;year&gt;…)</code> 括住了一个群，并把它命名为 <code class="language-vim">year</code>。用这种方式来产生群，就可以通过 <code class="language-vim">year</code> 这个键来提取结果。</p>
-<h2 id="anchor_5"><a class="anchor-navigation-ex-anchor" href="#anchor_5" name="anchor_5"><i aria-hidden="true" class="fa fa-link"></i></a>1. 正则表达式对象</h2>
+<h2 id="anchor_5">
+    <a class="anchor-navigation-ex-anchor" href="#anchor_5" name="anchor_5">
+        <i aria-hidden="true" class="fa fa-link"></i>
+    </a>1. 正则表达式对象
+</h2>
 <p>以上都是直接通过正则表达式来进行操作，很多时候为了更方便应用正则表达式，会将正则表达式的样式编译为一个<code class="language-vim">正则表达式对象</code>（正则对象），可以用于匹配，通过这个对象的方法进行操作，在特定情况下使正则应用更加高效。</p>
 <pre class="line-numbers"><code class="lang-python rainbow-braces">pattern = re.compile(r&quot;output_(\d{4})&quot;)
 pattern.search(&quot;output_1986.txt&quot;)
 pattern.search(&quot;output_1986.txt&quot;).group(1)
 </code></pre>
-<h2 id="anchor_6"><a class="anchor-navigation-ex-anchor" href="#anchor_6" name="anchor_6"><i aria-hidden="true" class="fa fa-link"></i></a>2. 多行搜索</h2>
+<h2 id="anchor_6">
+    <a class="anchor-navigation-ex-anchor" href="#anchor_6" name="anchor_6">
+        <i aria-hidden="true" class="fa fa-link"></i>
+    </a>2. 多行搜索
+</h2>
 <pre class="line-numbers"><code class="lang-python rainbow-braces">re.findall(r&quot;^wo.*&quot;, &quot;hello\nworld\nworld hello&quot;)
 re.findall(r&quot;^wo.*&quot;, &quot;hello\nworld\nworld hello&quot;, flags=re.M)
 </code></pre>
-<h2 id="anchor_7"><a class="anchor-navigation-ex-anchor" href="#anchor_7" name="anchor_7"><i aria-hidden="true" class="fa fa-link"></i></a>3. 忽略大小写</h2>
+<h2 id="anchor_7">
+    <a class="anchor-navigation-ex-anchor" href="#anchor_7" name="anchor_7">
+        <i aria-hidden="true" class="fa fa-link"></i>
+    </a>3. 忽略大小写
+</h2>
 <pre class="line-numbers"><code class="lang-python rainbow-braces">re.findall(r&quot;^wo.*&quot;, &quot;hello\nworld\nWorld hello&quot;, flags=re.M)
 re.findall(r&quot;^wo.*&quot;, &quot;hello\nworld\nWorld hello&quot;, flags=(re.M + re.I))
 </code></pre>
