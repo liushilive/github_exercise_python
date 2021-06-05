@@ -280,7 +280,7 @@
         <i aria-hidden="true" class="fa fa-link"></i>
     </a>1. 题目
 </h2>
-<p>打印出所有的&quot;水仙花数&quot;，所谓&quot;水仙花数&quot;是指一个三位数，其各位数字立方和等于该数本身。例如：153 是一个&quot;水仙花数&quot;，因为 153=1 的三次方＋5 的三次方＋3 的三次方。</p>
+<p>打印出所有的&quot;水仙花数&quot;，所谓&quot;水仙花数&quot;是指一个三位数，其各位数字立方和等于该数本身。例如：153 是一个&quot;水仙花数&quot;，因为 \(153 = 1^3 + 5^3 + 3^3\)</p>
 <h2 id="anchor_3">
     <a class="anchor-navigation-ex-anchor" href="#anchor_3" name="anchor_3">
         <i aria-hidden="true" class="fa fa-link"></i>
@@ -292,11 +292,10 @@
         <i aria-hidden="true" class="fa fa-link"></i>
     </a>3. 实例
 </h2>
-<sec data-title="点我看答案"><div class="panel panel-default"><div class="panel-heading"><b>点我看答案<a class="pull-right section atTitle btn btn-default " target="sectionx1"><span class="fa fa-angle-down" /></a></b></div><div class="panel-collapse collapse" id="sectionx1"><div class="panel-body"><pre class="line-numbers"><code class="lang-python rainbow-braces">for n in range(100, 1000):
-    i = n // 100
-    j = int(n / 10 % 10)
-    k = int(n % 10)
-    if n == i ** 3 + j ** 3 + k ** 3:
+<sec data-title="点我看答案"><div class="panel panel-default"><div class="panel-heading"><b>点我看答案<a class="pull-right section atTitle btn btn-default " target="sectionx1"><span class="fa fa-angle-down" /></a></b></div><div class="panel-collapse collapse" id="sectionx1"><div class="panel-body"><pre class="line-numbers"><code class="lang-python rainbow-braces">from functools import reduce
+
+for n in range(100, 1000):
+    if reduce(lambda x, y: x+y, map(lambda z: int(z) ** 3, str(n))) == n:
         print(n)
 
 </code></pre></div></div></div></sec>
@@ -353,7 +352,7 @@ setTimeout('busuanzi()', 2000);
                 "next_page_link": "014.html"
             },
             "basePath": "../..",
-            "js": {'prism': ['../../../asserts/lsbook/prismjs/clipboard.min.js', '../../../asserts/lsbook/prismjs/prism.js']}
+            "js": {'katex': ['../../../asserts/lsbook/katex/katex.min.js', '../../../asserts/lsbook/katex/contrib/auto-render.min.js'], 'prism': ['../../../asserts/lsbook/prismjs/clipboard.min.js', '../../../asserts/lsbook/prismjs/prism.js']}
         });
     });
 </script>

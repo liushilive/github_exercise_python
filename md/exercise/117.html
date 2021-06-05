@@ -286,31 +286,26 @@
         <i aria-hidden="true" class="fa fa-link"></i>
     </a>2. 分析
 </h2>
-<p>自幂数是指一个 n 位正整数，如果它的各位数字的 n 次方的和加起来等于这个数，数学家称这样的数为自幂数。例如，13+53+33=153，153 就是一个 3 位的自幂数，3 位自幂数也称为水仙花数。本程序设 n 的数值为 1~6，当 n 大于 6 时，程序退出。</p>
+<p>自幂数是指一个 n 位正整数，如果它的各位数字的 n 次方的和加起来等于这个数，数学家称这样的数为自幂数。例如，\(1^3+5^3+3^3=153\)，153 就是一个 3 位的自幂数，3 位自幂数也称为水仙花数。本程序设 n 的数值为 1~6，当 n 大于 6 时，程序退出。</p>
 <h2 id="anchor_4">
     <a class="anchor-navigation-ex-anchor" href="#anchor_4" name="anchor_4">
         <i aria-hidden="true" class="fa fa-link"></i>
     </a>3. 实例
 </h2>
-<sec data-title="点我看答案"><div class="panel panel-default"><div class="panel-heading"><b>点我看答案<a class="pull-right section atTitle btn btn-default " target="sectionx1"><span class="fa fa-angle-down" /></a></b></div><div class="panel-collapse collapse" id="sectionx1"><div class="panel-body"><pre class="line-numbers"><code class="lang-python rainbow-braces"># 自幂数
+<sec data-title="点我看答案"><div class="panel panel-default"><div class="panel-heading"><b>点我看答案<a class="pull-right section atTitle btn btn-default " target="sectionx1"><span class="fa fa-angle-down" /></a></b></div><div class="panel-collapse collapse" id="sectionx1"><div class="panel-body"><pre class="line-numbers"><code class="lang-python rainbow-braces">from functools import reduce
+
+# 自幂数
 start = 0
 end = 0
-digit = 0
-m = 0
 n = int(input(&#x27;请选择自幂数的位数【1，2，3，4，5，6】:&#x27;))
+
 while 0 &lt; n &lt; 7:
     start = pow(10, n - 1)
     end = pow(10, n) - 1
     print(n, &#x27;位数的自幂数有:&#x27;)
     for k in range(start, end + 1):
-        m = k
-        total = 0
-        while m != 0:
-            digit = m % 10
-            total += pow(digit, n)
-            m = m // 10
-        if total == k:
-            print(str(k), end=&#x27; &#x27;)
+        if reduce(lambda x, y: x+y, map(lambda z: int(z) ** n, str(k))) == k:
+            print(k)
     n = int(input(&#x27;\n 请选择自幂数的位数【1，2，3，4，5，6】:&#x27;))
 else:
     print(&#x27;输入位数不在范围内,程序结束。&#x27;)
@@ -369,7 +364,7 @@ setTimeout('busuanzi()', 2000);
                 "next_page_link": "118.html"
             },
             "basePath": "../..",
-            "js": {'prism': ['../../../asserts/lsbook/prismjs/clipboard.min.js', '../../../asserts/lsbook/prismjs/prism.js']}
+            "js": {'katex': ['../../../asserts/lsbook/katex/katex.min.js', '../../../asserts/lsbook/katex/contrib/auto-render.min.js'], 'prism': ['../../../asserts/lsbook/prismjs/clipboard.min.js', '../../../asserts/lsbook/prismjs/prism.js']}
         });
     });
 </script>
